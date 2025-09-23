@@ -6,6 +6,13 @@
 ![Tafsir](https://img.shields.io/badge/Tafsir-Kemenag%20%7C%20Ibnu%20Katsir%20%7C%20Jalalain%20%7C%20Quraish%20Shihab-purple.svg)
 ![Language](https://img.shields.io/badge/Language-Arabic%20%7C%20Indonesian%20%7C%20English-lightgrey.svg)
 
+## 🙋‍♂️ Perkenalan
+
+👨‍💻 **Ardy Ren**  
+Web Programmer dengan pengalaman lebih dari 5 tahun membangun aplikasi menggunakan **PHP, JavaScript, Node.js, dan Python**.  
+Fokus pada **backend development, integrasi API, manajemen server, bot automation**, serta **cross-platform development** dengan Arduino, C++, C#, dan Delphi.  
+
+---
 
 
 **Deskripsi**  
@@ -149,14 +156,32 @@ if __name__ == '__main__':
 ---
 
 ## 📎 Sumber data
-- Qur’an & Audio → https://islamic.network/  
-- Tafsir → https://qurano.com/  
-- Hadis → https://ilmuislam.id/  
-- Murottal Qur’an: [Google Drive](https://drive.google.com/drive/folders/1GWvlW5HGBDkbvSFMb46AsqE7UA5XAT22), [IslamDownload](https://islamdownload.net/124170-murottal-al-quran-dan-terjemahannya-oleh-syaikh-misyari-rasyid.html), [Archive.org](https://archive.org/details/AlQuranTerjemahanBahasaIndonesiaArabic), [Spotify](https://open.spotify.com/show/32VV2OExP3MRGe7mNkP2mh?si=MWNDI0qVS02APQ7TrIOSBg)  
-- Komunitas: Instagram → @langit.quran, [WA Group](https://chat.whatsapp.com/IQFzaK1AIlz3uRALVBKRA8), [WA Channel](https://whatsapp.com/channel/0029VaZzOuI3rZZY5YLVQP0W), [Telegram](https://t.me/renpwn_quranhadis)  
+- 📖 Qur’an & Audio → [Islamic Network](https://islamic.network/)  
+- 📚 Tafsir → [Qurano](https://qurano.com/)  
+- 📜 Hadis → [Ilmu Islam](https://ilmuislam.id/)  
+- 🎧 Murottal Qur’an: [Google Drive](https://drive.google.com/drive/folders/1GWvlW5HGBDkbvSFMb46AsqE7UA5XAT22), [IslamDownload](https://islamdownload.net/124170-murottal-al-quran-dan-terjemahannya-oleh-syaikh-misyari-rasyid.html), [Archive.org](https://archive.org/details/AlQuranTerjemahanBahasaIndonesiaArabic), [Spotify](https://open.spotify.com/show/32VV2OExP3MRGe7mNkP2mh?si=MWNDI0qVS02APQ7TrIOSBg)  
+
+### 👥 Komunitas
+- 📸 Instagram → [@langit.quran](https://instagram.com/langit.quran)  
+- 💬 WhatsApp Group → [Join Group](https://chat.whatsapp.com/IQFzaK1AIlz3uRALVBKRA8)  
+- 📢 WhatsApp Channel → [Join Channel](https://whatsapp.com/channel/0029VaZzOuI3rZZY5YLVQP0W)  
+- 📡 Telegram → [Channel](https://t.me/renpwn_quranhadis)  
+
 
 ---
 
 ## ⚖️ Lisensi
 MIT License © 2025
 
+
+---
+
+## 🌐 Temukan saya di sini
+
+- 🐙 GitHub → [RENPWN](https://github.com/hardknockdays)  
+- 📸 Instagram → [renpwn_ren](https://instagram.com/renpwn_ren)  
+- ▶️ YouTube → [@RenPwn](https://www.youtube.com/@RenPwn)  
+- 🎵 TikTok → [renpwn](https://www.tiktok.com/@renpwn)  
+- 🛍️ TikTok Shop → [RenPwn](https://www.tiktok.com/@renpwn/shop)  
+- 🏬 Tokopedia → [renpwn](https://tokopedia.com/renpwn)  
+- 🛒 Shopee → [renpwn](https://shopee.co.id/renpwn)  
