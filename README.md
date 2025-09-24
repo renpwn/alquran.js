@@ -14,7 +14,6 @@ Fokus pada **backend development, integrasi API, manajemen server, bot automatio
 
 ---
 
-
 **Deskripsi**  
 Repositori ini menyediakan dataset Al-Qur’an dalam format JSON: file ringkasan 114 surah (`📄 ListQuran.json`) dan file detail per-surah (`📂 Alquran_{n}.json`) berisi teks Arab, transliterasi, terjemahan, dan beberapa tafsir.  
 Format rapi: *array of objects* untuk kemudahan parsing.
@@ -28,7 +27,8 @@ Format rapi: *array of objects* untuk kemudahan parsing.
 | `README.md` | 📘 file | Dokumentasi (keterangan, cara penggunaan, contoh) |
 | `LICENSE` | 📜 file | MIT License |
 | `ListQuran.json` | 📄 file | Daftar 114 surah (nomor, nama Latin, arti, jumlah ayat). |
-| `alquran/Alquran_{n}.json` | 📂 folder/files | File detail per surah: teks Arab, transliterasi, terjemahan, tafsir. |
+| `alquran/Alquran_{n}.json` | 📂 folder/files | File detail per surah (versi normal, rapi, mudah dibaca). |
+| `alquran_min/Alquran_{n}.json` | 📂 folder/files | File detail per surah (versi minify, hemat ukuran ±1.96%). |
 | `examples/` | 💻 folder | Contoh penggunaan (Node.js & Python) |
 
 ---
@@ -167,12 +167,21 @@ if __name__ == '__main__':
 - 📢 WhatsApp Channel → [Join Channel](https://whatsapp.com/channel/0029VaZzOuI3rZZY5YLVQP0W)  
 - 📡 Telegram → [Channel](https://t.me/renpwn_quranhadis)  
 
+---
+
+## 📊 Summary Ukuran Dataset
+
+- **Total versi normal**: 42,786,872 bytes (~42.8 MB)  
+- **Total versi minify**: 41,949,292 bytes (~41.9 MB)  
+- **Penghematan**: 837,580 bytes (~0.84 MB)  
+- **Efisiensi**: 🟢 **1.96% lebih kecil**  
+
+> 💡 Gunakan versi **normal** untuk pengembangan & debugging, dan versi **minify** untuk distribusi / aplikasi ringan.
 
 ---
 
 ## ⚖️ Lisensi
 MIT License © 2025
-
 
 ---
 
