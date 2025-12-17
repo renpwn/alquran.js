@@ -1,0 +1,23 @@
+{
+  "name": "@renpwn/alquran-tafsir-dataset",
+  "version": "0.14.11",
+  "description": "[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)\r ![Dataset](https://img.shields.io/badge/Dataset-114%20Surah-blue.svg)\r ![Format](https://img.shields.io/badge/Format-JSON-orange.svg)\r ![Tafsir](https://img.shields.io/badge/Tafsir-Kemenag%20%7C%20Ibnu%20Katsir%20%7C%20Jalalain%20%7C%20Quraish%20Shihab-purple.svg)\r ![Language](https://img.shields.io/badge/Language-Arabic%20%7C%20Indonesian%20%7C%20English-lightgrey.svg)",
+  "homepage": "https://github.com/renpwn/alquran-tafsir-json-dataset#readme",
+  "bugs": {
+    "url": "https://github.com/renpwn/alquran-tafsir-json-dataset/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renpwn/alquran-tafsir-json-dataset.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
