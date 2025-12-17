@@ -73,7 +73,9 @@ const normalizeSurah = s =>
    AUDIO INDEX GLOBAL
 ===================================== */
 const getNoAudio = (list, surahNum, ayahNum) =>
-  list.slice(0, surahNum - 1).reduce((a, b) => a + b[2], 0) + ayahNum;
+  list.quran
+    .slice(0, surahNum - 1)
+    .reduce((a, b) => a + b.ayahs, 0) + ayahNum;
 
 /* =====================================
    RANGE AYAT (MAX 5)
@@ -107,10 +109,18 @@ const parseAyatRange = (input, maxAyat) => {
    MAIN HANDLER
 ===================================== */
 async function alquranHandler(input = "", options = {}) {
-  const { tafsir = null } = options;
+  // Daftar tafsir yang tersedia
+  const availableTafsirs = ['kemenag_ringkas', 'kemenag', 'ibnu_katsir', 'jalalain', 'quraish_shihab'];
+  
+  // Jika tafsir tidak diisi (null/undefined), pilih random dari daftar
+  let tafsir = options.tafsir;
+  if (!tafsir) {
+    const randomIndex = Math.floor(Math.random() * availableTafsirs.length);
+    tafsir = availableTafsirs[randomIndex];
+  }
 
   const list = readJSON(LIST_FILE);
-  const surahNames = list.map(x => normalizeSurah(x[0]));
+  const surahNames = list.quran.map(x => normalizeSurah(x.name));
 
   input = input.trim().replace(":", " ");
   let parts = input.split(/\s+/).filter(Boolean);
@@ -123,12 +133,27 @@ async function alquranHandler(input = "", options = {}) {
   if (!parts.length) {
     surahNum = Math.floor(Math.random() * 114) + 1;
   }
-
-  /* ========= FUZZY SURAH ========= */
-  else if (isNaN(parts[0])) {
-    const raw = normalizeSurah(parts[0]);
+  /* ========= NUMERIC SURAH ========= */
+  else if (!isNaN(parts[0])) {
+    surahNum = Number(parts[0]);
     ayatInput = parts[1];
-
+    if (surahNum < 1 || surahNum > 114) {
+      surahNum = Math.floor(Math.random() * 114) + 1;
+    }
+  }
+  /* ========= FUZZY SURAH ========= */
+  else {
+    // Cek apakah bagian terakhir adalah angka atau mengandung tanda "-"
+    const lastPart = parts[parts.length - 1];
+    const isAyat = !isNaN(lastPart) || (lastPart && lastPart.includes('-'));
+    let surahName;
+    if (isAyat) {
+      ayatInput = lastPart;
+      surahName = parts.slice(0, parts.length - 1).join(' ');
+    } else {
+      surahName = parts.join(' ');
+    }
+    const raw = normalizeSurah(surahName);
     const guess = correct(raw, surahNames);
 
     debug = {
@@ -139,7 +164,7 @@ async function alquranHandler(input = "", options = {}) {
         .sort((a, b) => b.rating - a.rating)
         .slice(0, 5)
         .map(x => ({
-          surah: list[surahNames.indexOf(x.target)][0],
+          surah: list.quran[surahNames.indexOf(x.target)]?.name,
           rating: Number(x.rating.toFixed(3))
         }))
     };
@@ -149,24 +174,28 @@ async function alquranHandler(input = "", options = {}) {
       : guess.indexAll + 1;
   }
 
-  /* ========= NUMERIC ========= */
-  else {
-    surahNum = Number(parts[0]);
-    ayatInput = parts[1];
-    if (surahNum < 1 || surahNum > 114)
-      surahNum = Math.floor(Math.random() * 114) + 1;
+  // Pastikan surahNum valid
+  if (surahNum < 1 || surahNum > 114) {
+    surahNum = Math.floor(Math.random() * 114) + 1;
   }
 
-  const [surah, arti, maxAyat] = list[surahNum - 1];
+  const surahObj = list.quran[surahNum - 1];
+  if (!surahObj) {
+    // Fallback random
+    surahNum = Math.floor(Math.random() * 114) + 1;
+  }
+  const { name: surah, translation: arti, ayahs: maxAyat } = list.quran[surahNum - 1];
+
   const { start, end } = parseAyatRange(ayatInput, maxAyat);
 
   const file = path.join(SURAH_DIR, `Alquran_${surahNum}.json`);
   const data = readJSON(file);
 
-  const ayahs = data.ayahs.slice(start - 1, end).map(a => {
-    const noAudio = getNoAudio(list, surahNum, a.index);
+  const ayahs = data.ayahs.slice(start - 1, end).map((a, i) => {
+    const ayahNumber = start + i;
+    const noAudio = getNoAudio(list, surahNum, ayahNumber);
     return {
-      ayah: a.index,
+      ayah: ayahNumber,
       arab: a.arb,
       transliterasi: a.transliterasi,
       indo: a.ind,

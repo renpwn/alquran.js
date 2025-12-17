@@ -16,11 +16,8 @@ const alquranHandler = require("./index");
     console.log("\n==============================");
     console.log("INPUT:", JSON.stringify(t));
     try {
-      const res = await alquranHandler(t, { tafsir: "kemenag" });
-      console.log("SURAH:", res.surahNumber, res.surah);
-      console.log("RANGE:", res.range);
-      console.log("AYAT:", res.ayahs.map(a => a.ayah));
-      console.log("AUDIO:", res.ayahs[0]?.audioUrl);
+      const res = await alquranHandler(t);
+      console.log(res);
       if (res.debug) {
         console.log("DEBUG:", res.debug);
       }
