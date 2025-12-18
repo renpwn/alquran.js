@@ -1,0 +1,2 @@
+DELETE FROM tafsirs WHERE ayah_id = 138 AND kitab = 'ibnu_katsir';
+INSERT INTO tafsirs (ayah_id, kitab, text) VALUES (138, 'ibnu_katsir', 'Adapun firman Allah Swt.:  Ketika Tuhannya berfirman kepadanya, "Tunduk patuhlah" Ibrahim menjawab, "Aku tunduk patuh kepada Tuhan semesta alam." (Al-Baqarah: 131)  Yakni Allah memerintahkannya untuk berikhlas kepada-Nya, tunduk dan patuh kepada-Nya; dan ternyata Ibrahim a.s. menunaikan perintah Allah ini seperti apa yang telah dikehendaki oleh-Nya.')

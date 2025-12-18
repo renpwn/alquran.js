@@ -1,0 +1,3 @@
+DELETE FROM translations WHERE ayah_id = 1021;
+INSERT INTO translations (ayah_id, lang, text) VALUES (1021, 'id', '(yaitu) surga ''Adn yang mereka masuk ke dalamnya, mengalir di bawahnya sungai-sungai, di dalam surga itu mereka mendapat segala apa yang mereka kehendaki. Demikianlah Allah memberi balasan kepada orang-orang yang bertakwa,');
+INSERT INTO translations (ayah_id, lang, text) VALUES (1021, 'en', 'Gardens of perpetual bliss will they enter - [gardens] through which running waters flow - having therein all that they might desire. Thus will God reward those who are conscious of Him-')
