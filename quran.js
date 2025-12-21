@@ -1,10 +1,17 @@
-import { sleep } from '../renpwn/lib/Function.js'
 import fs from 'fs/promises'
 import path from 'path'
-import { fileURLToPath } from 'url'
+import {
+  fileURLToPath
+} from 'url'
 import * as cheerio from 'cheerio'
 import axios from 'axios'
-import { openDB } from './db.js'
+import {
+  openDB
+} from './db.js'
+
+const sleep = async (ms) => {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 
 /* =========================
    DAFTAR SURAT
@@ -136,7 +143,8 @@ const ALQURAN_DIR_MIN = "./alquran_min"
 const SOURCE_DIR = "../renpwn/database/alquran"
 
 // Helper untuk mendapatkan __dirname di ES Module
-const __filename = fileURLToPath(import.meta.url)
+const __filename = fileURLToPath(
+  import.meta.url)
 const __dirname = path.dirname(__filename)
 
 // Helper untuk escape string SQL
@@ -162,10 +170,10 @@ function parseArgs() {
     batch: false,
     resume: false
   }
-  
+
   for (let i = 0; i < args.length; i++) {
     const arg = args[i]
-    
+
     if (arg === "--mode" || arg === "-m") {
       options.mode = parseInt(args[++i]) || 1
     } else if (arg === "--start" || arg === "-s") {
@@ -184,7 +192,7 @@ function parseArgs() {
       process.exit(0)
     }
   }
-  
+
   return options
 }
 
@@ -234,16 +242,24 @@ class DatabaseQueue {
 
   async add(task) {
     return new Promise((resolve, reject) => {
-      this.queue.push({ task, resolve, reject })
+      this.queue.push({
+        task,
+        resolve,
+        reject
+      })
       this.process()
     })
   }
 
   async process() {
     while (this.queue.length > 0 && this.processing < this.maxConcurrent) {
-      const { task, resolve, reject } = this.queue.shift()
+      const {
+        task,
+        resolve,
+        reject
+      } = this.queue.shift()
       this.processing++
-      
+
       task()
         .then(result => {
           resolve(result)
@@ -286,12 +302,12 @@ class TafsirQueue {
 
   async process() {
     const workers = []
-    
+
     const worker = async () => {
       while (this.queue.length > 0) {
         const task = this.queue.shift()
         if (!task) continue
-        
+
         this.processing++
         try {
           const result = await task()
@@ -306,11 +322,11 @@ class TafsirQueue {
         }
       }
     }
-    
+
     for (let i = 0; i < Math.min(this.concurrency, this.total); i++) {
       workers.push(worker())
     }
-    
+
     await Promise.all(workers)
     return this.results
   }
@@ -351,11 +367,11 @@ async function fetchUrl(url, options = {}, retryCount = 3) {
 async function salinDataSurah(key) {
   const val = List[key]
   const surahNo = key + 1
-  
+
   try {
     const sourceFile = `${SOURCE_DIR}/Alquran_${surahNo}.json`
     const targetFile = `${ALQURAN_DIR}/Alquran_${surahNo}.json`
-    
+
     // Cek apakah file target sudah ada
     try {
       await fs.access(targetFile)
@@ -364,11 +380,11 @@ async function salinDataSurah(key) {
     } catch {
       // File tidak ada, lanjut salin dari source
     }
-    
+
     // Baca file source
     const raw = await fs.readFile(sourceFile, "utf8")
     const res = JSON.parse(raw)
-    
+
     // Format data baru
     const isibaru = {
       number: surahNo,
@@ -380,7 +396,7 @@ async function salinDataSurah(key) {
       numberOfAyahs: res.data[0].ayahs.length,
       ayahs: []
     }
-    
+
     // Salin data ayat
     for (let keyay = 0; keyay < res.data[0].ayahs.length; keyay++) {
       isibaru.ayahs[keyay] = {
@@ -396,13 +412,13 @@ async function salinDataSurah(key) {
         saadi: ""
       }
     }
-    
+
     // Simpan ke file lokal
     await fs.writeFile(targetFile, JSON.stringify(isibaru, null, 4))
     console.log(`✅ Data dasar surah ${surahNo}: ${val[0]} (${isibaru.numberOfAyahs} ayat)`)
-    
+
     return isibaru
-    
+
   } catch (error) {
     console.error(`❌ Gagal menyalin surah ${surahNo}:`, error.message)
     throw error
@@ -412,26 +428,26 @@ async function salinDataSurah(key) {
 async function ambilTafsirAyat(surahNo, ayat) {
   const key = surahNo - 1
   const val = List[key]
+  const specialSlug = {
+    83: "al-tatfif",
+    40: "al-mu-min",
+    108: "al-kausar"
+  }
 
-  let slug = val[0].replace(/[ ']/g, "-").toLowerCase().replace("--","-")
-  
-  // Special cases
-  if (surahNo === 83) slug = "al-tatfif"
-  if (surahNo === 40) slug = "al-mu-min"
-  if (surahNo === 108) slug = "al-kausar"
-  
-  let surat = `${surahNo}-${slug}`.replace("--","-")
-  if (surat.endsWith("-")) surat = surat.slice(0, -1)
+  const baseSlug = val[0]
+    .toLowerCase()
+    .replace(/[ '\s]+/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "")
+
+  const slug = specialSlug[surahNo] ?? baseSlug
+  const surat = `${surahNo}-${slug}`
 
   const url = `https://qurano.com/id/${surat}/ayat-${ayat}/`
-  
+
   try {
     const html = await fetchUrl(url)
     const $ = cheerio.load(html)
-
-    // Ambil transliterasi
-    const trans = $("div.transliteration").text()
-    const transliterasi = trans.split("(")[0].trim()
 
     // Ambil title untuk nama surah
     const titleElement = $("h1.text-center")
@@ -441,25 +457,23 @@ async function ambilTafsirAyat(surahNo, ayat) {
     }
 
     // Formatter untuk tafsir
-    const formater = (id) => {
-      const element = $(`article#${id}`)
-      if (!element.length) return ""
-      let txt = element.find("p").html()
-      if (!txt) return ""
-      return txt.replace(/<br>/g, "\n").replace(/<em>|<\/em>/g, "_")
-    }
+    const formatter = (id) =>
+    $(`article#${id}`)
+      .find("p")
+      .html()
+      ?.replace(/<br\s*\/?>/gi, "\n")
+      .replace(/<\/?em>/gi, "_") ?? ""
 
     // Kumpulkan data tafsir
     const tafsirData = {
-      transliterasi: transliterasi,
-      kemenag_ringkas: formater("kemenag_ringkas"),
-      kemenag: formater("kemenag"),
-      ibnu_katsir: formater("ibnu_katsir"),
-      jalalain: formater("jalalain"),
-      quraish_shihab: formater("quraish_shihab"),
-      saadi: formater("saadi")
+      kemenag_ringkas: formatter("kemenag_ringkas"),
+      kemenag: formatter("kemenag"),
+      ibnu_katsir: formatter("ibnu_katsir"),
+      jalalain: formatter("jalalain"),
+      quraish_shihab: formatter("quraish_shihab"),
+      saadi: formatter("saadi")
     }
-    
+
     return {
       success: true,
       data: tafsirData,
@@ -467,7 +481,7 @@ async function ambilTafsirAyat(surahNo, ayat) {
       surat,
       ayat
     }
-    
+
   } catch (error) {
     console.error(`❌ Gagal ambil ${surahNo} ayat ${ayat}:`, error.message)
     return {
@@ -479,17 +493,208 @@ async function ambilTafsirAyat(surahNo, ayat) {
   }
 }
 
+async function ambilTransliterasiAyat(surahNo) {
+  const litequranSlugs = [
+    "al-fatihah", "al-baqarah", "ali-imran", "an-nisa", "al-maidah",
+    "al-anam", "al-araf", "al-anfal", "at-taubah", "yunus",
+    "hud", "yusuf", "ar-rad", "ibrahim", "al-hijr",
+    "an-nahl", "al-isra", "al-kahfi", "maryam", "taha",
+    "al-anbiya", "al-hajj", "al-muminun", "an-nur", "al-furqan",
+    "asy-syuara", "an-naml", "al-qasas", "al-ankabut", "ar-rum",
+    "luqman", "as-sajdah", "al-ahzab", "saba", "fatir",
+    "yasin", "as-saffat", "sad", "az-zumar", "gafir",
+    "fussilat", "asy-syura", "az-zukhruf", "ad-dukhan", "al-jasiyah",
+    "al-ahqaf", "muhammad", "al-fath", "al-hujurat", "qaf",
+    "az-zariyat", "at-tur", "an-najm", "al-qamar", "ar-rahman",
+    "al-waqiah", "al-hadid", "al-mujadilah", "al-hasyr", "al-mumtahanah",
+    "as-saff", "al-jumuah", "al-munafiqun", "at-tagabun", "at-talaq",
+    "at-tahrim", "al-mulk", "al-qalam", "al-haqqah", "al-maarij",
+    "nuh", "al-jinn", "al-muzzammil", "al-muddassir", "al-qiyamah",
+    "al-insan", "al-mursalat", "an-naba", "an-naziat", "abasa",
+    "at-takwir", "al-infitar", "al-mutaffifin", "al-insyiqaq", "al-buruj",
+    "at-tariq", "al-ala", "al-gasyiyah", "al-fajr", "al-balad",
+    "asy-syams", "al-lail", "ad-duha", "asy-syarh", "at-tin",
+    "al-alaq", "al-qadr", "al-bayyinah", "al-zalzalah", "al-adiyat",
+    "al-qariah", "at-takasur", "al-asr", "al-humazah", "al-fil",
+    "al-quraisy", "al-maun", "al-kausar", "al-kafirun", "an-nasr",
+    "al-lahab", "al-ikhlas", "al-falaq", "an-nas"
+  ];
+  const title = litequranSlugs[surahNo - 1];
+  const url = `https://litequran.net/${title}/`
+
+  try {
+    const html = await fetchUrl(url)
+    const $ = cheerio.load(html)
+
+    // Ambil transliterasi
+    const trans = $("p.translate")
+    const transliterasi = trans.map((i, el) => {
+      return $(el).text().trim()
+    })
+
+    return {
+      success: true,
+      transliterasi,
+      title
+    }
+
+  } catch (error) {
+    console.error(`❌ Gagal ambil ${title}`, error.message)
+    return {
+      success: false,
+      error: error.message,
+      title
+    }
+  }
+}
+
+
 function cekAyatBelumLengkap(surahData) {
   const ayatBelumLengkap = []
-  
+
   for (let i = 0; i < surahData.ayahs.length; i++) {
     const ayah = surahData.ayahs[i]
     if (!ayah.transliterasi || !ayah.kemenag || ayah.kemenag.trim() === "") {
       ayatBelumLengkap.push(i + 1)
     }
   }
-  
+
   return ayatBelumLengkap
+}
+
+
+/* =========================
+   MODE 1: WEB → JSON & DB
+   MODE 2: WEB → JSON
+========================= */
+async function processSurah(surahNo, concurrency = 5, resume = false, mode = 1) {
+  const key = surahNo - 1
+  const val = List[key]
+
+  console.log(`\n📖 Memproses surah ${surahNo}: ${val[0]} (Mode ${mode}: Web → JSON ${mode === 1 ? "& DB" : ""})`)
+  console.log(`📊 Total ayat: ${val[2]}, Web concurrency: ${concurrency}${mode === 1 ? `, DB concurrency: 1` : ""}`)
+
+  try {
+    // 1. Salin data dasar
+    let surahData = await salinDataSurah(key)
+
+    if(mode === 1){
+      // 2. Simpan surah ke database
+      await simpanSurahToDB(surahNo, surahData)
+    }
+
+    // 3. Cek ayat yang belum lengkap
+    const ayatBelumLengkap = resume ? cekAyatBelumLengkap(surahData) : Array.from({
+      length: val[2]
+    }, (_, i) => i + 1)
+
+    if (ayatBelumLengkap.length === 0) {
+      console.log(`✅ Semua tafsir surah ${surahNo} sudah lengkap`)
+      
+      // Buat versi minified
+      try {
+        await fs.access(ALQURAN_DIR_MIN)
+      } catch {
+        await fs.mkdir(ALQURAN_DIR_MIN, {
+          recursive: true
+        })
+      }
+
+      const filenameMin = `${ALQURAN_DIR_MIN}/Alquran_${surahNo}.min.json`
+      await fs.writeFile(filenameMin, JSON.stringify(surahData))
+
+      return true
+    }
+
+    console.log(`🔄 Mengambil ${ayatBelumLengkap.length} ayat yang belum lengkap...`)
+
+    // 4. Buat queue untuk pengambilan tafsir
+    const webQueue = new TafsirQueue(concurrency)
+
+    let namaSurahUpdated = false
+    
+    let trans = await ambilTransliterasiAyat(surahNo)
+    trans = trans.transliterasi || []
+
+    for (const ayat of ayatBelumLengkap) {
+      webQueue.add(async () => {
+        const result = await ambilTafsirAyat(surahNo, ayat)
+
+        if (result.success) {
+          // Update nama surah jika ada
+          if (result.title && result.title !== surahData.name && !namaSurahUpdated) {
+            surahData.name = result.title
+            namaSurahUpdated = true
+
+            if(mode === 1){
+              await dbQueue.add(async () => {
+                try {
+                  await db.exec(`
+                    UPDATE surahs SET name = '${esc(result.title)}' WHERE no = ${surahNo}
+                  `)
+                } catch (error) {
+                  console.error(`❌ Gagal update nama surah ${surahNo}:`, error.message)
+                  throw error
+                }
+              })
+            }
+          }
+
+          // Update data di memory
+          const ayahIndex = ayat - 1
+          surahData.ayahs[ayahIndex] = {
+            ...surahData.ayahs[ayahIndex],
+            transliterasi: trans[ayahIndex],
+            ...result.data
+          }
+
+          if(mode === 1) {
+          // Simpan ke database via queue
+          await simpanAyatToDB(surahNo, ayat, surahData.ayahs[ayahIndex])
+          }
+        }
+
+        return result
+      })
+    }
+
+    // 5. Proses web queue
+    await webQueue.process()
+
+    // 6. Tunggu semua operasi database selesai
+    if(mode === 1) {
+      console.log(`\n⏳ Menunggu operasi database selesai...`)
+      await dbQueue.waitUntilEmpty()
+    }
+
+    // 7. Simpan ke file JSON
+    const filename = `${ALQURAN_DIR}/Alquran_${surahNo}.json`
+    await fs.writeFile(filename, JSON.stringify(surahData, null, 4))
+
+    // 8. Buat versi minified
+    try {
+      await fs.access(ALQURAN_DIR_MIN)
+    } catch {
+      await fs.mkdir(ALQURAN_DIR_MIN, {
+        recursive: true
+      })
+    }
+
+    const filenameMin = `${ALQURAN_DIR_MIN}/Alquran_${surahNo}.min.json`
+    await fs.writeFile(filenameMin, JSON.stringify(surahData))
+
+    console.log(`\n✅ Surah ${surahNo} selesai diproses`)
+    console.log(`📊 Statistik: Web: ${webQueue.completed} berhasil, ${webQueue.failed} gagal`)
+    if (mode === 1) {
+      console.log(`📊 Statistik: DB: ${dbQueue.completed} berhasil, ${dbQueue.failed} gagal`)
+    }
+
+    return (mode === 1 ? (webQueue.failed === 0 && dbQueue.failed === 0) : webQueue.failed === 0)
+
+  } catch (error) {
+    console.error(`❌ Error memproses surah ${surahNo}:`, error.message)
+    return false
+  }
 }
 
 /* =========================
@@ -527,25 +732,24 @@ async function simpanAyatToDB(surahNo, ayahNo, ayahData) {
         INSERT OR REPLACE INTO ayahs (surah_id, ayat, text_ar, text_latin)
         VALUES (${surahNo}, ${ayahNo}, '${esc(ayahData.arb)}', '${esc(ayahData.transliterasi || '')}')
       `)
-      
+
       // Dapatkan ID ayat
-      const ayahResult = await db.query(`
+      const ayahResult = await db.get(`
         SELECT id FROM ayahs 
         WHERE surah_id = ${surahNo} AND ayat = ${ayahNo}
       `)
-      
+
       if (ayahResult && ayahResult[0]) {
         const ayahId = ayahResult[0].id
-        
+
         // Update terjemahan
-        const translationQueries = [
-          `DELETE FROM translations WHERE ayah_id = ${ayahId}`,
-          `INSERT INTO translations (ayah_id, lang, text) VALUES (${ayahId}, 'id', '${esc(ayahData.ind)}')`,
-          `INSERT INTO translations (ayah_id, lang, text) VALUES (${ayahId}, 'en', '${esc(ayahData.eng)}')`
-        ]
+        const translationQueries = 
+          `DELETE FROM translations WHERE ayah_id = ${ayahId};` +
+          `INSERT INTO translations (ayah_id, lang, text) VALUES (${ayahId}, 'id', '${esc(ayahData.ind)}');` +
+          `INSERT INTO translations (ayah_id, lang, text) VALUES (${ayahId}, 'en', '${esc(ayahData.eng)}');`
         
-        await db.execMany(translationQueries)
-        
+        await db.exec(translationQueries)
+
         // Simpan tafsir
         const tafsirEntries = [
           ['kemenag', ayahData.kemenag],
@@ -555,14 +759,14 @@ async function simpanAyatToDB(surahNo, ayahNo, ayahData) {
           ['quraish_shihab', ayahData.quraish_shihab],
           ['saadi', ayahData.saadi]
         ]
-        
+
         for (const [kitab, text] of tafsirEntries) {
           if (text && text.trim()) {
-            const tafsirQueries = [
-              `DELETE FROM tafsirs WHERE ayah_id = ${ayahId} AND kitab = '${kitab}'`,
-              `INSERT INTO tafsirs (ayah_id, kitab, text) VALUES (${ayahId}, '${kitab}', '${esc(text)}')`
-            ]
-            await db.execMany(tafsirQueries)
+            const tafsirQueries = 
+              `DELETE FROM tafsirs WHERE ayah_id = ${ayahId} AND kitab = '${kitab}';` +
+              `INSERT INTO tafsirs (ayah_id, kitab, text) VALUES (${ayahId}, '${kitab}', '${esc(text)}');`
+            
+            await db.exec(tafsirQueries)
           }
         }
       }
@@ -574,184 +778,6 @@ async function simpanAyatToDB(surahNo, ayahNo, ayahData) {
   })
 }
 
-async function processSurahMode1(surahNo, concurrency = 5, resume = false) {
-  const key = surahNo - 1
-  const val = List[key]
-  
-  console.log(`\n📖 Memproses surah ${surahNo}: ${val[0]} (Mode 1: Web → JSON & DB)`)
-  console.log(`📊 Total ayat: ${val[2]}, Web concurrency: ${concurrency}, DB concurrency: 1`)
-  
-  try {
-    // 1. Salin data dasar
-    let surahData = await salinDataSurah(key)
-    
-    // 2. Simpan surah ke database
-    await simpanSurahToDB(surahNo, surahData)
-    
-    // 3. Cek ayat yang belum lengkap
-    const ayatBelumLengkap = resume ? cekAyatBelumLengkap(surahData) : Array.from({length: val[2]}, (_, i) => i + 1)
-    
-    if (ayatBelumLengkap.length === 0) {
-      console.log(`✅ Semua tafsir surah ${surahNo} sudah lengkap`)
-      return true
-    }
-    
-    console.log(`🔄 Mengambil ${ayatBelumLengkap.length} ayat yang belum lengkap...`)
-    
-    // 4. Buat queue untuk pengambilan tafsir
-    const webQueue = new TafsirQueue(concurrency)
-    
-    for (const ayat of ayatBelumLengkap) {
-      webQueue.add(async () => {
-        const result = await ambilTafsirAyat(surahNo, ayat)
-        
-        if (result.success) {
-          // Update nama surah jika ada
-          if (result.title && result.title !== surahData.name) {
-            surahData.name = result.title
-            await dbQueue.add(async () => {
-              await db.exec(`
-                UPDATE surahs SET name = '${esc(result.title)}' WHERE no = ${surahNo}
-              `)
-            })
-          }
-          
-          // Update data di memory
-          const ayahIndex = ayat - 1
-          surahData.ayahs[ayahIndex] = {
-            ...surahData.ayahs[ayahIndex],
-            ...result.data
-          }
-          
-          // Simpan ke database via queue
-          await simpanAyatToDB(surahNo, ayat, surahData.ayahs[ayahIndex])
-        }
-        
-        return result
-      })
-    }
-    
-    // 5. Proses web queue
-    await webQueue.process()
-    
-    // 6. Tunggu semua operasi database selesai
-    console.log(`\n⏳ Menunggu operasi database selesai...`)
-    await dbQueue.waitUntilEmpty()
-    
-    // 7. Simpan ke file JSON
-    const filename = `${ALQURAN_DIR}/Alquran_${surahNo}.json`
-    await fs.writeFile(filename, JSON.stringify(surahData, null, 4))
-    
-    // 8. Buat versi minified
-    try {
-      await fs.access(ALQURAN_DIR_MIN)
-    } catch {
-      await fs.mkdir(ALQURAN_DIR_MIN, { recursive: true })
-    }
-    
-    const filenameMin = `${ALQURAN_DIR_MIN}/Alquran_${surahNo}.min.json`
-    await fs.writeFile(filenameMin, JSON.stringify(surahData))
-    
-    console.log(`\n✅ Surah ${surahNo} selesai diproses`)
-    console.log(`📊 Statistik: Web: ${webQueue.completed} berhasil, ${webQueue.failed} gagal`)
-    console.log(`📊 Statistik: DB: ${dbQueue.completed} berhasil, ${dbQueue.failed} gagal`)
-    
-    return webQueue.failed === 0 && dbQueue.failed === 0
-    
-  } catch (error) {
-    console.error(`❌ Error memproses surah ${surahNo}:`, error.message)
-    return false
-  }
-}
-
-/* =========================
-   MODE 2: WEB → JSON
-========================= */
-
-async function processSurahMode2(surahNo, concurrency = 5, resume = false) {
-  const key = surahNo - 1
-  const val = List[key]
-  
-  console.log(`\n📖 Memproses surah ${surahNo}: ${val[0]} (Mode 2: Web → JSON)`)
-  console.log(`📊 Total ayat: ${val[2]}, Concurrency: ${concurrency}`)
-  
-  try {
-    // 1. Salin data dasar
-    let surahData = await salinDataSurah(key)
-    
-    // 2. Cek ayat yang belum lengkap
-    const ayatBelumLengkap = resume ? cekAyatBelumLengkap(surahData) : Array.from({length: val[2]}, (_, i) => i + 1)
-    
-    if (ayatBelumLengkap.length === 0) {
-      console.log(`✅ Semua tafsir surah ${surahNo} sudah lengkap`)
-      
-      // Buat versi minified
-      try {
-        await fs.access(ALQURAN_DIR_MIN)
-      } catch {
-        await fs.mkdir(ALQURAN_DIR_MIN, { recursive: true })
-      }
-      
-      const filenameMin = `${ALQURAN_DIR_MIN}/Alquran_${surahNo}.min.json`
-      await fs.writeFile(filenameMin, JSON.stringify(surahData))
-      
-      return true
-    }
-    
-    console.log(`🔄 Mengambil ${ayatBelumLengkap.length} ayat yang belum lengkap...`)
-    
-    // 3. Buat queue untuk pengambilan tafsir
-    const queue = new TafsirQueue(concurrency)
-    
-    for (const ayat of ayatBelumLengkap) {
-      queue.add(async () => {
-        const result = await ambilTafsirAyat(surahNo, ayat)
-        
-        if (result.success) {
-          // Update nama surah jika ada
-          if (result.title && result.title !== surahData.name) {
-            surahData.name = result.title
-          }
-          
-          // Update data di memory
-          const ayahIndex = ayat - 1
-          surahData.ayahs[ayahIndex] = {
-            ...surahData.ayahs[ayahIndex],
-            ...result.data
-          }
-        }
-        
-        return result
-      })
-    }
-    
-    // 4. Proses queue
-    await queue.process()
-    
-    // 5. Simpan ke file JSON
-    const filename = `${ALQURAN_DIR}/Alquran_${surahNo}.json`
-    await fs.writeFile(filename, JSON.stringify(surahData, null, 4))
-    
-    // 6. Buat versi minified
-    try {
-      await fs.access(ALQURAN_DIR_MIN)
-    } catch {
-      await fs.mkdir(ALQURAN_DIR_MIN, { recursive: true })
-    }
-    
-    const filenameMin = `${ALQURAN_DIR_MIN}/Alquran_${surahNo}.min.json`
-    await fs.writeFile(filenameMin, JSON.stringify(surahData))
-    
-    console.log(`\n✅ Surah ${surahNo} selesai diproses`)
-    console.log(`📊 Statistik: ${queue.completed} berhasil, ${queue.failed} gagal`)
-    
-    return queue.failed === 0
-    
-  } catch (error) {
-    console.error(`❌ Error memproses surah ${surahNo}:`, error.message)
-    return false
-  }
-}
 
 /* =========================
    MODE 3: JSON → DB
@@ -759,15 +785,15 @@ async function processSurahMode2(surahNo, concurrency = 5, resume = false) {
 
 async function migrateJSONtoDB(surahNo) {
   console.log(`\n📁 Migrasi surah ${surahNo}...`)
-  
+
   const filename = `${ALQURAN_DIR}/Alquran_${surahNo}.json`
-  
+
   try {
     // Baca file JSON
     const surahData = JSON.parse(await fs.readFile(filename, "utf8"))
-    
+
     console.log(`📊 Surah: ${surahData.name}, Total ayat: ${surahData.ayahs.length}`)
-    
+
     // Simpan surah ke database
     await dbQueue.add(async () => {
       await db.exec(`
@@ -783,37 +809,37 @@ async function migrateJSONtoDB(surahNo) {
         )
       `)
     })
-    
+
     // Proses setiap ayat
     let successCount = 0
     let failCount = 0
-    
+
     for (let i = 0; i < surahData.ayahs.length; i++) {
       const ayah = surahData.ayahs[i]
       const ayahNo = i + 1
-      
+
       try {
         await simpanAyatToDB(surahNo, ayahNo, ayah)
         successCount++
-        
+
         // Tampilkan progress
         if ((i + 1) % 10 === 0 || i === surahData.ayahs.length - 1) {
           const progress = Math.round((i + 1) / surahData.ayahs.length * 100)
           process.stdout.write(`\r📊 Progress: ${i + 1}/${surahData.ayahs.length} ayat (${progress}%)`)
         }
-        
+
       } catch (error) {
         console.error(`\n❌ Gagal migrasi ayat ${ayahNo}:`, error.message)
         failCount++
       }
     }
-    
+
     // Tunggu semua operasi database selesai
     await dbQueue.waitUntilEmpty()
-    
+
     console.log(`\n✅ Migrasi selesai: ${successCount} berhasil, ${failCount} gagal`)
     return failCount === 0
-    
+
   } catch (error) {
     console.error(`❌ Gagal migrasi surah ${surahNo}:`, error.message)
     return false
@@ -825,12 +851,12 @@ async function rebuildFTS() {
   console.log("\n🔄 Rebuilding FTS tables...")
   try {
     await dbQueue.add(async () => {
-      await db.execMany([
-        "INSERT INTO surahs_fts(surahs_fts) VALUES ('rebuild')",
-        "INSERT INTO ayahs_fts(ayahs_fts) VALUES ('rebuild')",
-        "INSERT INTO translations_fts(translations_fts) VALUES ('rebuild')",
-        "INSERT INTO tafsirs_fts(tafsirs_fts) VALUES ('rebuild')"
-      ])
+      await db.exec(
+        "INSERT INTO surahs_fts(surahs_fts) VALUES ('rebuild');" +
+        "INSERT INTO ayahs_fts(ayahs_fts) VALUES ('rebuild');" +
+        "INSERT INTO translations_fts(translations_fts) VALUES ('rebuild');" +
+        "INSERT INTO tafsirs_fts(tafsirs_fts) VALUES ('rebuild');"
+      )
     })
     await dbQueue.waitUntilEmpty()
     console.log("✅ FTS tables rebuilt")
@@ -846,17 +872,17 @@ let dbQueue = null
 
 async function main() {
   const options = parseArgs()
-  
+
   console.log("=".repeat(60))
   console.log("📖 QURAN TAFSIR SCRAPER - 3 MODES")
   console.log("=".repeat(60))
-  
+
   const modeNames = {
     1: "Web → JSON & DB",
     2: "Web → JSON",
     3: "JSON → DB"
   }
-  
+
   console.log(`Mode: ${options.mode} (${modeNames[options.mode]})`)
   console.log(`Start: surah ${options.start}`)
   if (options.surah) console.log(`Single surah: ${options.surah}`)
@@ -864,29 +890,31 @@ async function main() {
   console.log(`Batch mode: ${options.batch}`)
   console.log(`Resume mode: ${options.resume}`)
   console.log("=".repeat(60))
-  
+
   // Buat folder alquran jika belum ada
   try {
     await fs.access(ALQURAN_DIR)
   } catch {
-    await fs.mkdir(ALQURAN_DIR, { recursive: true })
+    await fs.mkdir(ALQURAN_DIR, {
+      recursive: true
+    })
   }
-  
+
   // Buka koneksi database untuk mode 1 & 3
   if (options.mode === 1 || options.mode === 3) {
     console.log("\n🚀 Opening database connection...")
     db = await openDB(DB_PATH)
-    
+
     // Inisialisasi database queue (HANYA 1 concurrent untuk database)
     dbQueue = new DatabaseQueue(db, 1)
-    
+
     await sleep(1000)
   }
-  
+
   try {
     // Tentukan surah yang akan diproses
     const surahsToProcess = []
-    
+
     if (options.surah) {
       if (options.surah >= 1 && options.surah <= List.length) {
         surahsToProcess.push(options.surah)
@@ -901,51 +929,51 @@ async function main() {
     } else {
       surahsToProcess.push(options.start)
     }
-    
+
     console.log(`📋 Total surah yang akan diproses: ${surahsToProcess.length}`)
-    
+
     let totalSuccess = 0
     let totalFailed = 0
-    
+
     for (const surahNo of surahsToProcess) {
       const key = surahNo - 1
-      
+
       console.log(`\n📖 ========================================`)
       console.log(`📖 Proses surah ${surahNo}: ${List[key][0]}`)
       console.log(`📖 ========================================`)
-      
+
       let success = false
-      
+
       try {
         switch (options.mode) {
           case 1:
-            success = await processSurahMode1(surahNo, options.concurrency, options.resume)
+            success = await processSurah(surahNo, options.concurrency, options.resume, options.mode)
             break
-            
+
           case 2:
-            success = await processSurahMode2(surahNo, options.concurrency, options.resume)
+            success = await processSurah(surahNo, options.concurrency, options.resume, options.mode)
             break
-            
+
           case 3:
             success = await migrateJSONtoDB(surahNo)
             break
-            
+
           default:
             console.error(`❌ Mode ${options.mode} tidak dikenali`)
             return
         }
-        
+
         if (success) {
           totalSuccess++
         } else {
           totalFailed++
         }
-        
+
       } catch (error) {
         console.error(`❌ Error memproses surah ${surahNo}:`, error.message)
         totalFailed++
       }
-      
+
       // Jeda antar surah
       if (surahNo !== surahsToProcess[surahsToProcess.length - 1]) {
         const delay = options.mode === 1 || options.mode === 2 ? 3000 : 1000
@@ -953,29 +981,29 @@ async function main() {
         await sleep(delay)
       }
     }
-    
+
     // Rebuild FTS untuk mode 1 & 3
     if ((options.mode === 1 || options.mode === 3) && db) {
       await rebuildFTS()
     }
-    
+
     console.log("\n" + "=".repeat(60))
     console.log("🎉 PROSES SELESAI!")
     console.log("=".repeat(60))
     console.log(`📊 Statistik: ${totalSuccess} surah berhasil, ${totalFailed} surah gagal`)
     console.log(`📊 Mode: ${modeNames[options.mode]}`)
-    
+
     if (options.mode === 1 || options.mode === 3) {
       console.log(`💾 Database: ${DB_PATH}`)
     }
-    
+
     if (options.mode === 1 || options.mode === 2) {
       console.log(`📁 JSON files: ${ALQURAN_DIR}/`)
       console.log(`📁 Minified JSON: ${ALQURAN_DIR_MIN}/`)
     }
-    
+
     console.log("=".repeat(60))
-    
+
   } catch (error) {
     console.error("\n❌ Error utama:", error.message)
     console.error(error.stack)
@@ -988,6 +1016,7 @@ async function main() {
 }
 
 // Jalankan aplikasi
-if (process.argv[1] === fileURLToPath(import.meta.url)) {
+if (process.argv[1] === fileURLToPath(
+    import.meta.url)) {
   main().catch(console.error)
 }

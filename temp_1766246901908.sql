@@ -1,0 +1,2 @@
+DELETE FROM tafsirs WHERE ayah_id = 41 AND kitab = 'jalalain';
+INSERT INTO tafsirs (ayah_id, kitab, text) VALUES (41, 'jalalain', '(Dan) ingatlah! (Ketika Kami berfirman kepada para malaikat, "Sujudlah kalian kepada Adam!") Maksudnya sujud sebagai penghormatan dengan cara membungkukkan badan, (maka mereka pun sujud, kecuali Iblis) yakni nenek moyang bangsa jin yang ada di antara para malaikat, (ia enggan) tak hendak sujud (dan menyombongkan diri) dengan mengatakan bahwa ia lebih mulia daripada Adam (dan Iblis termasuk golongan yang kafir) dalam ilmu Allah Taala.')
