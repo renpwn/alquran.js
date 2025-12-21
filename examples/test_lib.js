@@ -1,4 +1,4 @@
-const alquranHandler = require("./index");
+const alquranHandler = require("./index.js");
 
 (async () => {
   const tests = [
@@ -16,7 +16,7 @@ const alquranHandler = require("./index");
     console.log("\n==============================");
     console.log("INPUT:", JSON.stringify(t));
     try {
-      const res = await alquranHandler(t);
+      const res = await alquranHandler(t, { min: true });
       console.log(res);
       if (res.debug) {
         console.log("DEBUG:", res.debug);

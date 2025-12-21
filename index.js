@@ -60,7 +60,7 @@ function correct(mainString, targetStrings) {
 ===================================== */
 const BASE = process.cwd();
 const LIST_FILE = path.join(BASE, "ListQuran.json");
-const SURAH_DIR = path.join(BASE, "alquran");
+let SURAH_DIR = path.join(BASE, "json");
 
 const readJSON = f => JSON.parse(fs.readFileSync(f, "utf8"));
 
@@ -117,6 +117,11 @@ async function alquranHandler(input = "", options = {}) {
   if (!tafsir) {
     const randomIndex = Math.floor(Math.random() * availableTafsirs.length);
     tafsir = availableTafsirs[randomIndex];
+  }
+  
+  let isMin = options.min || false;
+  if (isMin) {
+    SURAH_DIR = path.join(BASE, "json_min");
   }
 
   const list = readJSON(LIST_FILE);
@@ -188,7 +193,7 @@ async function alquranHandler(input = "", options = {}) {
 
   const { start, end } = parseAyatRange(ayatInput, maxAyat);
 
-  const file = path.join(SURAH_DIR, `Alquran_${surahNum}.json`);
+  const file = path.join(SURAH_DIR, `Alquran_${surahNum}${isMin ? ".min" : ""}.json`);
   const data = readJSON(file);
 
   const ayahs = data.ayahs.slice(start - 1, end).map((a, i) => {
