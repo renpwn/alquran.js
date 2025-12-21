@@ -735,18 +735,21 @@ async function simpanAyatToDB(surahNo, ayahNo, ayahData) {
 
       // Dapatkan ID ayat
       const ayahResult = await db.get(`
-        SELECT id FROM ayahs 
+        SELECT id, surah_id FROM ayahs 
         WHERE surah_id = ${surahNo} AND ayat = ${ayahNo}
       `)
 
-      if (ayahResult && ayahResult[0]) {
-        const ayahId = ayahResult[0].id
+      console.log("ayahResult:", ayahResult);
+
+      if (ayahResult && ayahResult.id) {
+        const ayahId = ayahResult.id
+        const surahId = ayahResult.surah_id
 
         // Update terjemahan
         const translationQueries = 
           `DELETE FROM translations WHERE ayah_id = ${ayahId};` +
-          `INSERT INTO translations (ayah_id, lang, text) VALUES (${ayahId}, 'id', '${esc(ayahData.ind)}');` +
-          `INSERT INTO translations (ayah_id, lang, text) VALUES (${ayahId}, 'en', '${esc(ayahData.eng)}');`
+          `INSERT INTO translations (surah_id, ayah_id, lang, text) VALUES (${surahId}, ${ayahId}, 'id', '${esc(ayahData.ind)}');` +
+          `INSERT INTO translations (surah_id, ayah_id, lang, text) VALUES (${surahId}, ${ayahId}, 'en', '${esc(ayahData.eng)}');`
         
         await db.exec(translationQueries)
 
@@ -764,7 +767,7 @@ async function simpanAyatToDB(surahNo, ayahNo, ayahData) {
           if (text && text.trim()) {
             const tafsirQueries = 
               `DELETE FROM tafsirs WHERE ayah_id = ${ayahId} AND kitab = '${kitab}';` +
-              `INSERT INTO tafsirs (ayah_id, kitab, text) VALUES (${ayahId}, '${kitab}', '${esc(text)}');`
+              `INSERT INTO tafsirs (ayah_id, surah_id, kitab, text) VALUES (${ayahId}, ${surahId}, '${kitab}', '${esc(text)}');`
             
             await db.exec(tafsirQueries)
           }

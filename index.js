@@ -1,226 +1,213 @@
-const fs = require("fs");
-const path = require("path");
+import { openDB } from './setting.db.js'
 
 /* =====================================
    FUZZY CORE (DRY – SINGLE SOURCE)
 ===================================== */
 function compareTwoStrings(first, second) {
-  first = first.replace(/\s+/g, '');
-  second = second.replace(/\s+/g, '');
+  first = first.replace(/\s+/g, '')
+  second = second.replace(/\s+/g, '')
 
-  if (first === second) return 1;
-  if (first.length < 2 || second.length < 2) return 0;
+  if (first === second) return 1
+  if (first.length < 2 || second.length < 2) return 0
 
-  let firstBigrams = new Map();
+  const map = new Map()
   for (let i = 0; i < first.length - 1; i++) {
-    const bigram = first.substring(i, i + 2);
-    firstBigrams.set(bigram, (firstBigrams.get(bigram) || 0) + 1);
+    const bg = first.substring(i, i + 2)
+    map.set(bg, (map.get(bg) || 0) + 1)
   }
 
-  let intersectionSize = 0;
+  let intersection = 0
   for (let i = 0; i < second.length - 1; i++) {
-    const bigram = second.substring(i, i + 2);
-    const count = firstBigrams.get(bigram) || 0;
+    const bg = second.substring(i, i + 2)
+    const count = map.get(bg) || 0
     if (count > 0) {
-      firstBigrams.set(bigram, count - 1);
-      intersectionSize++;
+      map.set(bg, count - 1)
+      intersection++
     }
   }
 
-  return (2 * intersectionSize) / (first.length + second.length - 2);
+  return (2 * intersection) / (first.length + second.length - 2)
 }
 
-/* =====================================
-   CORRECT (PAKAI CORE DI ATAS)
-===================================== */
-function correct(mainString, targetStrings) {
-  targetStrings = Array.isArray(targetStrings) ? targetStrings : [];
+function correct(main, targets) {
+  let bestIndex = 0
+  let bestRating = 0
 
-  const ratings = [];
-  let bestMatchIndex = 0;
-
-  for (let i = 0; i < targetStrings.length; i++) {
-    const rating = compareTwoStrings(mainString, targetStrings[i]);
-    ratings.push({ target: targetStrings[i], rating });
-    if (rating > ratings[bestMatchIndex].rating) bestMatchIndex = i;
-  }
-
-  const bestMatch = ratings[bestMatchIndex];
+  const ratings = targets.map((t, i) => {
+    const rating = compareTwoStrings(main, t)
+    if (rating > bestRating) {
+      bestRating = rating
+      bestIndex = i
+    }
+    return { target: t, rating }
+  })
 
   return {
     all: ratings,
-    indexAll: bestMatchIndex,
-    result: bestMatch.target,
-    rating: bestMatch.rating
-  };
+    indexAll: bestIndex,
+    result: ratings[bestIndex]?.target,
+    rating: ratings[bestIndex]?.rating || 0
+  }
 }
 
 /* =====================================
-   PATH & UTIL
+   UTIL
 ===================================== */
-const BASE = process.cwd();
-const LIST_FILE = path.join(BASE, "ListQuran.json");
-let SURAH_DIR = path.join(BASE, "json");
-
-const readJSON = f => JSON.parse(fs.readFileSync(f, "utf8"));
-
 const normalizeSurah = s =>
   s.toLowerCase()
-    .replace(/^al\s+/i, "")
-    .replace(/[^a-z]/g, "");
+    .replace(/^al\s+/i, '')
+    .replace(/[^a-z]/g, '')
 
-/* =====================================
-   AUDIO INDEX GLOBAL
-===================================== */
-const getNoAudio = (list, surahNum, ayahNum) =>
-  list.quran
-    .slice(0, surahNum - 1)
-    .reduce((a, b) => a + b.ayahs, 0) + ayahNum;
-
-/* =====================================
-   RANGE AYAT (MAX 5)
-===================================== */
 const parseAyatRange = (input, maxAyat) => {
-  const MAX = 5;
+  const MAX = 5
 
   if (!input) {
-    const r = Math.floor(Math.random() * maxAyat) + 1;
-    return { start: r, end: r };
+    const r = Math.floor(Math.random() * maxAyat) + 1
+    return { start: r, end: r }
   }
 
-  if (input.includes("-")) {
-    let [s, e] = input.split("-").map(Number);
-    if (s < 1) s = 1;
-    if (s > maxAyat) s = maxAyat;
-    if (!e || e > maxAyat) e = maxAyat;
-    if (e - s + 1 > MAX) e = s + MAX - 1;
-    if (e > maxAyat) e = maxAyat;
-    return { start: s, end: e };
+  if (input.includes('-')) {
+    let [s, e] = input.split('-').map(Number)
+    s = Math.max(1, Math.min(s, maxAyat))
+    e = Math.min(maxAyat, e || maxAyat)
+    if (e - s + 1 > MAX) e = s + MAX - 1
+    return { start: s, end: e }
   }
 
-  let a = Number(input);
-  if (a < 1) a = 1;
-  if (a > maxAyat) a = maxAyat;
-
-  return { start: a, end: a };
-};
+  const a = Math.max(1, Math.min(Number(input), maxAyat))
+  return { start: a, end: a }
+}
 
 /* =====================================
-   MAIN HANDLER
+   MAIN HANDLER (DB ONLY)
 ===================================== */
-async function alquranHandler(input = "", options = {}) {
-  // Daftar tafsir yang tersedia
-  const availableTafsirs = ['kemenag_ringkas', 'kemenag', 'ibnu_katsir', 'jalalain', 'quraish_shihab'];
-  
-  // Jika tafsir tidak diisi (null/undefined), pilih random dari daftar
-  let tafsir = options.tafsir;
-  if (!tafsir) {
-    const randomIndex = Math.floor(Math.random() * availableTafsirs.length);
-    tafsir = availableTafsirs[randomIndex];
-  }
-  
-  let isMin = options.min || false;
-  if (isMin) {
-    SURAH_DIR = path.join(BASE, "json_min");
-  }
+export default async function alquranHandler(input = '', options = {}) {
+  const db = await openDB()
 
-  const list = readJSON(LIST_FILE);
-  const surahNames = list.quran.map(x => normalizeSurah(x.name));
+  /* ========= TAFSIR ========= */
+  const availableTafsirs = [
+    'kemenag_ringkas',
+    'kemenag',
+    'ibnu_katsir',
+    'jalalain',
+    'quraish_shihab'
+  ]
+  const tafsir =
+    options.tafsir ||
+    availableTafsirs[Math.floor(Math.random() * availableTafsirs.length)]
 
-  input = input.trim().replace(":", " ");
-  let parts = input.split(/\s+/).filter(Boolean);
+  /* ========= LOAD SURAH LIST ========= */
+  const surahs = await db.all(`
+    SELECT no, name, id, ayat
+    FROM surahs
+    ORDER BY no
+  `)
 
-  let surahNum;
-  let ayatInput;
-  let debug = null;
+  const surahNames = surahs.map(s => normalizeSurah(s.name))
 
-  /* ========= AUTO RANDOM ========= */
+  input = input.trim().replace(':', ' ')
+  const parts = input.split(/\s+/).filter(Boolean)
+
+  let surahNum
+  let ayatInput
+  let debug = null
+
+  /* ========= PARSE INPUT ========= */
   if (!parts.length) {
-    surahNum = Math.floor(Math.random() * 114) + 1;
+    surahNum = Math.floor(Math.random() * 114) + 1
   }
-  /* ========= NUMERIC SURAH ========= */
   else if (!isNaN(parts[0])) {
-    surahNum = Number(parts[0]);
-    ayatInput = parts[1];
-    if (surahNum < 1 || surahNum > 114) {
-      surahNum = Math.floor(Math.random() * 114) + 1;
-    }
+    surahNum = Number(parts[0])
+    ayatInput = parts[1]
   }
-  /* ========= FUZZY SURAH ========= */
   else {
-    // Cek apakah bagian terakhir adalah angka atau mengandung tanda "-"
-    const lastPart = parts[parts.length - 1];
-    const isAyat = !isNaN(lastPart) || (lastPart && lastPart.includes('-'));
-    let surahName;
-    if (isAyat) {
-      ayatInput = lastPart;
-      surahName = parts.slice(0, parts.length - 1).join(' ');
-    } else {
-      surahName = parts.join(' ');
-    }
-    const raw = normalizeSurah(surahName);
-    const guess = correct(raw, surahNames);
+    const last = parts[parts.length - 1]
+    const isAyat = !isNaN(last) || last.includes('-')
+
+    const surahName = isAyat
+      ? parts.slice(0, -1).join(' ')
+      : parts.join(' ')
+
+    if (isAyat) ayatInput = last
+
+    const raw = normalizeSurah(surahName)
+    const guess = correct(raw, surahNames)
 
     debug = {
       input: raw,
       bestMatch: guess.result,
-      rating: guess.rating,
+      rating: Number(guess.rating.toFixed(3)),
       top5: guess.all
         .sort((a, b) => b.rating - a.rating)
         .slice(0, 5)
         .map(x => ({
-          surah: list.quran[surahNames.indexOf(x.target)]?.name,
+          surah: surahs[surahNames.indexOf(x.target)]?.name,
           rating: Number(x.rating.toFixed(3))
         }))
-    };
+    }
 
-    surahNum = guess.rating < 0.25
-      ? Math.floor(Math.random() * 114) + 1
-      : guess.indexAll + 1;
+    surahNum =
+      guess.rating < 0.25
+        ? Math.floor(Math.random() * 114) + 1
+        : guess.indexAll + 1
   }
 
-  // Pastikan surahNum valid
   if (surahNum < 1 || surahNum > 114) {
-    surahNum = Math.floor(Math.random() * 114) + 1;
+    surahNum = Math.floor(Math.random() * 114) + 1
   }
 
-  const surahObj = list.quran[surahNum - 1];
-  if (!surahObj) {
-    // Fallback random
-    surahNum = Math.floor(Math.random() * 114) + 1;
-  }
-  const { name: surah, translation: arti, ayahs: maxAyat } = list.quran[surahNum - 1];
+  const surah = surahs[surahNum - 1]
+  if (!surah) throw new Error('Surah not found')
 
-  const { start, end } = parseAyatRange(ayatInput, maxAyat);
+  const { start, end } = parseAyatRange(ayatInput, surah.ayat)
 
-  const file = path.join(SURAH_DIR, `Alquran_${surahNum}${isMin ? ".min" : ""}.json`);
-  const data = readJSON(file);
+  /* ========= AUDIO OFFSET ========= */
+  const offsetRow = await db.get(
+    `SELECT SUM(ayat) AS total FROM surahs WHERE no < ?`,
+    [surahNum]
+  )
+  const offset = offsetRow?.total || 0
 
-  const ayahs = data.ayahs.slice(start - 1, end).map((a, i) => {
-    const ayahNumber = start + i;
-    const noAudio = getNoAudio(list, surahNum, ayahNumber);
+  /* ========= AYAH QUERY ========= */
+  const ayahs = await db.all(
+    `
+    SELECT
+      a.id,
+      a.ayat,
+      a.text_ar,
+      a.text_latin,
+      t.text AS tafsir
+    FROM ayahs a
+    LEFT JOIN tafsirs t
+      ON t.ayah_id = a.id
+     AND t.kitab = ?
+    WHERE a.surah_id = ?
+      AND a.ayat BETWEEN ? AND ?
+    ORDER BY a.ayat
+    `,
+    [tafsir, surahNum, start, end]
+  )
+
+  const resultAyahs = ayahs.map((a, i) => {
+    const noAudio = offset + start + i
     return {
-      ayah: ayahNumber,
-      arab: a.arb,
-      transliterasi: a.transliterasi,
-      indo: a.ind,
-      english: a.eng,
-      tafsir: tafsir ? a[tafsir] || null : null,
+      ayah: a.ayat,
+      arab: a.text_ar,
+      transliterasi: a.text_latin,
+      tafsir: a.tafsir || null,
       noAudio,
       audioUrl: `https://cdn.islamic.network/quran/audio/128/ar.alafasy/${noAudio}.mp3`
-    };
-  });
+    }
+  })
 
   return {
     surahNumber: surahNum,
-    surah,
-    arti,
+    surah: surah.name,
+    arti: surah.id,
     range: start === end ? `${start}` : `${start}-${end}`,
-    totalAyat: maxAyat,
+    totalAyat: surah.ayat,
     tafsir,
-    ayahs,
+    ayahs: resultAyahs,
     debug
-  };
+  }
 }
-
-module.exports = alquranHandler;

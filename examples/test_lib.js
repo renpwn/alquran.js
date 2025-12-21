@@ -1,4 +1,4 @@
-const alquranHandler = require("./index.js");
+import alquranHandler from "../index.js";
 
 (async () => {
   const tests = [
@@ -10,6 +10,8 @@ const alquranHandler = require("./index.js");
     "150 3",
     "al kahfi 10",
     "baqarah 286",
+    "al fatihah 1-3",
+    "fatih",
   ];
 
   for (const t of tests) {

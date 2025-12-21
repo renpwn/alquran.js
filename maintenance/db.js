@@ -1,18 +1,24 @@
 import Database from '@renpwn/termux-sqlite3'
 import fs from 'fs'
 import path from 'path'
+import { fileURLToPath } from 'url'
 
-const DEFAULT_DB = 'quran.db'
+const DEFAULT_DB = './db/quran.db'
 
 export async function openDB(dbFile = DEFAULT_DB) {
-  // ===============================
-  // 1️⃣ PATH ABSOLUTE (WAJIB)
-  // ===============================
-  const dbPath = path.resolve(process.cwd(), dbFile)
+  const __filename = fileURLToPath(import.meta.url)
+  const __dirname = path.dirname(__filename)
 
-  // ===============================
-  // 2️⃣ HAPUS DB LAMA (OPSIONAL)
-  // ===============================
+  const dbPath = path.resolve(__dirname, '..', 'db', 'quran.db')
+  // const dbPath = path.resolve(process.cwd(), dbFile)
+
+  // ✅ PASTIKAN FOLDER ADA
+  const dbDir = path.dirname(dbPath)
+  if (!fs.existsSync(dbDir)) {
+    fs.mkdirSync(dbDir, { recursive: true })
+    console.log('📁 Created DB directory:', dbDir)
+  }
+
   if (fs.existsSync(dbPath)) {
     console.log('🗑 Removing old database...')
     fs.unlinkSync(dbPath)
@@ -21,7 +27,7 @@ export async function openDB(dbFile = DEFAULT_DB) {
   console.log('🚀 Opening database:', dbPath)
 
   // ===============================
-  // 3️⃣ OPEN DATABASE
+  // OPEN DATABASE
   // ===============================
   const db = new Database(dbPath, {
     timeout: 30000,
@@ -30,7 +36,7 @@ export async function openDB(dbFile = DEFAULT_DB) {
   })
 
   // ===============================
-  // 4️⃣ TEST KONEKSI (SYNC POINT)
+  // TEST KONEKSI (SYNC POINT)
   // ===============================
   try {
     await db.exec('SELECT 1')
@@ -40,7 +46,7 @@ export async function openDB(dbFile = DEFAULT_DB) {
   }
 
   // ===============================
-  // 5️⃣ INIT SCHEMA (ASYNC — AWAIT!)
+  // INIT SCHEMA (ASYNC — AWAIT!)
   // ===============================
   console.log('📊 Initializing schema...')
 
@@ -69,17 +75,21 @@ export async function openDB(dbFile = DEFAULT_DB) {
 
   CREATE TABLE IF NOT EXISTS translations (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
+    surah_id INTEGER NOT NULL,
     ayah_id INTEGER NOT NULL,
     lang TEXT NOT NULL,
     text TEXT NOT NULL,
+    FOREIGN KEY (surah_id) REFERENCES surahs(no) ON DELETE CASCADE,
     FOREIGN KEY (ayah_id) REFERENCES ayahs(id) ON DELETE CASCADE
   );
 
   CREATE TABLE IF NOT EXISTS tafsirs (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
+    surah_id INTEGER NOT NULL,
     ayah_id INTEGER NOT NULL,
     kitab TEXT NOT NULL,
     text TEXT NOT NULL,
+    FOREIGN KEY (surah_id) REFERENCES surahs(no) ON DELETE CASCADE,
     FOREIGN KEY (ayah_id) REFERENCES ayahs(id) ON DELETE CASCADE
   );
 
@@ -87,10 +97,10 @@ export async function openDB(dbFile = DEFAULT_DB) {
     ON ayahs(surah_id, ayat);
 
   CREATE INDEX IF NOT EXISTS idx_translations_ayah_id
-    ON translations(ayah_id);
+    ON translations(surah_id, ayah_id);
 
   CREATE INDEX IF NOT EXISTS idx_tafsirs_ayah_id
-    ON tafsirs(ayah_id);
+    ON tafsirs(surah_id, ayah_id);
   `
   
   const ftsSQL = `
@@ -131,7 +141,7 @@ export async function openDB(dbFile = DEFAULT_DB) {
   }
 
   // ===============================
-  // 6️⃣ VERIFIKASI TABEL (DEBUG REAL)
+  // VERIFIKASI TABEL (DEBUG REAL)
   // ===============================
   const tables = await db.all(`
     SELECT name FROM sqlite_master
@@ -149,7 +159,7 @@ export async function openDB(dbFile = DEFAULT_DB) {
   )
 
   // ===============================
-  // 7️⃣ RETURN DB (NO AUTO CLOSE!)
+  // RETURN DB (NO AUTO CLOSE!)
   // ===============================
   return {
     exec: (sql) => db.exec(sql),
