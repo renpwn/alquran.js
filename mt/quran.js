@@ -739,7 +739,7 @@ async function simpanAyatToDB(surahNo, ayahNo, ayahData) {
         WHERE surah_id = ${surahNo} AND ayat = ${ayahNo}
       `)
 
-      console.log("ayahResult:", ayahResult);
+      // console.log("ayahResult:", ayahResult);
 
       if (ayahResult && ayahResult.id) {
         const ayahId = ayahResult.id
