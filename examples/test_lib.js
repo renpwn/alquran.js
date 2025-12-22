@@ -8,10 +8,11 @@ import alquranHandler, { openDB, closeDB } from "../index.js";
     "baqa 1-5",
     "yasin",
     "150 3",
-    "al kahfi 10",
-    "baqarah 286",
-    "al fatihah 1-3",
-    "fatih",
+    "list",
+    // "al kahfi 10",
+    // "baqarah 286",
+    // "al fatihah 1-3",
+    // "fatih",
     // "Al-ḥamdu",
     // "اَلْحَمْدُ"
   ];
