@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/renpwn/alquran-tafsir-json-dataset.git"
   },
-  "license": "ISC",
+  "license": "MIT",
   "author": "",
   "type": "module",
   "main": "index.js",
@@ -23,9 +23,6 @@
   "dependencies": {
     "axios": "^1.13.2",
     "cheerio": "^1.1.2",
-    "child_process": "^1.0.2",
-    "fs": "^0.0.1-security",
-    "path": "^0.12.7",
-    "@renpwn/termux-sqlite3": "^1.0.2"
+    "@renpwn/termux-sqlite3": "^1.0.3"
   }
 }
