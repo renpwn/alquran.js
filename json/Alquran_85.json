@@ -1,14 +1,15 @@
 {
     "number": 85,
     "name": "Al-Buruj",
-    "englishName": "سُورَةُ البُرُوجِ",
-    "englishNameTranslation": "Al-Burooj",
+    "ar": "سُورَةُ البُرُوجِ",
+    "en": "Al-Burooj",
+    "id": "Gugusan Bintang",
     "revelationType": "Meccan",
     "numberOfAyahs": 22,
     "ayahs": [
         {
             "ind": "Demi langit yang mempunyai gugusan bintang,",
-            "arb": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ وَالسَّمَاءِ ذَاتِ الْبُرُوجِ",
+            "arb": "وَالسَّمَاۤءِ ذَاتِ الْبُرُوْجِۙ",
             "transliterasi": "Was-samā'i żātil-burūj(i).",
             "eng": "CONSIDER the sky full of great constellations,",
             "kemenag": "Dalam ayat ini, Allah bersumpah dengan langit yang mempunyai gugusan bintang-bintang yang luar biasa besarnya dan tak terhitung jumlah bintang di dalamnya. Sebagian sangat jauh jaraknya dari bumi sehingga cahayanya dalam perhitungan biasa baru sampai kepada kita setelah ribuan tahun lamanya, bahkan ada pula yang setelah miliaran tahun.\nAllah bersumpah dengan gugusan bintang karena mempunyai keajaiban yang luar biasa dan mengandung hikmah yang besar dan banyak serta sangat berguna bagi manusia dalam kehidupannya.\nBerbagai keajaiban dan hikmah itu menunjukkan kepada kita tentang kebesaran penciptanya yang Mahakuasa dan Mahatinggi ilmu-Nya serta Mahabijaksana.\n",
@@ -20,7 +21,7 @@
         },
         {
             "ind": "dan hari yang dijanjikan,",
-            "arb": "وَالْيَوْمِ الْمَوْعُودِ",
+            "arb": "وَالْيَوْمِ الْمَوْعُوْدِۙ",
             "transliterasi": "Wal-yaumil-mau‘ūd(i).",
             "eng": "and [then bethink thyself of] the promised Day,",
             "kemenag": "Dalam ayat kedua, Allah bersumpah dengan hari yang dijanjikan-Nya, yaitu hari Kiamat, serta hari kepastian dan pembalasan. Ketika itu, hanya kekuasaan dan hukum Allah-lah yang berlaku.",
@@ -32,7 +33,7 @@
         },
         {
             "ind": "dan yang menyaksikan dan yang disaksikan.",
-            "arb": "وَشَاهِدٍ وَمَشْهُودٍ",
+            "arb": "وَشَاهِدٍ وَّمَشْهُوْدٍۗ",
             "transliterasi": "Wa syāhidiw wa masyhūd(in).",
             "eng": "and [of] Him who witnesses [all], and [of] that unto which witness is borne [by Him]!",
             "kemenag": "Dalam ayat yang ketiga, Allah bersumpah dengan alam semesta ini yang dapat memalingkan perhatian. Ringkasnya, Allah bersumpah dengan alam semesta agar dapat memalingkan manusia memikirkan kebesaran dan keagungan-Nya, agar mereka dapat mengambil manfaat dari apa yang dapat mereka lihat itu dan agar mereka mencurahkan perhatiannya untuk dapat memperoleh hakikat dan rahasia alam yang masih tersembunyi.",
@@ -44,7 +45,7 @@
         },
         {
             "ind": "Binasa dan terlaknatlah orang-orang yang membuat parit,",
-            "arb": "قُتِلَ أَصْحَابُ الْأُخْدُودِ",
+            "arb": "قُتِلَ اَصْحٰبُ الْاُخْدُوْدِۙ",
             "transliterasi": "Qutila aṣḥābul-ukhdūd(i).",
             "eng": "THEY DESTROY [but] themselves, they who would ready a pit",
             "kemenag": "Dalam ayat-ayat ini diterangkan bahwa Allah telah membinasakan Najran, sebuah kota di Yaman, karena penduduknya telah menyiksa dan membunuh para pengikut Nabi Isa (orang-orang Nasrani) yang meninggalkan agama pembesar-pembesar negeri itu, yaitu agama Yahudi dan memeluk agama yang dibawa oleh Nabi Isa dengan memasukkan mereka ke dalam parit-parit yang telah mereka gali dan diberi api yang menyala-nyala. Orang-orang kafir negeri itu duduk di sekitar parit-parit itu menyaksikan siksaan yang tidak berperikemanusia-an itu.\nSiksaan itu sebenarnya tidak patut mereka lakukan sebab orang-orang itu tidak mempunyai kesalahan yang besar. Mereka menyiksa hanya karena orang-orang mukmin itu beriman kepada Allah Yang Mahaperkasa lagi Maha Terpuji, yang mempunyai kerajaan langit dan bumi serta berkuasa atas semua yang ada pada keduanya. Sungguh tidak ada jalan bagi orang yang zalim itu untuk lari dari kekuasaan-Nya.\nBagi orang-orang mukmin siksaan dan pembunuhan ini hanyalah merupakan cobaan dan ujian yang akan membawa mereka kepada kebahagiaan abadi apabila mereka tetap sabar dengan tetap beriman kepada Allah.\n",
@@ -56,7 +57,7 @@
         },
         {
             "ind": "yang berapi (dinyalakan dengan) kayu bakar,",
-            "arb": "النَّارِ ذَاتِ الْوَقُودِ",
+            "arb": "النَّارِ ذَاتِ الْوَقُوْدِۙ",
             "transliterasi": "An-nāri żātil-waqūd(i).",
             "eng": "of fire fiercely burning [for all who have attained to faith]!",
             "kemenag": "Dalam ayat-ayat ini diterangkan bahwa Allah telah membinasakan Najran, sebuah kota di Yaman, karena penduduknya telah menyiksa dan membunuh para pengikut Nabi Isa (orang-orang Nasrani) yang meninggalkan agama pembesar-pembesar negeri itu, yaitu agama Yahudi dan memeluk agama yang dibawa oleh Nabi Isa dengan memasukkan mereka ke dalam parit-parit yang telah mereka gali dan diberi api yang menyala-nyala. Orang-orang kafir negeri itu duduk di sekitar parit-parit itu menyaksikan siksaan yang tidak berperikemanusia-an itu.\nSiksaan itu sebenarnya tidak patut mereka lakukan sebab orang-orang itu tidak mempunyai kesalahan yang besar. Mereka menyiksa hanya karena orang-orang mukmin itu beriman kepada Allah Yang Mahaperkasa lagi Maha Terpuji, yang mempunyai kerajaan langit dan bumi serta berkuasa atas semua yang ada pada keduanya. Sungguh tidak ada jalan bagi orang yang zalim itu untuk lari dari kekuasaan-Nya.\nBagi orang-orang mukmin siksaan dan pembunuhan ini hanyalah merupakan cobaan dan ujian yang akan membawa mereka kepada kebahagiaan abadi apabila mereka tetap sabar dengan tetap beriman kepada Allah.\n",
@@ -68,7 +69,7 @@
         },
         {
             "ind": "ketika mereka duduk di sekitarnya,",
-            "arb": "إِذْ هُمْ عَلَيْهَا قُعُودٌ",
+            "arb": "اِذْ هُمْ عَلَيْهَا قُعُوْدٌۙ",
             "transliterasi": "Iż hum ‘alaihā qu‘ūd(un).",
             "eng": "Lo! [With glee do] they contemplate that [fire],",
             "kemenag": "Dalam ayat-ayat ini diterangkan bahwa Allah telah membinasakan Najran, sebuah kota di Yaman, karena penduduknya telah menyiksa dan membunuh para pengikut Nabi Isa (orang-orang Nasrani) yang meninggalkan agama pembesar-pembesar negeri itu, yaitu agama Yahudi dan memeluk agama yang dibawa oleh Nabi Isa dengan memasukkan mereka ke dalam parit-parit yang telah mereka gali dan diberi api yang menyala-nyala. Orang-orang kafir negeri itu duduk di sekitar parit-parit itu menyaksikan siksaan yang tidak berperikemanusia-an itu.\nSiksaan itu sebenarnya tidak patut mereka lakukan sebab orang-orang itu tidak mempunyai kesalahan yang besar. Mereka menyiksa hanya karena orang-orang mukmin itu beriman kepada Allah Yang Mahaperkasa lagi Maha Terpuji, yang mempunyai kerajaan langit dan bumi serta berkuasa atas semua yang ada pada keduanya. Sungguh tidak ada jalan bagi orang yang zalim itu untuk lari dari kekuasaan-Nya.\nBagi orang-orang mukmin siksaan dan pembunuhan ini hanyalah merupakan cobaan dan ujian yang akan membawa mereka kepada kebahagiaan abadi apabila mereka tetap sabar dengan tetap beriman kepada Allah.\n",
@@ -80,7 +81,7 @@
         },
         {
             "ind": "sedang mereka menyaksikan apa yang mereka perbuat terhadap orang-orang yang beriman.",
-            "arb": "وَهُمْ عَلَىٰ مَا يَفْعَلُونَ بِالْمُؤْمِنِينَ شُهُودٌ",
+            "arb": "وَّهُمْ عَلٰى مَا يَفْعَلُوْنَ بِالْمُؤْمِنِيْنَ شُهُوْدٌ  ۗ",
             "transliterasi": "Wa hum ‘alā mā yaf‘alūna bil-mu'minīna syuhūd(un).",
             "eng": "fully conscious of what they are doing to the believers,",
             "kemenag": "Dalam ayat-ayat ini diterangkan bahwa Allah telah membinasakan Najran, sebuah kota di Yaman, karena penduduknya telah menyiksa dan membunuh para pengikut Nabi Isa (orang-orang Nasrani) yang meninggalkan agama pembesar-pembesar negeri itu, yaitu agama Yahudi dan memeluk agama yang dibawa oleh Nabi Isa dengan memasukkan mereka ke dalam parit-parit yang telah mereka gali dan diberi api yang menyala-nyala. Orang-orang kafir negeri itu duduk di sekitar parit-parit itu menyaksikan siksaan yang tidak berperikemanusia-an itu.\nSiksaan itu sebenarnya tidak patut mereka lakukan sebab orang-orang itu tidak mempunyai kesalahan yang besar. Mereka menyiksa hanya karena orang-orang mukmin itu beriman kepada Allah Yang Mahaperkasa lagi Maha Terpuji, yang mempunyai kerajaan langit dan bumi serta berkuasa atas semua yang ada pada keduanya. Sungguh tidak ada jalan bagi orang yang zalim itu untuk lari dari kekuasaan-Nya.\nBagi orang-orang mukmin siksaan dan pembunuhan ini hanyalah merupakan cobaan dan ujian yang akan membawa mereka kepada kebahagiaan abadi apabila mereka tetap sabar dengan tetap beriman kepada Allah.\n",
@@ -92,7 +93,7 @@
         },
         {
             "ind": "Dan mereka tidak menyiksa orang-orang mukmin itu melainkan karena orang-orang mukmin itu beriman kepada Allah Yang Maha Perkasa lagi Maha Terpuji,",
-            "arb": "وَمَا نَقَمُوا مِنْهُمْ إِلَّا أَن يُؤْمِنُوا بِاللَّهِ الْعَزِيزِ الْحَمِيدِ",
+            "arb": "وَمَا نَقَمُوْا مِنْهُمْ اِلَّآ اَنْ يُّؤْمِنُوْا بِاللّٰهِ الْعَزِيْزِ الْحَمِيْدِۙ",
             "transliterasi": "Wa mā naqamū minhum illā ay yu'minū billāhil-‘azīzil-ḥamīd(i).",
             "eng": "whom they hate for no other reason than that they believe in God, the Almighty, the One to whom all praise is due,",
             "kemenag": "Dalam ayat-ayat ini diterangkan bahwa Allah telah membinasakan Najran, sebuah kota di Yaman, karena penduduknya telah menyiksa dan membunuh para pengikut Nabi Isa (orang-orang Nasrani) yang meninggalkan agama pembesar-pembesar negeri itu, yaitu agama Yahudi dan memeluk agama yang dibawa oleh Nabi Isa dengan memasukkan mereka ke dalam parit-parit yang telah mereka gali dan diberi api yang menyala-nyala. Orang-orang kafir negeri itu duduk di sekitar parit-parit itu menyaksikan siksaan yang tidak berperikemanusia-an itu.\nSiksaan itu sebenarnya tidak patut mereka lakukan sebab orang-orang itu tidak mempunyai kesalahan yang besar. Mereka menyiksa hanya karena orang-orang mukmin itu beriman kepada Allah Yang Mahaperkasa lagi Maha Terpuji, yang mempunyai kerajaan langit dan bumi serta berkuasa atas semua yang ada pada keduanya. Sungguh tidak ada jalan bagi orang yang zalim itu untuk lari dari kekuasaan-Nya.\nBagi orang-orang mukmin siksaan dan pembunuhan ini hanyalah merupakan cobaan dan ujian yang akan membawa mereka kepada kebahagiaan abadi apabila mereka tetap sabar dengan tetap beriman kepada Allah.\n",
@@ -104,7 +105,7 @@
         },
         {
             "ind": "Yang mempunyai kerajaan langit dan bumi; dan Allah Maha Menyaksikan segala sesuatu.",
-            "arb": "الَّذِي لَهُ مُلْكُ السَّمَاوَاتِ وَالْأَرْضِ ۚ وَاللَّهُ عَلَىٰ كُلِّ شَيْءٍ شَهِيدٌ",
+            "arb": "الَّذِيْ لَهٗ مُلْكُ السَّمٰوٰتِ وَالْاَرْضِ ۗوَاللّٰهُ عَلٰى كُلِّ شَيْءٍ شَهِيْدٌ  ۗ",
             "transliterasi": "Allażī lahū mulkus-samāwāti wal-arḍ(i), wallāhu ‘alā kulli syai'in syahīd(un).",
             "eng": "[and] to whom the dominion of the heavens and the earth belongs. But God is witness unto everything!",
             "kemenag": "Pada akhir ayat ini, Allah menerangkan bahwa Ia telah menyaksikan segala sesuatunya dan dengan demikian akan memberikan balasan yang setimpal atas kekejaman yang telah dilakukan oleh orang-orang kafir itu.",
@@ -116,7 +117,7 @@
         },
         {
             "ind": "Sesungguhnya orang-orang yang mendatangkan cobaan kepada orang-orang yang mukmin laki-laki dan perempuan kemudian mereka tidak bertaubat, maka bagi mereka azab Jahannam dan bagi mereka azab (neraka) yang membakar.",
-            "arb": "إِنَّ الَّذِينَ فَتَنُوا الْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ ثُمَّ لَمْ يَتُوبُوا فَلَهُمْ عَذَابُ جَهَنَّمَ وَلَهُمْ عَذَابُ الْحَرِيقِ",
+            "arb": "اِنَّ الَّذِيْنَ فَتَنُوا الْمُؤْمِنِيْنَ وَالْمُؤْمِنٰتِ ثُمَّ لَمْ يَتُوْبُوْا فَلَهُمْ عَذَابُ جَهَنَّمَ وَلَهُمْ عَذَابُ الْحَرِيْقِۗ",
             "transliterasi": "Innal-lażīna fatanul-mu'minīna wal-mu'mināti ṡumma lam yatūbū fa lahum ‘ażābu jahannama wa lahum ‘ażābul-ḥarīq(i).",
             "eng": "Verily, as for those who persecute believing men and believing women, and thereafter do not repent, hell's suffering awaits them: yea, suffering through fire awaits them!",
             "kemenag": "Dalam ayat ini, Allah menerangkan bahwa bagi orang-orang kafir yang menganiaya dan menyiksa orang-orang mukmin dan mereka tidak mau meninggalkan agamanya, tetap dalam kekufuran, tidak bertobat sebelum mereka meninggal, telah disediakan api neraka untuk mengazab mereka di akhirat nanti.",
@@ -128,7 +129,7 @@
         },
         {
             "ind": "Sesungguhnya orang-orang yang beriman dan mengerjakan amal-amal yang saleh bagi mereka surga yang mengalir di bawahnya sungai-sungai; itulah keberuntungan yang besar.",
-            "arb": "إِنَّ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ لَهُمْ جَنَّاتٌ تَجْرِي مِن تَحْتِهَا الْأَنْهَارُ ۚ ذَٰلِكَ الْفَوْزُ الْكَبِيرُ",
+            "arb": "اِنَّ الَّذِيْنَ اٰمَنُوْا وَعَمِلُوا الصّٰلِحٰتِ لَهُمْ جَنّٰتٌ تَجْرِيْ مِنْ تَحْتِهَا الْاَنْهٰرُ ەۗ ذٰلِكَ الْفَوْزُ الْكَبِيْرُۗ",
             "transliterasi": "Innal-lażīna āmanū wa ‘amiluṣ-ṣāliḥāti lahum jannātun tajrī min taḥtihal-anhār(u), żālikal-fauzul-kabīr(u).",
             "eng": "[But,] verily, they who attain to faith and do righteous deeds shall [in the life to come] have gardens through which running waters flow - that triumph most great!",
             "kemenag": "Dalam ayat ini, Allah menerangkan bahwa orang-orang yang beriman mengakui bahwa Tuhan Maha Esa. Oleh karena itu, mereka mengerjakan pekerjaan yang sesuai dengan perintah Allah dan menjauhkan diri dari semua larangan-Nya. Semua itu mereka lakukan untuk mengharapkan keridaan-Nya. Di akhirat Allah akan memberi mereka kebun-kebun yang mengalir di bawahnya anak sungai, sehingga mereka hidup bahagia abadi di dalam surga, sebagai ganjaran atas keimanan dan kepatuhan mereka.",
@@ -140,7 +141,7 @@
         },
         {
             "ind": "Sesungguhnya azab Tuhanmu benar-benar keras.",
-            "arb": "إِنَّ بَطْشَ رَبِّكَ لَشَدِيدٌ",
+            "arb": "اِنَّ بَطْشَ رَبِّكَ لَشَدِيْدٌ ۗ",
             "transliterasi": "Inna baṭsya rabbika lasyadīd(un).",
             "eng": "VERILY, thy Sustainer's grip is exceedingly strong!",
             "kemenag": "Dalam ayat ini dijelaskan bahwa siksa yang akan ditimpakan kepada orang-orang kafir yang menganiaya, menyiksa, dan membunuh orang-orang mukmin karena tidak mau meninggalkan agama mereka, sangatlah keras. Perlu diingat bahwa Allah-lah yang telah menciptakan mereka, dan Dia pula yang menghidupkan mereka kembali.\nMereka akhirnya akan kembali kepada Allah. Apabila Ia belum menyiksa mereka di dunia ini, bukanlah berarti mereka tidak akan mendapat siksaan sama sekali. Akan tetapi, siksaan itu diundurkan waktunya sampai mereka kembali kepada-Nya, yaitu pada hari Kiamat.\n",
@@ -152,7 +153,7 @@
         },
         {
             "ind": "Sesungguhnya Dialah Yang menciptakan (makhluk) dari permulaan dan menghidupkannya (kembali).",
-            "arb": "إِنَّهُ هُوَ يُبْدِئُ وَيُعِيدُ",
+            "arb": "اِنَّهٗ هُوَ يُبْدِئُ وَيُعِيْدُۚ",
             "transliterasi": "Innahū huwa yubdi'u wa yu‘īd(u).",
             "eng": "Behold, it is He who creates [man] in the first instance, and He [it is who] will bring him forth anew.",
             "kemenag": "Dalam ayat ini dijelaskan bahwa siksa yang akan ditimpakan kepada orang-orang kafir yang menganiaya, menyiksa, dan membunuh orang-orang mukmin karena tidak mau meninggalkan agama mereka, sangatlah keras. Perlu diingat bahwa Allah-lah yang telah menciptakan mereka, dan Dia pula yang menghidupkan mereka kembali.\nMereka akhirnya akan kembali kepada Allah. Apabila Ia belum menyiksa mereka di dunia ini, bukanlah berarti mereka tidak akan mendapat siksaan sama sekali. Akan tetapi, siksaan itu diundurkan waktunya sampai mereka kembali kepada-Nya, yaitu pada hari Kiamat.\n",
@@ -164,7 +165,7 @@
         },
         {
             "ind": "Dialah Yang Maha Pengampun lagi Maha Pengasih,",
-            "arb": "وَهُوَ الْغَفُورُ الْوَدُودُ",
+            "arb": "وَهُوَ الْغَفُوْرُ الْوَدُوْدُۙ",
             "transliterasi": "Wa huwal-gafūrul-wadūd(u).",
             "eng": "And He alone is truly-forgiving, all-embracing in His love,",
             "kemenag": "Dalam ayat ini diterangkan bahwa Allah Maha Pengampun bagi orang-orang yang kembali kepada-Nya dengan bertobat, Maha Pengasih bagi mereka yang sungguh-sungguh dan dengan ikhlas mencintai-Nya. Allah juga mempunyai kekuasaan yang mesti berlaku, perintah-Nya tidak dapat dibantah, dan Ia berbuat apa yang Ia kehendaki. Apabila Allah menghendaki kebinasaan bagi mereka yang ingkar dan durhaka, tidak ada suatu kekuasaan pun yang dapat menghalangi-Nya.",
@@ -176,7 +177,7 @@
         },
         {
             "ind": "yang mempunyai 'Arsy, lagi Maha Mulia,",
-            "arb": "ذُو الْعَرْشِ الْمَجِيدُ",
+            "arb": "ذُو الْعَرْشِ الْمَجِيْدُۙ",
             "transliterasi": "Żul-‘arsyil-majīd(i).",
             "eng": "in sublime almightiness enthroned,",
             "kemenag": "Dalam ayat ini diterangkan bahwa Allah Maha Pengampun bagi orang-orang yang kembali kepada-Nya dengan bertobat, Maha Pengasih bagi mereka yang sungguh-sungguh dan dengan ikhlas mencintai-Nya. Allah juga mempunyai kekuasaan yang mesti berlaku, perintah-Nya tidak dapat dibantah, dan Ia berbuat apa yang Ia kehendaki. Apabila Allah menghendaki kebinasaan bagi mereka yang ingkar dan durhaka, tidak ada suatu kekuasaan pun yang dapat menghalangi-Nya.",
@@ -188,7 +189,7 @@
         },
         {
             "ind": "Maha Kuasa berbuat apa yang dikehendaki-Nya.",
-            "arb": "فَعَّالٌ لِّمَا يُرِيدُ",
+            "arb": "فَعَّالٌ لِّمَا يُرِيْدُۗ",
             "transliterasi": "Fa‘‘ālul limā yurīd(u).",
             "eng": "a sovereign doer of whatever He wills.",
             "kemenag": "Dalam ayat ini diterangkan bahwa Allah Maha Pengampun bagi orang-orang yang kembali kepada-Nya dengan bertobat, Maha Pengasih bagi mereka yang sungguh-sungguh dan dengan ikhlas mencintai-Nya. Allah juga mempunyai kekuasaan yang mesti berlaku, perintah-Nya tidak dapat dibantah, dan Ia berbuat apa yang Ia kehendaki. Apabila Allah menghendaki kebinasaan bagi mereka yang ingkar dan durhaka, tidak ada suatu kekuasaan pun yang dapat menghalangi-Nya.",
@@ -200,7 +201,7 @@
         },
         {
             "ind": "Sudahkah datang kepadamu berita kaum-kaum penentang,",
-            "arb": "هَلْ أَتَاكَ حَدِيثُ الْجُنُودِ",
+            "arb": "هَلْ اَتٰىكَ حَدِيْثُ الْجُنُوْدِۙ",
             "transliterasi": "Hal atāka ḥadīṡul-junūd(i).",
             "eng": "HAS IT ever come within thy ken, the story of the [sinful] hosts",
             "kemenag": "Dalam ayat-ayat ini, Allah menerangkan dalam bentuk pertanyaan kepada Nabi Muhammad bahwa apakah telah sampai kepadanya tentang kisah Fir'aun dan kaumnya yang telah mendustakan kenabian Nabi Musa, kisah tentang kesombongan Fir'aun, dan kekufuran kaumnya, serta akibat dari perbuatan mereka, yaitu ditenggelamkan ke dalam laut.\nDemikian pula dengan kaum Samud yang telah mendustakan Nabi Saleh sebagai utusan Allah. Mereka telah menyembelih unta yang menjadi tanda kenabiannya. Sebagai akibatnya, Allah menurunkan siksaan-Nya kepada mereka dengan menghancurkan negeri mereka serta memusnahkan semua yang ada.\nRingkasnya, orang-orang kafir itu sejak dahulu tidak berubah. Mereka selalu mengingkari kebenaran agama yang dibawa oleh para nabi utusan Allah. Mereka tentu akan menerima balasannya sebagaimana kaum-kaum sebelum mereka, bila mereka tidak bertobat dan kembali kepada jalan yang diridai Allah.\n",
@@ -212,7 +213,7 @@
         },
         {
             "ind": "(yaitu kaum) Fir'aun dan (kaum) Tsamud?",
-            "arb": "فِرْعَوْنَ وَثَمُودَ",
+            "arb": "فِرْعَوْنَ وَثَمُوْدَۗ",
             "transliterasi": "Fir‘auna wa ṡamūd(a).",
             "eng": "of Pharaoh, and of [the tribe of] Thamud?",
             "kemenag": "Dalam ayat-ayat ini, Allah menerangkan dalam bentuk pertanyaan kepada Nabi Muhammad bahwa apakah telah sampai kepadanya tentang kisah Fir'aun dan kaumnya yang telah mendustakan kenabian Nabi Musa, kisah tentang kesombongan Fir'aun, dan kekufuran kaumnya, serta akibat dari perbuatan mereka, yaitu ditenggelamkan ke dalam laut.\nDemikian pula dengan kaum Samud yang telah mendustakan Nabi Saleh sebagai utusan Allah. Mereka telah menyembelih unta yang menjadi tanda kenabiannya. Sebagai akibatnya, Allah menurunkan siksaan-Nya kepada mereka dengan menghancurkan negeri mereka serta memusnahkan semua yang ada.\nRingkasnya, orang-orang kafir itu sejak dahulu tidak berubah. Mereka selalu mengingkari kebenaran agama yang dibawa oleh para nabi utusan Allah. Mereka tentu akan menerima balasannya sebagaimana kaum-kaum sebelum mereka, bila mereka tidak bertobat dan kembali kepada jalan yang diridai Allah.\n",
@@ -224,7 +225,7 @@
         },
         {
             "ind": "Sesungguhnya orang-orang kafir selalu mendustakan,",
-            "arb": "بَلِ الَّذِينَ كَفَرُوا فِي تَكْذِيبٍ",
+            "arb": "بَلِ الَّذِيْنَ كَفَرُوْا فِيْ تَكْذِيْبٍۙ",
             "transliterasi": "Balil-lażīna kafarū fī takżīb(in).",
             "eng": "And yet, they who are bent on denying the truth persist in giving it the lie:",
             "kemenag": "Dalam ayat-ayat ini, Allah menerangkan dalam bentuk pertanyaan kepada Nabi Muhammad bahwa apakah telah sampai kepadanya tentang kisah Fir'aun dan kaumnya yang telah mendustakan kenabian Nabi Musa, kisah tentang kesombongan Fir'aun, dan kekufuran kaumnya, serta akibat dari perbuatan mereka, yaitu ditenggelamkan ke dalam laut.\nDemikian pula dengan kaum Samud yang telah mendustakan Nabi Saleh sebagai utusan Allah. Mereka telah menyembelih unta yang menjadi tanda kenabiannya. Sebagai akibatnya, Allah menurunkan siksaan-Nya kepada mereka dengan menghancurkan negeri mereka serta memusnahkan semua yang ada.\nRingkasnya, orang-orang kafir itu sejak dahulu tidak berubah. Mereka selalu mengingkari kebenaran agama yang dibawa oleh para nabi utusan Allah. Mereka tentu akan menerima balasannya sebagaimana kaum-kaum sebelum mereka, bila mereka tidak bertobat dan kembali kepada jalan yang diridai Allah.\n",
@@ -236,7 +237,7 @@
         },
         {
             "ind": "padahal Allah mengepung mereka dari belakang mereka.",
-            "arb": "وَاللَّهُ مِن وَرَائِهِم مُّحِيطٌ",
+            "arb": "وَّاللّٰهُ مِنْ وَّرَاۤىِٕهِمْ مُّحِيْطٌۚ",
             "transliterasi": "Wallāhu miw warā'ihim muḥīṭ(un).",
             "eng": "but all the while God encompasses them [with His knowledge and might] without their being aware of it.",
             "kemenag": "Dalam ayat ini, Allah menjelaskan bahwa mereka tidak akan lepas dari kekuasaan-Nya, dan tidak akan dapat lari dari jangkauan-Nya.",
@@ -248,7 +249,7 @@
         },
         {
             "ind": "Bahkan yang didustakan mereka itu ialah Al Quran yang mulia,",
-            "arb": "بَلْ هُوَ قُرْآنٌ مَّجِيدٌ",
+            "arb": "بَلْ هُوَ قُرْاٰنٌ مَّجِيْدٌۙ",
             "transliterasi": "Bal huwa qur'ānum majīd(un).",
             "eng": "Nay, but this [divine writ which they reject] is a discourse sublime,",
             "kemenag": "Dalam ayat ini, Allah menerangkan bahwa Al-Qur'an itu adalah kitab Allah yang mulia, tersimpan dalam Lauh Mahfudh. Tidak ada yang dapat menandingi isi dan susunan kata-katanya, terpelihara dari pemalsuan dan perubahan. Ini sebagai jawaban kepada orang-orang kafir yang mendustakan Al-Qur'an dengan mengatakan bahwa ia adalah cerita-cerita orang dahulu kala.",
@@ -260,7 +261,7 @@
         },
         {
             "ind": "yang (tersimpan) dalam Lauh Mahfuzh.",
-            "arb": "فِي لَوْحٍ مَّحْفُوظٍ",
+            "arb": "فِيْ لَوْحٍ مَّحْفُوْظٍ ࣖ",
             "transliterasi": "Fī lauḥim maḥfūẓ(in).",
             "eng": "upon an imperishable tablet [inscribed].",
             "kemenag": "Dalam ayat ini, Allah menerangkan bahwa Al-Qur'an itu adalah kitab Allah yang mulia, tersimpan dalam Lauh Mahfudh. Tidak ada yang dapat menandingi isi dan susunan kata-katanya, terpelihara dari pemalsuan dan perubahan. Ini sebagai jawaban kepada orang-orang kafir yang mendustakan Al-Qur'an dengan mengatakan bahwa ia adalah cerita-cerita orang dahulu kala.",

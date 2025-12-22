@@ -1,4 +1,4 @@
-import alquranHandler from "../index.js";
+import alquranHandler, { openDB, closeDB } from "../index.js";
 
 (async () => {
   const tests = [
@@ -12,8 +12,11 @@ import alquranHandler from "../index.js";
     "baqarah 286",
     "al fatihah 1-3",
     "fatih",
+    // "Al-ḥamdu",
+    // "اَلْحَمْدُ"
   ];
-
+  
+  const db = await openDB(); // buka 1x
   for (const t of tests) {
     console.log("\n==============================");
     console.log("INPUT:", JSON.stringify(t));
@@ -27,4 +30,5 @@ import alquranHandler from "../index.js";
       console.error("ERROR:", e.message);
     }
   }
+  await closeDB(); // tutup 1x
 })();

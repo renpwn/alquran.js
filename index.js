@@ -1,4 +1,25 @@
-import { openDB } from './setting.db.js'
+import { openDB as _openDB } from './setting.db.js';
+
+let gdb = null;         // global DB instance
+let manualDB = false;  // flag: apakah user membuka DB manual?
+
+// Buka DB manual
+export async function openDB() {
+  if (!gdb) {
+    gdb = await _openDB();
+    manualDB = true; // user harus menutup
+  }
+  return gdb;
+}
+
+// Tutup DB manual
+export async function closeDB() {
+  if (gdb) {
+    await gdb.close();
+    gdb = null;
+    manualDB = false;
+  }
+}
 
 /* =====================================
    FUZZY CORE (DRY – SINGLE SOURCE)
@@ -81,8 +102,21 @@ const parseAyatRange = (input, maxAyat) => {
 /* =====================================
    MAIN HANDLER (DB ONLY)
 ===================================== */
-export default async function alquranHandler(input = '', options = {}) {
-  const db = await openDB()
+export default async function alquranHandler(input = '', options = {}, dbInstance = null) {
+  let db = dbInstance;
+  let autoClose = false;
+
+  // jika user kirim dbInstance, pakai itu
+  // kalau tidak ada, pakai global db atau open sementara
+  if (!db) {
+    if (gdb) {
+      db = gdb; // pakai DB manual
+    } else {
+      db = await _openDB(); // buka DB sementara
+      autoClose = true;           // tandai untuk ditutup di akhir
+    }
+  }
+
 
   /* ========= TAFSIR ========= */
   const availableTafsirs = [
@@ -95,6 +129,9 @@ export default async function alquranHandler(input = '', options = {}) {
   const tafsir =
     options.tafsir ||
     availableTafsirs[Math.floor(Math.random() * availableTafsirs.length)]
+  
+  const normalizeSearch = s =>
+  s.toLowerCase().replace(/[^a-z0-9\s]/g, '').trim()
 
   /* ========= LOAD SURAH LIST ========= */
   const surahs = await db.all(`
@@ -119,10 +156,134 @@ export default async function alquranHandler(input = '', options = {}) {
   else if (!isNaN(parts[0])) {
     surahNum = Number(parts[0])
     ayatInput = parts[1]
+  }else if (parts[0].toLowerCase() === 'list') {
+    const list = await db.all(`SELECT * FROM surahs`)
+    return {
+      mode: 'list',
+      surahs: list
+    }
   }
   else {
     const last = parts[parts.length - 1]
     const isAyat = !isNaN(last) || last.includes('-')
+
+    // ===============================
+    // TEXT SEARCH MODE
+    // ===============================
+    
+    if (parts.length >= 1 && input.length >= 7) {
+      const keyword = `%${input}%`
+
+      const rows = await db.all(
+        `
+        WITH surah_offset AS (
+          SELECT
+            no,
+            COALESCE(
+              (SELECT SUM(ayat) FROM surahs s2 WHERE s2.no < s1.no),
+              0
+            ) AS offset
+          FROM surahs s1
+        )
+        SELECT
+          s.no   AS surahNumber,
+          s.name AS surah,
+          a.ayat,
+          a.text_ar,
+          a.text_latin,
+
+          -- 🔥 nomor audio global
+          so.offset + a.ayat AS noAudio,
+
+          -- translations
+          COALESCE(
+            MAX(CASE WHEN tr.lang = 'id' THEN tr.text END),
+            MAX(CASE WHEN tr2.lang = 'id' THEN tr2.text END)
+          ) AS id,
+          COALESCE(
+            MAX(CASE WHEN tr.lang = 'en' THEN tr.text END),
+            MAX(CASE WHEN tr2.lang = 'en' THEN tr2.text END)
+          ) AS en,
+
+          -- tafsir          
+          t.text AS tafsir
+          -- MAX(CASE WHEN t.kitab = 'kemenag' THEN t.text END) AS kemenag,
+          -- MAX(CASE WHEN t.kitab = 'kemenag_ringkas' THEN t.text END) AS kemenag_ringkas,
+          -- MAX(CASE WHEN t.kitab = 'jalalain' THEN t.text END) AS jalalain,
+          -- MAX(CASE WHEN t.kitab = 'ibnu_katsir' THEN t.text END) AS ibnu_katsir,
+          -- MAX(CASE WHEN t.kitab = 'quraish_shihab' THEN t.text END) AS quraish_shihab,
+          -- MAX(CASE WHEN t.kitab = 'saadi' THEN t.text END) AS saadi
+
+        FROM ayahs a
+        JOIN surahs s ON s.no = a.surah_id
+        JOIN surah_offset so ON so.no = s.no
+
+        JOIN translations tr
+          ON tr.ayah_id = a.id
+        AND tr.lang IN ('id','en')
+
+        LEFT JOIN translations tr2
+          ON tr2.ayah_id = a.id
+        AND tr2.lang IN ('id','en')
+
+        LEFT JOIN tafsirs t
+          ON t.ayah_id = a.id
+        AND t.kitab = ?
+
+        -- LEFT JOIN tafsirs t
+        --   ON t.ayah_id = a.id
+        -- AND t.kitab IN (
+        --   'kemenag',
+        --   'kemenag_ringkas',
+        --   'jalalain',
+        --   'ibnu_katsir',
+        --   'quraish_shihab',
+        --   'saadi'
+        -- )
+
+        WHERE
+          (a.text_latin LIKE ?
+          OR a.text_ar LIKE ?
+          OR tr.text LIKE ?)
+
+        GROUP BY a.id
+        ORDER BY s.no, a.ayat
+        LIMIT 5;
+        `,
+        [tafsir, keyword, keyword, keyword]
+      )
+
+      if(rows.length>=1) {
+        return {
+          mode: 'search',
+          query: input,
+          tafsir,
+          total: rows.length,
+          results: rows.map(r => ({
+            surah: r.surah,
+            ayah: r.ayat,
+            surahNumber: r.surahNumber,
+            arab: r.text_ar,
+            latin: r.text_latin,
+            id: r.id,
+            en: r.en,
+            tafsir: r.tafsir,            
+            noAudio: r.noAudio,
+            audioUrl: `https://cdn.islamic.network/quran/audio/128/ar.alafasy/${r.noAudio}.mp3`
+            // kemenag: r.kemenag,
+            // kemenag_ringkas: r.kemenag_ringkas,
+            // jalalain: r.jalalain,
+            // ibnu_katsir: r.ibnu_katsir,
+            // quraish_shihab: r.quraish_shihab,
+            // saadi: r.saadi
+          }))
+        }
+      }
+    }
+
+    // ===============================
+    // DEFAULT SURAH GUESS (existing)
+    // ===============================
 
     const surahName = isAyat
       ? parts.slice(0, -1).join(' ')
@@ -152,6 +313,7 @@ export default async function alquranHandler(input = '', options = {}) {
         : guess.indexAll + 1
   }
 
+  console.log('Surah number out of range, selecting random surah:', surahNum, debug, surahs[surahNum - 1])
   if (surahNum < 1 || surahNum > 114) {
     surahNum = Math.floor(Math.random() * 114) + 1
   }
@@ -171,13 +333,25 @@ export default async function alquranHandler(input = '', options = {}) {
   /* ========= AYAH QUERY ========= */
   const ayahs = await db.all(
     `
+    WITH surah_offset AS (
+      SELECT
+        no,
+        COALESCE(
+          (SELECT SUM(ayat) FROM surahs s2 WHERE s2.no < s1.no),
+          0
+        ) AS offset
+      FROM surahs s1
+    )
     SELECT
       a.id,
       a.ayat,
       a.text_ar,
       a.text_latin,
-      t.text AS tafsir
-    FROM ayahs a
+      t.text AS tafsir,
+      so.offset + a.ayat AS noAudio
+    FROM ayahs a   
+    JOIN surahs s ON s.no = a.surah_id
+    JOIN surah_offset so ON so.no = s.no
     LEFT JOIN tafsirs t
       ON t.ayah_id = a.id
      AND t.kitab = ?
@@ -189,18 +363,24 @@ export default async function alquranHandler(input = '', options = {}) {
   )
 
   const resultAyahs = ayahs.map((a, i) => {
-    const noAudio = offset + start + i
+    // const noAudio = offset + start + i
     return {
       ayah: a.ayat,
       arab: a.text_ar,
       transliterasi: a.text_latin,
       tafsir: a.tafsir || null,
-      noAudio,
-      audioUrl: `https://cdn.islamic.network/quran/audio/128/ar.alafasy/${noAudio}.mp3`
+      noAudio: a.noAudio,
+      audioUrl: `https://cdn.islamic.network/quran/audio/128/ar.alafasy/${a.noAudio}.mp3`
     }
   })
+  
+  // ==== AUTO CLOSE jika dibuka sendiri ====
+  if (autoClose) {
+    await db.close();
+  }
 
   return {
+    mode: 'default',
     surahNumber: surahNum,
     surah: surah.name,
     arti: surah.id,

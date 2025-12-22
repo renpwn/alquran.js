@@ -1,14 +1,15 @@
 {
     "number": 88,
     "name": "Al-Gasyiyah",
-    "englishName": "سُورَةُ الغَاشِيَةِ",
-    "englishNameTranslation": "Al-Ghaashiya",
+    "ar": "سُورَةُ الغَاشِيَةِ",
+    "en": "Al-Ghaashiya",
+    "id": "Hari Pembalasan",
     "revelationType": "Meccan",
     "numberOfAyahs": 26,
     "ayahs": [
         {
             "ind": "Sudah datangkah kepadamu berita (tentang) hari pembalasan?",
-            "arb": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ هَلْ أَتَاكَ حَدِيثُ الْغَاشِيَةِ",
+            "arb": "هَلْ اَتٰىكَ حَدِيْثُ الْغَاشِيَةِۗ",
             "transliterasi": "Hal atāka ḥadīṡul-gāsyiyah(ti).",
             "eng": "HAS THERE COME unto thee the tiding of the Overshadowing Event?'",
             "kemenag": "Allah menyindir penduduk neraka dengan mengatakan, \"Sudahkah sampai kepada kamu berita tentang hari Kiamat.\"",
@@ -20,7 +21,7 @@
         },
         {
             "ind": "Banyak muka pada hari itu tunduk terhina,",
-            "arb": "وُجُوهٌ يَوْمَئِذٍ خَاشِعَةٌ",
+            "arb": "وُجُوْهٌ يَّوْمَىِٕذٍ خَاشِعَةٌ  ۙ",
             "transliterasi": "Wujūhuy yauma'iżin khāsyi‘ah(tun).",
             "eng": "Some faces will on that Day be downcast,",
             "kemenag": "Kemudian Allah menjelaskan bahwa manusia ketika itu terbagi dua, yaitu golongan orang kafir dan golongan orang mukmin.\nGolongan orang kafir ketika melihat kedahsyatan yang terjadi ketika itu, menjadi tertunduk dan merasa terhina. Allah berfirman:\n\nDan (alangkah ngerinya), jika sekiranya kamu melihat orang-orang yang berdosa itu menundukkan kepalanya di hadapan Tuhannya, (mereka berkata), \"Ya Tuhan kami, kami telah melihat dan mendengar, maka kembalikanlah kami (ke dunia), niscaya kami akan mengerjakan kebajikan. Sungguh, kami adalah orang-orang yang yakin.\" (as-Sajdah/32: 12)\n\nDan firman Allah:\n\n\nDan kamu akan melihat mereka dihadapkan ke neraka dalam keadaan tertunduk karena (merasa) hina, mereka melihat dengan pandangan yang lesu. Dan orang-orang yang beriman berkata, \"Sesungguhnya orang-orang yang rugi ialah orang-orang yang merugikan diri mereka sendiri dan keluarganya pada hari Kiamat.\" Ingatlah, sesungguhnya orang-orang zalim itu berada dalam azab yang kekal. (asy-Syura/42: 45)\n\n",
@@ -32,7 +33,7 @@
         },
         {
             "ind": "bekerja keras lagi kepayahan,",
-            "arb": "عَامِلَةٌ نَّاصِبَةٌ",
+            "arb": "عَامِلَةٌ نَّاصِبَةٌ  ۙ",
             "transliterasi": "‘Amilatun nāṣibah(tun).",
             "eng": "toiling [under burdens of sin], worn out [by fear],",
             "kemenag": "Allah menerangkan bahwa orang-orang kafir itu semasa hidup di dunia bekerja dengan rajin dan sungguh-sungguh. Akan tetapi, perbuatan mereka itu tidak diterima karena mereka tidak beriman kepada Allah dan Rasul-Nya, yang merupakan syarat utama untuk diterimanya perbuatan dan mendapat ganjaran-Nya.",
@@ -44,7 +45,7 @@
         },
         {
             "ind": "memasuki api yang sangat panas (neraka),",
-            "arb": "تَصْلَىٰ نَارًا حَامِيَةً",
+            "arb": "تَصْلٰى نَارًا حَامِيَةً  ۙ",
             "transliterasi": "Taṣlā nāran ḥāmiyah(tan).",
             "eng": "about to enter a glowing fire,",
             "kemenag": "Dalam ayat-ayat ini, Allah menerangkan bahwa orang-orang kafir akan dimasukkan ke dalam neraka. Bila mereka meminta air karena haus, maka mereka diberi air bersumber dari mata air yang sangat panas. Bila mereka meminta makan, maka diberi makanan yang jelek, yang tidak ada artinya. Allah berfirman:\n\nDan tidak ada makanan (baginya) kecuali dari darah dan nanah. (al-haqqah/69: 36)\n\nDan firman Allah:\n\n\nKemudian sesungguhnya kamu, wahai orang-orang yang sesat lagi mendustakan! pasti akan memakan pohon zaqqum. (al-Waqi'ah/56: 51-52)\n\nDalam ayat lain Allah berfirman:\n\n\nSungguh pohon zaqqum itu, makanan bagi orang yang banyak dosa. (ad-Dukhan/44: 43-44)\n\n",
@@ -56,7 +57,7 @@
         },
         {
             "ind": "diberi minum (dengan air) dari sumber yang sangat panas.",
-            "arb": "تُسْقَىٰ مِنْ عَيْنٍ آنِيَةٍ",
+            "arb": "تُسْقٰى مِنْ عَيْنٍ اٰنِيَةٍ ۗ",
             "transliterasi": "Tusqā min ‘ainin āniyah(tin).",
             "eng": "given to drink from a boiling spring.",
             "kemenag": "Dalam ayat-ayat ini, Allah menerangkan bahwa orang-orang kafir akan dimasukkan ke dalam neraka. Bila mereka meminta air karena haus, maka mereka diberi air bersumber dari mata air yang sangat panas. Bila mereka meminta makan, maka diberi makanan yang jelek, yang tidak ada artinya. Allah berfirman:\n\nDan tidak ada makanan (baginya) kecuali dari darah dan nanah. (al-haqqah/69: 36)\n\nDan firman Allah:\n\n\nKemudian sesungguhnya kamu, wahai orang-orang yang sesat lagi mendustakan! pasti akan memakan pohon zaqqum. (al-Waqi'ah/56: 51-52)\n\nDalam ayat lain Allah berfirman:\n\n\nSungguh pohon zaqqum itu, makanan bagi orang yang banyak dosa. (ad-Dukhan/44: 43-44)\n\n",
@@ -68,7 +69,7 @@
         },
         {
             "ind": "Mereka tiada memperoleh makanan selain dari pohon yang berduri,",
-            "arb": "لَّيْسَ لَهُمْ طَعَامٌ إِلَّا مِن ضَرِيعٍ",
+            "arb": "لَيْسَ لَهُمْ طَعَامٌ اِلَّا مِنْ ضَرِيْعٍۙ",
             "transliterasi": "Laisa lahum ṭa‘āmun illā min ḍarī‘(in).",
             "eng": "No food for them save the bitterness of dry thorns,",
             "kemenag": "Dalam ayat-ayat ini, Allah menerangkan bahwa orang-orang kafir akan dimasukkan ke dalam neraka. Bila mereka meminta air karena haus, maka mereka diberi air bersumber dari mata air yang sangat panas. Bila mereka meminta makan, maka diberi makanan yang jelek, yang tidak ada artinya. Allah berfirman:\n\nDan tidak ada makanan (baginya) kecuali dari darah dan nanah. (al-haqqah/69: 36)\n\nDan firman Allah:\n\n\nKemudian sesungguhnya kamu, wahai orang-orang yang sesat lagi mendustakan! pasti akan memakan pohon zaqqum. (al-Waqi'ah/56: 51-52)\n\nDalam ayat lain Allah berfirman:\n\n\nSungguh pohon zaqqum itu, makanan bagi orang yang banyak dosa. (ad-Dukhan/44: 43-44)\n\n",
@@ -80,7 +81,7 @@
         },
         {
             "ind": "yang tidak menggemukkan dan tidak pula menghilangkan lapar.",
-            "arb": "لَّا يُسْمِنُ وَلَا يُغْنِي مِن جُوعٍ",
+            "arb": "لَّا يُسْمِنُ وَلَا يُغْنِيْ مِنْ جُوْعٍۗ",
             "transliterasi": "Lā yusminu wa lā yugnī min jū‘(in).",
             "eng": "which gives no strength and neither stills hunger.",
             "kemenag": "Dalam ayat-ayat ini, Allah menerangkan bahwa orang-orang kafir akan dimasukkan ke dalam neraka. Bila mereka meminta air karena haus, maka mereka diberi air bersumber dari mata air yang sangat panas. Bila mereka meminta makan, maka diberi makanan yang jelek, yang tidak ada artinya. Allah berfirman:\n\nDan tidak ada makanan (baginya) kecuali dari darah dan nanah. (al-haqqah/69: 36)\n\nDan firman Allah:\n\n\nKemudian sesungguhnya kamu, wahai orang-orang yang sesat lagi mendustakan! pasti akan memakan pohon zaqqum. (al-Waqi'ah/56: 51-52)\n\nDalam ayat lain Allah berfirman:\n\n\nSungguh pohon zaqqum itu, makanan bagi orang yang banyak dosa. (ad-Dukhan/44: 43-44)\n\n",
@@ -92,7 +93,7 @@
         },
         {
             "ind": "Banyak muka pada hari itu berseri-seri,",
-            "arb": "وُجُوهٌ يَوْمَئِذٍ نَّاعِمَةٌ",
+            "arb": "وُجُوْهٌ يَّوْمَىِٕذٍ نَّاعِمَةٌ  ۙ",
             "transliterasi": "Wujūhuy yauma'iżin nā‘imah(tun).",
             "eng": "[And] some faces will on that Day shine with bliss,",
             "kemenag": "Allah menerangkan bahwa di dalam surga, muka orang mukmin berseri penuh kegembiraan. Mereka merasa senang melihat hasil usaha mereka yang mendapat keridaan Allah yang kemudian mendapat imbalan surga yang diidam-idamkan.\n(10-16) Dalam ayat-ayat berikut ini, Allah menerangkan keadaan surga:\n1.Surga tempatnya bernilai tinggi, lebih tinggi dari nilai tempat-tempat yang lain.\n2.Di dalamnya tidak terdengar perkataan yang tidak berguna, sebab tempat itu adalah tempat orang-orang yang dikasihi Allah.\n3.Di dalamnya terdapat mata air yang mengalirkan air bersih yang menarik pandangan bagi siapa saja yang melihatnya.\n4.Di dalamnya terdapat mahligai yang tinggi.\n5.Di dekat mereka tersedia gelas-gelas yang berisi minuman yang sudah siap diminum.\n6.Di dalamnya terdapat bantal-bantal tersusun yang dapat dipergunakan menurut selera mereka, duduk di atasnya atau dipakai untuk bersandar dan sebagainya.\n7.Di sana terdapat pula permadani yang indah dan terhampar pada setiap tempat.\n8.Terdapat segala macam kenikmatan rohani dan jasmani yang jauh dari yang dapat kita bayangkan.\n",
@@ -104,7 +105,7 @@
         },
         {
             "ind": "merasa senang karena usahanya,",
-            "arb": "لِّسَعْيِهَا رَاضِيَةٌ",
+            "arb": "لِّسَعْيِهَا رَاضِيَةٌ  ۙ",
             "transliterasi": "Lisa‘yihā rāḍiyah(tun).",
             "eng": "well-pleased with [the fruit of] their striving,",
             "kemenag": "Allah menerangkan bahwa di dalam surga, muka orang mukmin berseri penuh kegembiraan. Mereka merasa senang melihat hasil usaha mereka yang mendapat keridaan Allah yang kemudian mendapat imbalan surga yang diidam-idamkan.\n(10-16) Dalam ayat-ayat berikut ini, Allah menerangkan keadaan surga:\n1.Surga tempatnya bernilai tinggi, lebih tinggi dari nilai tempat-tempat yang lain.\n2.Di dalamnya tidak terdengar perkataan yang tidak berguna, sebab tempat itu adalah tempat orang-orang yang dikasihi Allah.\n3.Di dalamnya terdapat mata air yang mengalirkan air bersih yang menarik pandangan bagi siapa saja yang melihatnya.\n4.Di dalamnya terdapat mahligai yang tinggi.\n5.Di dekat mereka tersedia gelas-gelas yang berisi minuman yang sudah siap diminum.\n6.Di dalamnya terdapat bantal-bantal tersusun yang dapat dipergunakan menurut selera mereka, duduk di atasnya atau dipakai untuk bersandar dan sebagainya.\n7.Di sana terdapat pula permadani yang indah dan terhampar pada setiap tempat.\n8.Terdapat segala macam kenikmatan rohani dan jasmani yang jauh dari yang dapat kita bayangkan.\n",
@@ -116,7 +117,7 @@
         },
         {
             "ind": "dalam surga yang tinggi,",
-            "arb": "فِي جَنَّةٍ عَالِيَةٍ",
+            "arb": "فِيْ جَنَّةٍ عَالِيَةٍۙ",
             "transliterasi": "Fī jannatin ‘āliyah(tin).",
             "eng": "in a garden sublime,",
             "kemenag": "Dalam ayat-ayat berikut ini, Allah menerangkan keadaan surga:\n1.Surga tempatnya bernilai tinggi, lebih tinggi dari nilai tempat-tempat yang lain.\n2.Di dalamnya tidak terdengar perkataan yang tidak berguna, sebab tempat itu adalah tempat orang-orang yang dikasihi Allah.\n3.Di dalamnya terdapat mata air yang mengalirkan air bersih yang menarik pandangan bagi siapa saja yang melihatnya.\n4.Di dalamnya terdapat mahligai yang tinggi.\n5.Di dekat mereka tersedia gelas-gelas yang berisi minuman yang sudah siap diminum.\n6.Di dalamnya terdapat bantal-bantal tersusun yang dapat dipergunakan menurut selera mereka, duduk di atasnya atau dipakai untuk bersandar dan sebagainya.\n7.Di sana terdapat pula permadani yang indah dan terhampar pada setiap tempat.\n8.Terdapat segala macam kenikmatan rohani dan jasmani yang jauh dari yang dapat kita bayangkan.\n",
@@ -128,7 +129,7 @@
         },
         {
             "ind": "tidak kamu dengar di dalamnya perkataan yang tidak berguna.",
-            "arb": "لَّا تَسْمَعُ فِيهَا لَاغِيَةً",
+            "arb": "لَّا تَسْمَعُ فِيْهَا لَاغِيَةً ۗ",
             "transliterasi": "Lā tasama‘u fīhā lāgiyah(tan).",
             "eng": "wherein thou wilt hear no empty talk.",
             "kemenag": "Dalam ayat-ayat berikut ini, Allah menerangkan keadaan surga:\n1.Surga tempatnya bernilai tinggi, lebih tinggi dari nilai tempat-tempat yang lain.\n2.Di dalamnya tidak terdengar perkataan yang tidak berguna, sebab tempat itu adalah tempat orang-orang yang dikasihi Allah.\n3.Di dalamnya terdapat mata air yang mengalirkan air bersih yang menarik pandangan bagi siapa saja yang melihatnya.\n4.Di dalamnya terdapat mahligai yang tinggi.\n5.Di dekat mereka tersedia gelas-gelas yang berisi minuman yang sudah siap diminum.\n6.Di dalamnya terdapat bantal-bantal tersusun yang dapat dipergunakan menurut selera mereka, duduk di atasnya atau dipakai untuk bersandar dan sebagainya.\n7.Di sana terdapat pula permadani yang indah dan terhampar pada setiap tempat.\n8.Terdapat segala macam kenikmatan rohani dan jasmani yang jauh dari yang dapat kita bayangkan.\n",
@@ -140,7 +141,7 @@
         },
         {
             "ind": "Di dalamnya ada mata air yang mengalir.",
-            "arb": "فِيهَا عَيْنٌ جَارِيَةٌ",
+            "arb": "فِيْهَا عَيْنٌ جَارِيَةٌ  ۘ",
             "transliterasi": "Fīhā ‘ainun jāriyah(tun).",
             "eng": "Countless springs will flow therein,",
             "kemenag": "Dalam ayat-ayat berikut ini, Allah menerangkan keadaan surga:\n1.Surga tempatnya bernilai tinggi, lebih tinggi dari nilai tempat-tempat yang lain.\n2.Di dalamnya tidak terdengar perkataan yang tidak berguna, sebab tempat itu adalah tempat orang-orang yang dikasihi Allah.\n3.Di dalamnya terdapat mata air yang mengalirkan air bersih yang menarik pandangan bagi siapa saja yang melihatnya.\n4.Di dalamnya terdapat mahligai yang tinggi.\n5.Di dekat mereka tersedia gelas-gelas yang berisi minuman yang sudah siap diminum.\n6.Di dalamnya terdapat bantal-bantal tersusun yang dapat dipergunakan menurut selera mereka, duduk di atasnya atau dipakai untuk bersandar dan sebagainya.\n7.Di sana terdapat pula permadani yang indah dan terhampar pada setiap tempat.\n8.Terdapat segala macam kenikmatan rohani dan jasmani yang jauh dari yang dapat kita bayangkan.\n",
@@ -152,7 +153,7 @@
         },
         {
             "ind": "Di dalamnya ada takhta-takhta yang ditinggikan,",
-            "arb": "فِيهَا سُرُرٌ مَّرْفُوعَةٌ",
+            "arb": "فِيْهَا سُرُرٌ مَّرْفُوْعَةٌ  ۙ",
             "transliterasi": "Fīhā sururum marfū‘ah(tun).",
             "eng": "[and] there will be thrones [of happiness] raised high,",
             "kemenag": "Dalam ayat-ayat berikut ini, Allah menerangkan keadaan surga:\n1.Surga tempatnya bernilai tinggi, lebih tinggi dari nilai tempat-tempat yang lain.\n2.Di dalamnya tidak terdengar perkataan yang tidak berguna, sebab tempat itu adalah tempat orang-orang yang dikasihi Allah.\n3.Di dalamnya terdapat mata air yang mengalirkan air bersih yang menarik pandangan bagi siapa saja yang melihatnya.\n4.Di dalamnya terdapat mahligai yang tinggi.\n5.Di dekat mereka tersedia gelas-gelas yang berisi minuman yang sudah siap diminum.\n6.Di dalamnya terdapat bantal-bantal tersusun yang dapat dipergunakan menurut selera mereka, duduk di atasnya atau dipakai untuk bersandar dan sebagainya.\n7.Di sana terdapat pula permadani yang indah dan terhampar pada setiap tempat.\n8.Terdapat segala macam kenikmatan rohani dan jasmani yang jauh dari yang dapat kita bayangkan.\n",
@@ -164,7 +165,7 @@
         },
         {
             "ind": "dan gelas-gelas yang terletak (di dekatnya),",
-            "arb": "وَأَكْوَابٌ مَّوْضُوعَةٌ",
+            "arb": "وَّاَكْوَابٌ مَّوْضُوْعَةٌ  ۙ",
             "transliterasi": "Wa akwābum mauḍū‘ah(tun).",
             "eng": "and goblets placed ready,",
             "kemenag": "Dalam ayat-ayat berikut ini, Allah menerangkan keadaan surga:\n1.Surga tempatnya bernilai tinggi, lebih tinggi dari nilai tempat-tempat yang lain.\n2.Di dalamnya tidak terdengar perkataan yang tidak berguna, sebab tempat itu adalah tempat orang-orang yang dikasihi Allah.\n3.Di dalamnya terdapat mata air yang mengalirkan air bersih yang menarik pandangan bagi siapa saja yang melihatnya.\n4.Di dalamnya terdapat mahligai yang tinggi.\n5.Di dekat mereka tersedia gelas-gelas yang berisi minuman yang sudah siap diminum.\n6.Di dalamnya terdapat bantal-bantal tersusun yang dapat dipergunakan menurut selera mereka, duduk di atasnya atau dipakai untuk bersandar dan sebagainya.\n7.Di sana terdapat pula permadani yang indah dan terhampar pada setiap tempat.\n8.Terdapat segala macam kenikmatan rohani dan jasmani yang jauh dari yang dapat kita bayangkan.\n",
@@ -176,7 +177,7 @@
         },
         {
             "ind": "dan bantal-bantal sandaran yang tersusun,",
-            "arb": "وَنَمَارِقُ مَصْفُوفَةٌ",
+            "arb": "وَّنَمَارِقُ مَصْفُوْفَةٌ  ۙ",
             "transliterasi": "Wa namāriqu maṣfūfah(tun).",
             "eng": "and cushions ranged,",
             "kemenag": "Dalam ayat-ayat berikut ini, Allah menerangkan keadaan surga:\n1.Surga tempatnya bernilai tinggi, lebih tinggi dari nilai tempat-tempat yang lain.\n2.Di dalamnya tidak terdengar perkataan yang tidak berguna, sebab tempat itu adalah tempat orang-orang yang dikasihi Allah.\n3.Di dalamnya terdapat mata air yang mengalirkan air bersih yang menarik pandangan bagi siapa saja yang melihatnya.\n4.Di dalamnya terdapat mahligai yang tinggi.\n5.Di dekat mereka tersedia gelas-gelas yang berisi minuman yang sudah siap diminum.\n6.Di dalamnya terdapat bantal-bantal tersusun yang dapat dipergunakan menurut selera mereka, duduk di atasnya atau dipakai untuk bersandar dan sebagainya.\n7.Di sana terdapat pula permadani yang indah dan terhampar pada setiap tempat.\n8.Terdapat segala macam kenikmatan rohani dan jasmani yang jauh dari yang dapat kita bayangkan.\n",
@@ -188,7 +189,7 @@
         },
         {
             "ind": "dan permadani-permadani yang terhampar.",
-            "arb": "وَزَرَابِيُّ مَبْثُوثَةٌ",
+            "arb": "وَّزَرَابِيُّ مَبْثُوْثَةٌ  ۗ",
             "transliterasi": "Wa zarābiyyu mabṡūṡah(tun).",
             "eng": "and carpets spread out…",
             "kemenag": "Dalam ayat-ayat berikut ini, Allah menerangkan keadaan surga:\n1.Surga tempatnya bernilai tinggi, lebih tinggi dari nilai tempat-tempat yang lain.\n2.Di dalamnya tidak terdengar perkataan yang tidak berguna, sebab tempat itu adalah tempat orang-orang yang dikasihi Allah.\n3.Di dalamnya terdapat mata air yang mengalirkan air bersih yang menarik pandangan bagi siapa saja yang melihatnya.\n4.Di dalamnya terdapat mahligai yang tinggi.\n5.Di dekat mereka tersedia gelas-gelas yang berisi minuman yang sudah siap diminum.\n6.Di dalamnya terdapat bantal-bantal tersusun yang dapat dipergunakan menurut selera mereka, duduk di atasnya atau dipakai untuk bersandar dan sebagainya.\n7.Di sana terdapat pula permadani yang indah dan terhampar pada setiap tempat.\n8.Terdapat segala macam kenikmatan rohani dan jasmani yang jauh dari yang dapat kita bayangkan.\n",
@@ -200,7 +201,7 @@
         },
         {
             "ind": "Maka apakah mereka tidak memperhatikan unta bagaimana dia diciptakan,",
-            "arb": "أَفَلَا يَنظُرُونَ إِلَى الْإِبِلِ كَيْفَ خُلِقَتْ",
+            "arb": "اَفَلَا يَنْظُرُوْنَ اِلَى الْاِبِلِ كَيْفَ خُلِقَتْۗ",
             "transliterasi": "Afalā yanẓurūna ilal-ibili kaifa khuliqat.",
             "eng": "DO, THEN, they [who deny resurrection] never gaze at the clouds pregnant with water, [and observe] how they are created?",
             "kemenag": "Dalam ayat-ayat ini, Allah mempertanyakan apakah mereka tidak memperhatikan bagaimana unta, yang ada di depan mata mereka dan dipergunakan setiap waktu, diciptakan. Bagaimana pula langit yang berada di tempat yang tinggi tanpa tiang; bagaimana gunung-gunung dipancangkan dengan kukuh, tidak bergoyang dan dijadikan petunjuk bagi orang yang dalam perjalanan. Di atasnya terdapat danau dan mata air yang dapat dipergunakan untuk keperluan manusia, mengairi tumbuh-tumbuhan, dan memberi minum binatang ternak. Bagaimana pula bumi dihamparkan sebagai tempat tinggal bagi manusia.\nApabila mereka telah memperhatikan semua itu dengan seksama, tentu mereka akan mengakui bahwa penciptanya dapat membangkitkan manusia kembali pada hari Kiamat.\n\n",
@@ -212,7 +213,7 @@
         },
         {
             "ind": "Dan langit, bagaimana ia ditinggikan?",
-            "arb": "وَإِلَى السَّمَاءِ كَيْفَ رُفِعَتْ",
+            "arb": "وَاِلَى السَّمَاۤءِ كَيْفَ رُفِعَتْۗ",
             "transliterasi": "Wa ilas-samā'i kaifa rufi‘at.",
             "eng": "And at the sky, how it is raised aloft?",
             "kemenag": "Dalam ayat-ayat ini, Allah mempertanyakan apakah mereka tidak memperhatikan bagaimana unta, yang ada di depan mata mereka dan dipergunakan setiap waktu, diciptakan. Bagaimana pula langit yang berada di tempat yang tinggi tanpa tiang; bagaimana gunung-gunung dipancangkan dengan kukuh, tidak bergoyang dan dijadikan petunjuk bagi orang yang dalam perjalanan. Di atasnya terdapat danau dan mata air yang dapat dipergunakan untuk keperluan manusia, mengairi tumbuh-tumbuhan, dan memberi minum binatang ternak. Bagaimana pula bumi dihamparkan sebagai tempat tinggal bagi manusia.\nApabila mereka telah memperhatikan semua itu dengan seksama, tentu mereka akan mengakui bahwa penciptanya dapat membangkitkan manusia kembali pada hari Kiamat.\n\n",
@@ -224,7 +225,7 @@
         },
         {
             "ind": "Dan gunung-gunung bagaimana ia ditegakkan?",
-            "arb": "وَإِلَى الْجِبَالِ كَيْفَ نُصِبَتْ",
+            "arb": "وَاِلَى الْجِبَالِ كَيْفَ نُصِبَتْۗ",
             "transliterasi": "Wa ilal-jibāli kaifa nuṣibat.",
             "eng": "And at the mountains, how firmly they are reared?",
             "kemenag": "Dalam ayat-ayat ini, Allah mempertanyakan apakah mereka tidak memperhatikan bagaimana unta, yang ada di depan mata mereka dan dipergunakan setiap waktu, diciptakan. Bagaimana pula langit yang berada di tempat yang tinggi tanpa tiang; bagaimana gunung-gunung dipancangkan dengan kukuh, tidak bergoyang dan dijadikan petunjuk bagi orang yang dalam perjalanan. Di atasnya terdapat danau dan mata air yang dapat dipergunakan untuk keperluan manusia, mengairi tumbuh-tumbuhan, dan memberi minum binatang ternak. Bagaimana pula bumi dihamparkan sebagai tempat tinggal bagi manusia.\nApabila mereka telah memperhatikan semua itu dengan seksama, tentu mereka akan mengakui bahwa penciptanya dapat membangkitkan manusia kembali pada hari Kiamat.\n\n",
@@ -236,7 +237,7 @@
         },
         {
             "ind": "Dan bumi bagaimana ia dihamparkan?",
-            "arb": "وَإِلَى الْأَرْضِ كَيْفَ سُطِحَتْ",
+            "arb": "وَاِلَى الْاَرْضِ كَيْفَ سُطِحَتْۗ",
             "transliterasi": "Wa ilal-arḍi kaifa suṭiḥat.",
             "eng": "And at the earth, how it is spread out?",
             "kemenag": "Dalam ayat-ayat ini, Allah mempertanyakan apakah mereka tidak memperhatikan bagaimana unta, yang ada di depan mata mereka dan dipergunakan setiap waktu, diciptakan. Bagaimana pula langit yang berada di tempat yang tinggi tanpa tiang; bagaimana gunung-gunung dipancangkan dengan kukuh, tidak bergoyang dan dijadikan petunjuk bagi orang yang dalam perjalanan. Di atasnya terdapat danau dan mata air yang dapat dipergunakan untuk keperluan manusia, mengairi tumbuh-tumbuhan, dan memberi minum binatang ternak. Bagaimana pula bumi dihamparkan sebagai tempat tinggal bagi manusia.\nApabila mereka telah memperhatikan semua itu dengan seksama, tentu mereka akan mengakui bahwa penciptanya dapat membangkitkan manusia kembali pada hari Kiamat.\n\n",
@@ -248,7 +249,7 @@
         },
         {
             "ind": "Maka berilah peringatan, karena sesungguhnya kamu hanyalah orang yang memberi peringatan.",
-            "arb": "فَذَكِّرْ إِنَّمَا أَنتَ مُذَكِّرٌ",
+            "arb": "فَذَكِّرْۗ اِنَّمَآ اَنْتَ مُذَكِّرٌۙ",
             "transliterasi": "Fa żakkir, innamā anta mużakkir(un).",
             "eng": "And so, [O Prophet,] exhort them; thy task is only to exhort:",
             "kemenag": "Dalam ayat ini, Allah memerintahkan Nabi Muhammad agar memberi peringatan dan petunjuk serta menyampaikan agama-Nya kepada umat manusia, karena tugasnya tidak lain hanyalah memberi peringatan dengan menyampaikan kabar gembira dan kabar yang menakutkan.",
@@ -260,7 +261,7 @@
         },
         {
             "ind": "Kamu bukanlah orang yang berkuasa atas mereka,",
-            "arb": "لَّسْتَ عَلَيْهِم بِمُصَيْطِرٍ",
+            "arb": "لَّسْتَ عَلَيْهِمْ بِمُصَيْطِرٍۙ",
             "transliterasi": "Lasta ‘alaihim bimusaiṭir(in).",
             "eng": "thou canst not compel them [to believe].",
             "kemenag": "Dalam ayat-ayat ini, Allah menerangkan bahwa Nabi Muhammad tidak berkuasa menjadikan seseorang beriman. Akan tetapi, Allah-lah yang berkuasa menjadikan manusia beriman. Sementara itu, barang siapa yang berpaling dengan mengingkari kebenaran petunjuk Nabi-Nya, niscaya Allah menghukumnya. Allah berfirman:\n\nDan jika Tuhanmu menghendaki, tentulah beriman semua orang di bumi seluruhnya. Tetapi apakah kamu (hendak) memaksa manusia agar mereka menjadi orang-orang yang beriman? (Yunus/10: 99)\n\nDan Allah berfirman:\n\n\nKami lebih mengetahui tentang apa yang mereka katakan, dan engkau (Muhammad) bukanlah seorang pemaksa terhadap mereka. Maka berilah peringatan dengan Al-Qur'an kepada siapa pun yang takut kepada ancaman-Ku. (Qaf/50: 45)\n\nBerkaitan dengan hal itu, para juru dakwah cukup menyampaikan pesan-pesan Al-Qur'an dan hadis Nabi sambil mengajak setiap manusia untuk beriman dan beramal saleh, serta masuk ke dalam agama Islam secara keseluruhan (kaffah). Penampilan dan metode dakwah perlu dengan cara yang baik dan tidak boleh bersikap memaksa, sebagaimana firman Allah:\n\nTidak ada paksaan dalam (menganut) agama (Islam), sesungguhnya telah jelas (perbedaan) antara jalan yang benar dengan jalan yang sesat. (al-Baqarah/2: 256)\n\nDan Allah berfirman:\n\n\nSerulah (manusia) kepada jalan Tuhanmu dengan hikmah dan pengajaran yang baik, dan berdebatlah dengan mereka dengan cara yang baik. Sesungguhnya Tuhanmu, Dialah yang lebih mengetahui siapa yang sesat dari jalan-Nya dan Dialah yang lebih mengetahui siapa yang mendapat petunjuk. (an-Nahl/16: 125)\n",
@@ -272,7 +273,7 @@
         },
         {
             "ind": "tetapi orang yang berpaling dan kafir,",
-            "arb": "إِلَّا مَن تَوَلَّىٰ وَكَفَرَ",
+            "arb": "اِلَّا مَنْ تَوَلّٰى وَكَفَرَۙ",
             "transliterasi": "Illā man tawallā wa kafar(a).",
             "eng": "However, as for him who turns away, being bent on denying the truth,",
             "kemenag": "Dalam ayat-ayat ini, Allah menerangkan bahwa Nabi Muhammad tidak berkuasa menjadikan seseorang beriman. Akan tetapi, Allah-lah yang berkuasa menjadikan manusia beriman. Sementara itu, barang siapa yang berpaling dengan mengingkari kebenaran petunjuk Nabi-Nya, niscaya Allah menghukumnya. Allah berfirman:\n\nDan jika Tuhanmu menghendaki, tentulah beriman semua orang di bumi seluruhnya. Tetapi apakah kamu (hendak) memaksa manusia agar mereka menjadi orang-orang yang beriman? (Yunus/10: 99)\n\nDan Allah berfirman:\n\n\nKami lebih mengetahui tentang apa yang mereka katakan, dan engkau (Muhammad) bukanlah seorang pemaksa terhadap mereka. Maka berilah peringatan dengan Al-Qur'an kepada siapa pun yang takut kepada ancaman-Ku. (Qaf/50: 45)\n\nBerkaitan dengan hal itu, para juru dakwah cukup menyampaikan pesan-pesan Al-Qur'an dan hadis Nabi sambil mengajak setiap manusia untuk beriman dan beramal saleh, serta masuk ke dalam agama Islam secara keseluruhan (kaffah). Penampilan dan metode dakwah perlu dengan cara yang baik dan tidak boleh bersikap memaksa, sebagaimana firman Allah:\n\nTidak ada paksaan dalam (menganut) agama (Islam), sesungguhnya telah jelas (perbedaan) antara jalan yang benar dengan jalan yang sesat. (al-Baqarah/2: 256)\n\nDan Allah berfirman:\n\n\nSerulah (manusia) kepada jalan Tuhanmu dengan hikmah dan pengajaran yang baik, dan berdebatlah dengan mereka dengan cara yang baik. Sesungguhnya Tuhanmu, Dialah yang lebih mengetahui siapa yang sesat dari jalan-Nya dan Dialah yang lebih mengetahui siapa yang mendapat petunjuk. (an-Nahl/16: 125)\n",
@@ -284,7 +285,7 @@
         },
         {
             "ind": "maka Allah akan mengazabnya dengan azab yang besar.",
-            "arb": "فَيُعَذِّبُهُ اللَّهُ الْعَذَابَ الْأَكْبَرَ",
+            "arb": "فَيُعَذِّبُهُ اللّٰهُ الْعَذَابَ الْاَكْبَرَۗ",
             "transliterasi": "Fa yu‘ażżibuhullāhul-‘ażābal-akbar(a).",
             "eng": "him will God cause to suffer the greatest suffering [in the life to come]:",
             "kemenag": "Dalam ayat-ayat ini, Allah menerangkan bahwa Nabi Muhammad tidak berkuasa menjadikan seseorang beriman. Akan tetapi, Allah-lah yang berkuasa menjadikan manusia beriman. Sementara itu, barang siapa yang berpaling dengan mengingkari kebenaran petunjuk Nabi-Nya, niscaya Allah menghukumnya. Allah berfirman:\n\nDan jika Tuhanmu menghendaki, tentulah beriman semua orang di bumi seluruhnya. Tetapi apakah kamu (hendak) memaksa manusia agar mereka menjadi orang-orang yang beriman? (Yunus/10: 99)\n\nDan Allah berfirman:\n\n\nKami lebih mengetahui tentang apa yang mereka katakan, dan engkau (Muhammad) bukanlah seorang pemaksa terhadap mereka. Maka berilah peringatan dengan Al-Qur'an kepada siapa pun yang takut kepada ancaman-Ku. (Qaf/50: 45)\n\nBerkaitan dengan hal itu, para juru dakwah cukup menyampaikan pesan-pesan Al-Qur'an dan hadis Nabi sambil mengajak setiap manusia untuk beriman dan beramal saleh, serta masuk ke dalam agama Islam secara keseluruhan (kaffah). Penampilan dan metode dakwah perlu dengan cara yang baik dan tidak boleh bersikap memaksa, sebagaimana firman Allah:\n\nTidak ada paksaan dalam (menganut) agama (Islam), sesungguhnya telah jelas (perbedaan) antara jalan yang benar dengan jalan yang sesat. (al-Baqarah/2: 256)\n\nDan Allah berfirman:\n\n\nSerulah (manusia) kepada jalan Tuhanmu dengan hikmah dan pengajaran yang baik, dan berdebatlah dengan mereka dengan cara yang baik. Sesungguhnya Tuhanmu, Dialah yang lebih mengetahui siapa yang sesat dari jalan-Nya dan Dialah yang lebih mengetahui siapa yang mendapat petunjuk. (an-Nahl/16: 125)\n",
@@ -296,7 +297,7 @@
         },
         {
             "ind": "Sesungguhnya kepada Kami-lah kembali mereka,",
-            "arb": "إِنَّ إِلَيْنَا إِيَابَهُمْ",
+            "arb": "اِنَّ اِلَيْنَآ اِيَابَهُمْ",
             "transliterasi": "Inna ilainā iyābahum.",
             "eng": "for behold, unto Us will be their return,",
             "kemenag": "Dalam ayat-ayat ini, Allah menerangkan bahwa mereka akan kembali kepada-Nya. Tidak ada jalan bagi mereka untuk lari daripada-Nya. Dialah yang akan menghisab mereka atas perbuatan yang telah mereka perbuat di dunia dan kemudian menjatuhkan hukuman-Nya. Ayat-ayat ini adalah penghibur hati bagi Nabi Muhammad dan sebagai obat bagi kesedihan dan kepedihan hatinya atas keingkaran orang-orang kafir itu.",
@@ -308,7 +309,7 @@
         },
         {
             "ind": "kemudian sesungguhnya kewajiban Kami-lah menghisab mereka.",
-            "arb": "ثُمَّ إِنَّ عَلَيْنَا حِسَابَهُم",
+            "arb": "ثُمَّ اِنَّ عَلَيْنَا حِسَابَهُمْ ࣖ",
             "transliterasi": "Ṡumma inna ‘alainā ḥisābahum.",
             "eng": "and verily, It is for Us to call them to account.",
             "kemenag": "Dalam ayat-ayat ini, Allah menerangkan bahwa mereka akan kembali kepada-Nya. Tidak ada jalan bagi mereka untuk lari daripada-Nya. Dialah yang akan menghisab mereka atas perbuatan yang telah mereka perbuat di dunia dan kemudian menjatuhkan hukuman-Nya. Ayat-ayat ini adalah penghibur hati bagi Nabi Muhammad dan sebagai obat bagi kesedihan dan kepedihan hatinya atas keingkaran orang-orang kafir itu.",

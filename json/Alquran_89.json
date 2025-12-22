@@ -1,14 +1,15 @@
 {
     "number": 89,
     "name": "Al-Fajr",
-    "englishName": "سُورَةُ الفَجۡرِ",
-    "englishNameTranslation": "Al-Fajr",
+    "ar": "سُورَةُ الفَجۡرِ",
+    "en": "Al-Fajr",
+    "id": "Fajar",
     "revelationType": "Meccan",
     "numberOfAyahs": 30,
     "ayahs": [
         {
             "ind": "Demi fajar,",
-            "arb": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ وَالْفَجْرِ",
+            "arb": "وَالْفَجْرِۙ",
             "transliterasi": "Wal-fajr(i).",
             "eng": "CONSIDER the daybreak",
             "kemenag": "Allah bersumpah dengan fajar. Fajar yang dimaksud adalah fajar yaumun-nahr (hari penyembelihan kurban), yaitu tanggal 10 Zulhijah, karena ayat berikutnya membicarakan \"malam yang sepuluh\", yaitu sepuluh hari pertama bulan itu. Akan tetapi, ada yang berpendapat bahwa fajar yang dimaksud adalah fajar setiap hari yang mulai menyingsing yang menandakan malam sudah berakhir dan siang sudah dimulai. Ada pula yang berpendapat bahwa fajar itu adalah fajar 1 Muharram sebagai awal tahun, atau fajar 1 Zulhijah sebagai bulan pelaksanaan ibadah haji.",
@@ -20,7 +21,7 @@
         },
         {
             "ind": "dan malam yang sepuluh,",
-            "arb": "وَلَيَالٍ عَشْرٍ",
+            "arb": "وَلَيَالٍ عَشْرٍۙ",
             "transliterasi": "Wa layālin ‘asyr(in).",
             "eng": "and the ten nights!",
             "kemenag": "Berikutnya Allah bersumpah dengan \"malam yang sepuluh\". Yang dimaksud adalah sepuluh hari pertama bulan Zulhijah, yang merupakan hari-hari yang sangat dimuliakan beramal pada hari-hari tersebut, sebagaimana diinformasikan hadis berikut:\nTidak ada hari apa pun berbuat baik lebih dicintai Allah padanya daripada hari-hari ini. (Riwayat al-Bukhari dari Ibnu 'Abbas)\n\nAkan tetapi, ada yang berpendapat bahwa yang dimaksud adalah sepuluh hari pertama bulan Muharram, atau sepuluh hari pertama bulan Ramadan, atau sepuluh hari pertama setiap bulan.\n",
@@ -32,7 +33,7 @@
         },
         {
             "ind": "dan yang genap dan yang ganjil,",
-            "arb": "وَالشَّفْعِ وَالْوَتْرِ",
+            "arb": "وَّالشَّفْعِ وَالْوَتْرِۙ",
             "transliterasi": "Wasy-syaf‘i wal-watr(i).",
             "eng": "Consider the multiple and the One!",
             "kemenag": "Berikutnya lagi Allah bersumpah dengan \"yang genap dan yang ganjil\". \"Yang genap adalah yaumun-nahr di atas, yaitu tanggal 10 Zulhijah, dan \"yang ganjil\" adalah hari 'Arafah, yaitu tanggal 9 Zulhijah. Itu adalah hari-hari yang dimuliakan juga. Tanggal 9 Zulhijah adalah hari wukuf di 'Arafah, yaitu hari dimulainya ibadah haji, dan tanggal 10 Zulhijah adalah hari mulai penyembelihan hewan kurban.",
@@ -44,7 +45,7 @@
         },
         {
             "ind": "dan malam bila berlalu.",
-            "arb": "وَاللَّيْلِ إِذَا يَسْرِ",
+            "arb": "وَالَّيْلِ اِذَا يَسْرِۚ",
             "transliterasi": "Wal-laili iżā yasr(i).",
             "eng": "Consider the night as it runs its course!",
             "kemenag": "Selanjutnya Allah bersumpah dengan \"malam ketika berlalu\". Malam yang dimaksud adalah malam ketika jamaah haji sudah berlalu dari 'Arafah dan singgah di Muzdalifah dalam perjalanan menuju Mina dalam pelaksanaan ibadah haji.\nDemikianlah Allah bersumpah dengan hari-hari dalam pelaksanaan ibadah haji untuk menunjukkan bahwa ibadah haji itu besar maknanya dalam pandangan Allah. Hal itu karena ibadah haji itu mengingatkan manusia tentang adanya kematian. Dengan ingat kematian, manusia diharapkan beriman dan berbuat baik.\nAyat ini juga bisa ditafsirkan bahwa Allah bersumpah dengan hari-hari yang terus silih berganti untuk menunjukkan bahwa Allah Mahakuasa memelihara dan mengelola alam. Bila sudah tiba waktunya, yaitu hari Kiamat, Ia Mahakuasa pula menghancurkannya dan menghidupkannya kembali\n",
@@ -56,7 +57,7 @@
         },
         {
             "ind": "Pada yang demikian itu terdapat sumpah (yang dapat diterima) oleh orang-orang yang berakal.",
-            "arb": "هَلْ فِي ذَٰلِكَ قَسَمٌ لِّذِي حِجْرٍ",
+            "arb": "هَلْ فِيْ ذٰلِكَ قَسَمٌ لِّذِيْ حِجْرٍۗ",
             "transliterasi": "Hal fī żālika qasamul liżī ḥijr(in).",
             "eng": "Considering all this - could there be, to anyone endowed with reason, a [more] solemn evidence of the truth?",
             "kemenag": "Pesan yang ingin disampaikan Allah dengan bersumpah di atas adalah bahwa orang yang mau menggunakan akalnya harusnya mengerti bahwa Allah Mahakuasa mengadakan, memelihara, menghancurkan, dan menghidupkan kembali alam ini. Oleh karena itu, mereka seharusnya beriman dan berbuat baik. \nAyat ini merupakan peringatan bagi kaum kafir Mekah pada saat ayat ini turun, agar beriman kepada Allah dan hari kemudian, berbuat baik, dan meninggalkan perbuatan jahat mereka. Juga menjadi peringatan bagi seluruh umat manusia\n",
@@ -68,7 +69,7 @@
         },
         {
             "ind": "Apakah kamu tidak memperhatikan bagaimana Tuhanmu berbuat terhadap kaum 'Aad?",
-            "arb": "أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِعَادٍ",
+            "arb": "اَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِعَادٍۖ",
             "transliterasi": "Alam tara kaifa fa‘ala rabbuka bi‘ād(in).",
             "eng": "ART THOU NOT aware of how thy Sustainer has dealt with [the tribe of] ‘Ad,",
             "kemenag": "Allah bertanya kepada Nabi Muhammad, yang maksudnya untuk memberitahukan kepada beliau atau siapa saja untuk direnungkan, tentang kaum 'Ad. Kaum ini adalah umat Nabi Hud yang mendiami daerah yang disebut Ahqaf di daerah Hadramaut, Yaman. 'Ad adalah nama nenek moyang mereka, 'Ad bin Iram bin Sam bin Nuh. Mereka diberi nama dengan nama nenek moyang mereka itu. Mereka terkenal sebagai bangsa yang kuat dan memiliki tubuh yang tinggi, besar, dan perkasa. Bukti keperkasaan mereka adalah bahwa mereka telah mampu membangun kota yang disebut Iram dengan gedung-gedung yang kokoh, tinggi, dan megah untuk ukuran pada masa itu. Mereka juga menguasai bangsa-bangsa sekitarnya. Walaupun demikian perkasa dan memiliki peradaban yang tinggi, Allah tetap mampu menghancurkan mereka sehingga hanya tinggal nama. Semua itu akibat pembangkangan mereka kepada Allah dan kesewenang-wenangan mereka kepada manusia.",
@@ -80,7 +81,7 @@
         },
         {
             "ind": "(yaitu) penduduk Iram yang mempunyai bangunan-bangunan yang tinggi,",
-            "arb": "إِرَمَ ذَاتِ الْعِمَادِ",
+            "arb": "اِرَمَ ذَاتِ الْعِمَادِۖ",
             "transliterasi": "Irama żātil-‘imād(i).",
             "eng": "[the people of] Iram the many-pillared,",
             "kemenag": "Allah bertanya kepada Nabi Muhammad, yang maksudnya untuk memberitahukan kepada beliau atau siapa saja untuk direnungkan, tentang kaum 'Ad. Kaum ini adalah umat Nabi Hud yang mendiami daerah yang disebut Ahqaf di daerah Hadramaut, Yaman. 'Ad adalah nama nenek moyang mereka, 'Ad bin Iram bin Sam bin Nuh. Mereka diberi nama dengan nama nenek moyang mereka itu. Mereka terkenal sebagai bangsa yang kuat dan memiliki tubuh yang tinggi, besar, dan perkasa. Bukti keperkasaan mereka adalah bahwa mereka telah mampu membangun kota yang disebut Iram dengan gedung-gedung yang kokoh, tinggi, dan megah untuk ukuran pada masa itu. Mereka juga menguasai bangsa-bangsa sekitarnya. Walaupun demikian perkasa dan memiliki peradaban yang tinggi, Allah tetap mampu menghancurkan mereka sehingga hanya tinggal nama. Semua itu akibat pembangkangan mereka kepada Allah dan kesewenang-wenangan mereka kepada manusia.",
@@ -92,7 +93,7 @@
         },
         {
             "ind": "yang belum pernah dibangun (suatu kota) seperti itu, di negeri-negeri lain,",
-            "arb": "الَّتِي لَمْ يُخْلَقْ مِثْلُهَا فِي الْبِلَادِ",
+            "arb": "الَّتِيْ لَمْ يُخْلَقْ مِثْلُهَا فِى الْبِلَادِۖ",
             "transliterasi": "Allatī lam yukhlaq miṡluhā fil-bilād(i).",
             "eng": "the like of whom has never been reared in all the land? –",
             "kemenag": "Allah bertanya kepada Nabi Muhammad, yang maksudnya untuk memberitahukan kepada beliau atau siapa saja untuk direnungkan, tentang kaum 'Ad. Kaum ini adalah umat Nabi Hud yang mendiami daerah yang disebut Ahqaf di daerah Hadramaut, Yaman. 'Ad adalah nama nenek moyang mereka, 'Ad bin Iram bin Sam bin Nuh. Mereka diberi nama dengan nama nenek moyang mereka itu. Mereka terkenal sebagai bangsa yang kuat dan memiliki tubuh yang tinggi, besar, dan perkasa. Bukti keperkasaan mereka adalah bahwa mereka telah mampu membangun kota yang disebut Iram dengan gedung-gedung yang kokoh, tinggi, dan megah untuk ukuran pada masa itu. Mereka juga menguasai bangsa-bangsa sekitarnya. Walaupun demikian perkasa dan memiliki peradaban yang tinggi, Allah tetap mampu menghancurkan mereka sehingga hanya tinggal nama. Semua itu akibat pembangkangan mereka kepada Allah dan kesewenang-wenangan mereka kepada manusia.",
@@ -104,7 +105,7 @@
         },
         {
             "ind": "dan kaum Tsamud yang memotong batu-batu besar di lembah,",
-            "arb": "وَثَمُودَ الَّذِينَ جَابُوا الصَّخْرَ بِالْوَادِ",
+            "arb": "وَثَمُوْدَ الَّذِيْنَ جَابُوا الصَّخْرَ بِالْوَادِۖ",
             "transliterasi": "Wa ṡamūdal-lażīna jābuṣ-ṣakhra bil-wād(i).",
             "eng": "and with [the tribe of] Thamud, who hollowed out rocks in the valley? –",
             "kemenag": "Begitu juga Allah telah menghancurleburkan kaum Samud, umat Nabi Saleh. Bangsa ini juga telah memiliki peradaban yang tinggi, yang ditunjukkan oleh kemampuan mereka membangun gedung-gedung megah di tempat-tempat datar dan memotong, memahat batu-batu di pegunungan untuk dibuat tempat-tempat peristirahatan, serta membuat relief-relief dan perhiasan-perhiasan dari batu atau marmer. Keahlian mereka itu diceritakan dalam ayat lain:\n\nDan kamu pahat dengan terampil sebagian gunung-gunung untuk dijadikan rumah-rumah. (asy-Syu'ara'/26: 149)\n\nWalaupun mereka sudah begitu maju, kuat, dan memiliki peradaban yang tinggi, Allah tetap kuasa menghancurkan mereka karena pembangkangan mereka.\n",
@@ -116,7 +117,7 @@
         },
         {
             "ind": "dan kaum Fir'aun yang mempunyai pasak-pasak (tentara yang banyak),",
-            "arb": "وَفِرْعَوْنَ ذِي الْأَوْتَادِ",
+            "arb": "وَفِرْعَوْنَ ذِى الْاَوْتَادِۖ",
             "transliterasi": "Wa fir‘auna żil-autād(i).",
             "eng": "and with Pharaoh of the [many] tent-poles?",
             "kemenag": "Allah juga telah menghancurkan Fir'aun. Ia terkenal sebagai raja yang zalim bahkan memandang dirinya tuhan bangsa Mesir. Bangsa ini di bawah Fir'aun juga telah mencapai peradaban yang tinggi, di antara buktinya adalah kemampuan mereka membangun piramid-piramid yang merupakan salah satu keajaiban dunia sampai sekarang. Mereka juga telah memiliki angkatan bersenjata yang besar. Akan tetapi, semuanya itu juga sudah dihancurleburkan Allah sehingga sekarang mereka hanya tinggal nama untuk dikenang.",
@@ -128,7 +129,7 @@
         },
         {
             "ind": "yang berbuat sewenang-wenang dalam negeri,",
-            "arb": "الَّذِينَ طَغَوْا فِي الْبِلَادِ",
+            "arb": "الَّذِيْنَ طَغَوْا فِى الْبِلَادِۖ",
             "transliterasi": "Allażīna ṭagau fil-bilād(i).",
             "eng": "[It was they] who transgressed all bounds of equity all over their lands,",
             "kemenag": "Semua bangsa yang telah disebutkan di atas, yaitu kaum 'Ad, Samud, dan Fir'aun telah melakukan kesewenang-wenangan di bumi ini, yaitu mempertuhankan manusia atau benda dan memperkosa hak-hak asasi manusia.",
@@ -140,7 +141,7 @@
         },
         {
             "ind": "lalu mereka berbuat banyak kerusakan dalam negeri itu,",
-            "arb": "فَأَكْثَرُوا فِيهَا الْفَسَادَ",
+            "arb": "فَاَكْثَرُوْا فِيْهَا الْفَسَادَۖ",
             "transliterasi": "Fa akṡarū fīhal-fasād(a).",
             "eng": "and brought about great corruption therein:",
             "kemenag": "Di samping itu, mereka telah melakukan kerusakan di muka bumi, seperti menindas kaum yang lemah bahkan membunuh siapa saja yang mereka kehendaki.",
@@ -152,7 +153,7 @@
         },
         {
             "ind": "karena itu Tuhanmu menimpakan kepada mereka cemeti azab,",
-            "arb": "فَصَبَّ عَلَيْهِمْ رَبُّكَ سَوْطَ عَذَابٍ",
+            "arb": "فَصَبَّ عَلَيْهِمْ رَبُّكَ سَوْطَ عَذَابٍۖ",
             "transliterasi": "Fa ṣabba ‘alaihim rabbuka sauṭa ‘ażāb(in).",
             "eng": "and therefore thy Sustainer let loose upon them a scourge of suffering:",
             "kemenag": "Akhirnya Allah \"menumpahkan kepada mereka cemeti azab\", yang berarti bahwa azab itu dicurahkan seluruhnya kepada mereka sehebat-hebatnya, sehingga mereka hancur lebur tak bersisa dan yang tertinggal hanyalah nama untuk diingat orang. Yang menimpakan azab itu adalah \"Tuhanmu\" (ya, Muhammad!), yang berarti bahwa peristiwa-peristiwa itu hendaknya menjadi pelajaran bagi kaum kafir Mekah agar mereka tidak terus-menerus membangkang.\nBagaimana azab yang ditimpakan kepada bangsa-bangsa itu dinyatakan dalam ayat-ayat lain:\n\nMaka adapun kaum Samud, mereka telah dibinasakan dengan suara yang sangat keras, sedangkan kaum 'Ad, mereka telah dibinasakan dengan angin topan yang sangat dingin, Allah menimpakan angin itu kepada mereka selama tujuh malam delapan hari terus-menerus; maka kamu melihat kaum 'Ad pada waktu itu mati bergelimpangan seperti batang-batang pohon kurma yang telah kosong (lapuk). Maka adakah kamu melihat seorang pun yang masih tersisa di antara mereka? Kemudian datang Fir'aun dan orang-orang yang sebelumnya dan (penduduk) negeri-negeri yang dijungkirbalikkan karena kesalahan yang besar. Maka mereka mendurhakai utusan Tuhannya, Allah menyiksa mereka dengan siksaan yang sangat keras. (al-haqqah/69: 5-10)\n",
@@ -164,7 +165,7 @@
         },
         {
             "ind": "sesungguhnya Tuhanmu benar-benar mengawasi.",
-            "arb": "إِنَّ رَبَّكَ لَبِالْمِرْصَادِ",
+            "arb": "اِنَّ رَبَّكَ لَبِالْمِرْصَادِۗ",
             "transliterasi": "Inna rabbaka labil-mirṣād(i).",
             "eng": "for, verily, thy Sustainer is ever on the watch!",
             "kemenag": "Allah menegaskan bahwa Ia sungguh amat kuat pengawasan-Nya terhadap makhluk-Nya. Tidak ada perbuatan sekecil apa pun yang tidak diketahui-Nya. Oleh karena itu, yang membangkang dan bergelimang dosa seharusnya sadar dan kemudian beriman dan tobat dari dosa-dosanya.",
@@ -176,7 +177,7 @@
         },
         {
             "ind": "Adapun manusia apabila Tuhannya mengujinya lalu dia dimuliakan-Nya dan diberi-Nya kesenangan, maka dia akan berkata: \"Tuhanku telah memuliakanku\".",
-            "arb": "فَأَمَّا الْإِنسَانُ إِذَا مَا ابْتَلَاهُ رَبُّهُ فَأَكْرَمَهُ وَنَعَّمَهُ فَيَقُولُ رَبِّي أَكْرَمَنِ",
+            "arb": "فَاَمَّا الْاِنْسَانُ اِذَا مَا ابْتَلٰىهُ رَبُّهٗ فَاَكْرَمَهٗ وَنَعَّمَهٗۙ فَيَقُوْلُ رَبِّيْٓ اَكْرَمَنِۗ",
             "transliterasi": "Fa ammal-insānu iżā mabtalāhu rabbuhū fa akramahū wa na‘‘amah(ū), fa yaqūlu rabbī akraman(i).",
             "eng": "BUT AS FOR man, whenever his Sustainer tries him by His generosity and by letting him enjoy a life of ease, he says, \"My Sustainer has been [justly] generous towards me\";",
             "kemenag": "Ayat ini menyatakan bahwa Allah menguji manusia dengan kemuliaan dan berbagai nikmat-Nya, seperti kekuasaan dan kekayaan. Orang yang kafir dan durhaka akan memandang hal itu sebagai tanda bahwa Allah menyayangi mereka.",
@@ -188,7 +189,7 @@
         },
         {
             "ind": "Adapun bila Tuhannya mengujinya lalu membatasi rezekinya maka dia berkata: \"Tuhanku menghinakanku\".",
-            "arb": "وَأَمَّا إِذَا مَا ابْتَلَاهُ فَقَدَرَ عَلَيْهِ رِزْقَهُ فَيَقُولُ رَبِّي أَهَانَنِ",
+            "arb": "وَاَمَّآ اِذَا مَا ابْتَلٰىهُ فَقَدَرَ عَلَيْهِ رِزْقَهٗ ەۙ فَيَقُوْلُ رَبِّيْٓ اَهَانَنِۚ",
             "transliterasi": "Wa ammā iżā mabtalāhu fa qadara ‘alaihi rizqah(ū), fa yaqūlu rabbī ahānan(i).",
             "eng": "whereas, whenever He tries him by straitening his means of livelihood, he says, \"My Sustainer has disgraced me!\"",
             "kemenag": "Sebaliknya, bila Allah menguji mereka dengan cara membatasi rezeki, mereka menyangka bahwa Allah telah membenci mereka. Pandangan itu tidak benar, karena Allah memberi siapa yang disukai-Nya atau tidak memberi siapa yang tidak disukai-Nya. Allah ingin menguji manusia, dan karena itu Ia menghendaki agar manusia itu selalu patuh kepada-Nya, baik dalam keadaan berkecukupan maupun kekurangan. Bila Allah memberi, maka manusia yang diberi harus bersyukur, dan bila Ia tidak memberi, manusia harus bersabar.",
@@ -200,7 +201,7 @@
         },
         {
             "ind": "Sekali-kali tidak (demikian), sebenarnya kamu tidak memuliakan anak yatim,",
-            "arb": "كَلَّا ۖ بَل لَّا تُكْرِمُونَ الْيَتِيمَ",
+            "arb": "كَلَّا بَلْ لَّا تُكْرِمُوْنَ الْيَتِيْمَۙ",
             "transliterasi": "Kallā bal lā tukrimūnal-yatīm(a).",
             "eng": "But nay, nay, [O men, consider all that you do and fail to do:] you are not generous towards the orphan,",
             "kemenag": "Akan tetapi banyak manusia yang ingkar, mereka tidak mensyukuri nikmat yang diberikan kepadanya. Bersyukur adalah mengucapkan kata-kata syukur dan menggunakan nikmat itu sesuai dengan ketentuan Yang Memberinya. Salah satu ketentuan-Nya adalah bahwa orang yang diberi kelebihan rezeki harus memperhatikan mereka yang berkekurangan. Di antara mereka adalah anak-anak yatim. Anak yatim perlu diasuh sampai mereka dewasa. Manusia yang ingkar dan tak mau bersyukur tidak mau memperhatikan pengasuhan anak-anak yatim itu.",
@@ -212,7 +213,7 @@
         },
         {
             "ind": "dan kamu tidak saling mengajak memberi makan orang miskin,",
-            "arb": "وَلَا تَحَاضُّونَ عَلَىٰ طَعَامِ الْمِسْكِينِ",
+            "arb": "وَلَا تَحٰۤضُّوْنَ عَلٰى طَعَامِ الْمِسْكِيْنِۙ",
             "transliterasi": "Wa lā taḥāḍḍūna ‘alā ṭa‘āmil-miskīn(i).",
             "eng": "and you do not urge one another to feed the needy,",
             "kemenag": "Di samping itu, mereka tidak menaruh kasihan pada penderitaan orang miskin. Jangankan untuk melepaskan mereka dari kemiskinan, membantu mencukupkan kebutuhan pokok mereka saja mereka tidak ada perhatian.",
@@ -224,7 +225,7 @@
         },
         {
             "ind": "dan kamu memakan harta pusaka dengan cara mencampur baurkan (yang halal dan yang bathil),",
-            "arb": "وَتَأْكُلُونَ التُّرَاثَ أَكْلًا لَّمًّا",
+            "arb": "وَتَأْكُلُوْنَ التُّرَاثَ اَكْلًا لَّمًّاۙ",
             "transliterasi": "Wa ta'kulūnat-turāṡa aklal lammā(n).",
             "eng": "and you devour the inheritance [of others] with devouring greed,",
             "kemenag": "Tambahan lagi manusia yang ingkar dan durhaka itu sangat tamak. Mereka tega merampas harta warisan yang menjadi hak anak yatim secara akal-akalan, misalnya mencampurkannya ke dalam kekayaan mereka lalu menyatakan bahwa yang mereka makan adalah harta mereka sendiri.",
@@ -236,7 +237,7 @@
         },
         {
             "ind": "dan kamu mencintai harta benda dengan kecintaan yang berlebihan.",
-            "arb": "وَتُحِبُّونَ الْمَالَ حُبًّا جَمًّا",
+            "arb": "وَّتُحِبُّوْنَ الْمَالَ حُبًّا جَمًّاۗ",
             "transliterasi": "Wa tuḥibbūnal-māla ḥubban jammā(n).",
             "eng": "and you love wealth with boundless love!",
             "kemenag": "Orang yang durhaka itu terus mencari dan mengumpulkan kekayaan tanpa mengenal rasa lelah dan tidak peduli halal atau haram. Di samping itu, mereka sangat pelit, tidak mau mengeluarkan kewajiban berkenaan harta, yaitu membayar zakat dan membantu orang yang berkekurangan.\nAllah tidak mungkin sayang kepada orang kaya raya yang memperoleh kekayaan itu dengan cara yang tidak benar. Juga kepada orang yang tidak mau membantu orang lain. Mereka jangan mengira bahwa mereka memperoleh kekayaan itu sebagai tanda bahwa Allah menyayangi mereka. Sebaliknya, Allah sesungguhnya membenci mereka. Tidak mustahil mereka akan dijatuhi azab seperti yang telah ditimpakan-Nya kepada umat-umat terdahulu itu. Di akhirat nanti, Allah akan memasukkan mereka ke dalam neraka. Hakikat ini hendaknya disadari oleh kaum kafir Mekah yang masih juga membangkang. Hal itu hendaknya dijadikan pelajaran oleh seluruh umat manusia.\n",
@@ -248,7 +249,7 @@
         },
         {
             "ind": "Jangan (berbuat demikian). Apabila bumi digoncangkan berturut-turut,",
-            "arb": "كَلَّا إِذَا دُكَّتِ الْأَرْضُ دَكًّا دَكًّا",
+            "arb": "كَلَّآ اِذَا دُكَّتِ الْاَرْضُ دَكًّا دَكًّاۙ",
             "transliterasi": "Kallā iżā dukkatil-arḍu dakkan dakkā(n).",
             "eng": "Nay, but [how will you fare on Judgment Day,] when the earth is crushed with crushing upon crushing,",
             "kemenag": "Dalam ayat ini, Allah memberitahukan bahwa orang-orang kafir itu nanti di akhirat akan menyesal. Allah memberitahukan bahwa dunia ini akan hancur karena planet-planet ini akan bertubrukan satu sama lain dengan dahsyatnya dan semua makhluk akan mati. Setelah itu Allah menghidupkan semua makhluk itu kembali dan menghadapkan mereka di Padang Mahsyar. Kemudian Allah dan para malaikat yang membuat formasi-formasi khusus memeriksa setiap amal manusia. Waktu itulah neraka Jahanam dihadapkan kepada orang-orang yang durhaka ketika di dunia. Waktu itu mereka yang durhaka sadar atas kedurhakaannya. Akan tetapi, sadar pada waktu itu tidak ada gunanya, karena \"nasi sudah jadi bubur\", dunia tempat beramal sudah berakhir, dan yang ada hanyalah tempat melihat hasil amal di dunia.",
@@ -260,7 +261,7 @@
         },
         {
             "ind": "dan datanglah Tuhanmu; sedang malaikat berbaris-baris.",
-            "arb": "وَجَاءَ رَبُّكَ وَالْمَلَكُ صَفًّا صَفًّا",
+            "arb": "وَّجَاۤءَ رَبُّكَ وَالْمَلَكُ صَفًّا صَفًّاۚ",
             "transliterasi": "Wa jā'a rabbuka wal-malaku ṣaffan ṣaffā(n).",
             "eng": "and [the majesty of] thy Sustainer stands revealed, as well as [the true nature of] the angels; rank upon rank?",
             "kemenag": "Dalam ayat ini, Allah memberitahukan bahwa orang-orang kafir itu nanti di akhirat akan menyesal. Allah memberitahukan bahwa dunia ini akan hancur karena planet-planet ini akan bertubrukan satu sama lain dengan dahsyatnya dan semua makhluk akan mati. Setelah itu Allah menghidupkan semua makhluk itu kembali dan menghadapkan mereka di Padang Mahsyar. Kemudian Allah dan para malaikat yang membuat formasi-formasi khusus memeriksa setiap amal manusia. Waktu itulah neraka Jahanam dihadapkan kepada orang-orang yang durhaka ketika di dunia. Waktu itu mereka yang durhaka sadar atas kedurhakaannya. Akan tetapi, sadar pada waktu itu tidak ada gunanya, karena \"nasi sudah jadi bubur\", dunia tempat beramal sudah berakhir, dan yang ada hanyalah tempat melihat hasil amal di dunia.",
@@ -272,7 +273,7 @@
         },
         {
             "ind": "Dan pada hari itu diperlihatkan neraka Jahannam; dan pada hari itu ingatlah manusia, akan tetapi tidak berguna lagi mengingat itu baginya.",
-            "arb": "وَجِيءَ يَوْمَئِذٍ بِجَهَنَّمَ ۚ يَوْمَئِذٍ يَتَذَكَّرُ الْإِنسَانُ وَأَنَّىٰ لَهُ الذِّكْرَىٰ",
+            "arb": "وَجِايْۤءَ يَوْمَىِٕذٍۢ بِجَهَنَّمَۙ يَوْمَىِٕذٍ يَّتَذَكَّرُ الْاِنْسَانُ وَاَنّٰى لَهُ الذِّكْرٰىۗ",
             "transliterasi": "Wa jī'a yauma'iżim bijahannam(a), yauma'iżiy yatażakkarul-insānu wa annā lahuż-żikrā.",
             "eng": "And on that Day hell will be brought [within sight]; on that Day man will remember [all that he did and failed to do]: but what will that remembrance avail him?",
             "kemenag": "Dalam ayat ini, Allah memberitahukan bahwa orang-orang kafir itu nanti di akhirat akan menyesal. Allah memberitahukan bahwa dunia ini akan hancur karena planet-planet ini akan bertubrukan satu sama lain dengan dahsyatnya dan semua makhluk akan mati. Setelah itu Allah menghidupkan semua makhluk itu kembali dan menghadapkan mereka di Padang Mahsyar. Kemudian Allah dan para malaikat yang membuat formasi-formasi khusus memeriksa setiap amal manusia. Waktu itulah neraka Jahanam dihadapkan kepada orang-orang yang durhaka ketika di dunia. Waktu itu mereka yang durhaka sadar atas kedurhakaannya. Akan tetapi, sadar pada waktu itu tidak ada gunanya, karena \"nasi sudah jadi bubur\", dunia tempat beramal sudah berakhir, dan yang ada hanyalah tempat melihat hasil amal di dunia.",
@@ -284,7 +285,7 @@
         },
         {
             "ind": "Dia mengatakan: \"Alangkah baiknya kiranya aku dahulu mengerjakan (amal saleh) untuk hidupku ini\".",
-            "arb": "يَقُولُ يَا لَيْتَنِي قَدَّمْتُ لِحَيَاتِي",
+            "arb": "يَقُوْلُ يٰلَيْتَنِيْ قَدَّمْتُ لِحَيَاتِيْۚ",
             "transliterasi": "Yaqūlu yā laitanī qaddamtu liḥayātī.",
             "eng": "He will say, \"Oh, would that I had. provided beforehand for my life [to come]!\"",
             "kemenag": "Ketika itu orang-orang yang durhaka menyesali diri mereka mengapa dulu di dunia tidak melakukan sesuatu yang berguna untuk kehidupannya di akhirat.",
@@ -296,7 +297,7 @@
         },
         {
             "ind": "Maka pada hari itu tiada seorangpun yang menyiksa seperti siksa-Nya.",
-            "arb": "فَيَوْمَئِذٍ لَّا يُعَذِّبُ عَذَابَهُ أَحَدٌ",
+            "arb": "فَيَوْمَىِٕذٍ لَّا يُعَذِّبُ عَذَابَهٗٓ اَحَدٌ ۙ",
             "transliterasi": "Fa yauma'iżil lā yu‘ażżibu ‘ażābahū aḥad(un).",
             "eng": "For, none can make suffer as He will make suffer [the sinners] on that Day,",
             "kemenag": "Di akhirat, yang ada hanya azab bagi orang yang durhaka. Azab itu tiada tara sehingga tidak ada bandingannya. Azab itu dijatuhkan sesuai dengan dosa-dosa mereka pada waktu di dunia.",
@@ -308,7 +309,7 @@
         },
         {
             "ind": "dan tiada seorangpun yang mengikat seperti ikatan-Nya.",
-            "arb": "وَلَا يُوثِقُ وَثَاقَهُ أَحَدٌ",
+            "arb": "وَّلَا يُوْثِقُ وَثَاقَهٗٓ اَحَدٌ ۗ",
             "transliterasi": "Wa lā yūṡiqu waṡāqahū aḥad(un).",
             "eng": "and none can bind with bonds like His.",
             "kemenag": "Pada waktu itu tidak ada yang lebih dipercaya dalam melaksanakan tugasnya selain Malaikat Zabaniyah. Malaikat itu akan melaksanakan tugasnya persis sebagaimana yang diperintahkan Allah, yaitu bahwa orang-orang yang durhaka itu akan diazab di dalam neraka Jahanam sesuai dengan dosa-dosa mereka. Dengan demikian, terbuktilah bahwa kelimpahan nikmat yang mereka terima pada waktu di dunia itu bukanlah tanda bahwa Allah cinta kepada mereka.",
@@ -320,7 +321,7 @@
         },
         {
             "ind": "Hai jiwa yang tenang.",
-            "arb": "يَا أَيَّتُهَا النَّفْسُ الْمُطْمَئِنَّةُ",
+            "arb": "يٰٓاَيَّتُهَا النَّفْسُ الْمُطْمَىِٕنَّةُۙ",
             "transliterasi": "Yā ayyatuhan-nafsul-muṭma'innah(tu).",
             "eng": "[But unto the righteous God will say,] \"O thou human being that hast attained to inner peace!",
             "kemenag": "Dalam ayat-ayat ini, Allah memanggil jiwa yang tenang dan damai ketika diwafatkan, yaitu jiwa yang suci karena iman dan amal saleh yang dikerjakannya, sehingga memperoleh apa yang dijanjikan Allah kepadanya. Jiwa itu diminta Allah untuk pulang memenuhi panggilan-Nya dengan menghadap kepada-Nya kembali dengan perasaan puas dan senang karena telah memenuhi perintah-perintah-Nya waktu hidup di dunia. Allah juga puas dan senang kepadanya karena sudah menjalankan perintah-perintah-Nya. Setelah datang kepada-Nya, jiwa itu dipersilakan Allah masuk ke dalam kelompok hamba-hamba-Nya, yaitu ke dalam surga-Nya.",
@@ -332,7 +333,7 @@
         },
         {
             "ind": "Kembalilah kepada Tuhanmu dengan hati yang puas lagi diridhai-Nya.",
-            "arb": "ارْجِعِي إِلَىٰ رَبِّكِ رَاضِيَةً مَّرْضِيَّةً",
+            "arb": "ارْجِعِيْٓ اِلٰى رَبِّكِ رَاضِيَةً مَّرْضِيَّةً ۚ",
             "transliterasi": "Irji‘ī ilā rabbiki rāḍiyatam marḍiyyah(tan).",
             "eng": "Return thou unto thy Sustainer, well-pleased [and] pleasing [Him]:",
             "kemenag": "Dalam ayat-ayat ini, Allah memanggil jiwa yang tenang dan damai ketika diwafatkan, yaitu jiwa yang suci karena iman dan amal saleh yang dikerjakannya, sehingga memperoleh apa yang dijanjikan Allah kepadanya. Jiwa itu diminta Allah untuk pulang memenuhi panggilan-Nya dengan menghadap kepada-Nya kembali dengan perasaan puas dan senang karena telah memenuhi perintah-perintah-Nya waktu hidup di dunia. Allah juga puas dan senang kepadanya karena sudah menjalankan perintah-perintah-Nya. Setelah datang kepada-Nya, jiwa itu dipersilakan Allah masuk ke dalam kelompok hamba-hamba-Nya, yaitu ke dalam surga-Nya.",
@@ -344,7 +345,7 @@
         },
         {
             "ind": "Maka masuklah ke dalam jama'ah hamba-hamba-Ku,",
-            "arb": "فَادْخُلِي فِي عِبَادِي",
+            "arb": "فَادْخُلِيْ فِيْ عِبٰدِيْۙ",
             "transliterasi": "Fadkhuli fī ‘ibādī.",
             "eng": "enter, then, together with My [other true] servants –",
             "kemenag": "Dalam ayat-ayat ini, Allah memanggil jiwa yang tenang dan damai ketika diwafatkan, yaitu jiwa yang suci karena iman dan amal saleh yang dikerjakannya, sehingga memperoleh apa yang dijanjikan Allah kepadanya. Jiwa itu diminta Allah untuk pulang memenuhi panggilan-Nya dengan menghadap kepada-Nya kembali dengan perasaan puas dan senang karena telah memenuhi perintah-perintah-Nya waktu hidup di dunia. Allah juga puas dan senang kepadanya karena sudah menjalankan perintah-perintah-Nya. Setelah datang kepada-Nya, jiwa itu dipersilakan Allah masuk ke dalam kelompok hamba-hamba-Nya, yaitu ke dalam surga-Nya.",
@@ -356,7 +357,7 @@
         },
         {
             "ind": "masuklah ke dalam surga-Ku.",
-            "arb": "وَادْخُلِي جَنَّتِي",
+            "arb": "وَادْخُلِيْ جَنَّتِيْ ࣖࣖ",
             "transliterasi": "Wadkhulī jannatī.",
             "eng": "yea, enter thou My paradise!\"",
             "kemenag": "Dalam ayat-ayat ini, Allah memanggil jiwa yang tenang dan damai ketika diwafatkan, yaitu jiwa yang suci karena iman dan amal saleh yang dikerjakannya, sehingga memperoleh apa yang dijanjikan Allah kepadanya. Jiwa itu diminta Allah untuk pulang memenuhi panggilan-Nya dengan menghadap kepada-Nya kembali dengan perasaan puas dan senang karena telah memenuhi perintah-perintah-Nya waktu hidup di dunia. Allah juga puas dan senang kepadanya karena sudah menjalankan perintah-perintah-Nya. Setelah datang kepada-Nya, jiwa itu dipersilakan Allah masuk ke dalam kelompok hamba-hamba-Nya, yaitu ke dalam surga-Nya.",

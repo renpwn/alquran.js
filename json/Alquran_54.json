@@ -1,14 +1,15 @@
 {
     "number": 54,
     "name": "Al-Qamar",
-    "englishName": "سُورَةُ القَمَرِ",
-    "englishNameTranslation": "Al-Qamar",
+    "ar": "سُورَةُ القَمَرِ",
+    "en": "Al-Qamar",
+    "id": "Bulan",
     "revelationType": "Meccan",
     "numberOfAyahs": 55,
     "ayahs": [
         {
             "ind": "Telah dekat datangnya saat itu dan telah terbelah bulan.",
-            "arb": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ اقْتَرَبَتِ السَّاعَةُ وَانشَقَّ الْقَمَرُ",
+            "arb": "اِقْتَرَبَتِ السَّاعَةُ وَانْشَقَّ الْقَمَرُ",
             "transliterasi": "Iqtarabatis-sā‘atu wansyaqqal-qamar(u).",
             "eng": "THE LAST HOUR draws near, and the moon is split asunder!",
             "kemenag": "Allah menyatakan bahwa hari Kiamat hampir datang, pada waktu kehidupan dunia akan berakhir. Dalam ayat lain yang bersamaan maksudnya Allah berfirman: \nKetetapan Allah pasti datang, maka janganlah kamu meminta agar dipercepat (datang)nya. (an-Nahl/16: 1) \nAllah berfirman: \nTelah semakin dekat kepada manusia perhitungan amal mereka, sedang mereka dalam keadaan lalai (dengan dunia), berpaling (dari akhirat). (al-Anbiya'/21: 1) \nPada waktu itu bulan akan pecah bercerai-berai akibat penyimpangan dari peredarannya, sebagaimana diutarakan dalam ayat-ayat yang lain yang bersamaan maksudnya: \nApabila langit terbelah. (al-Insyiqaq/84: 1) \nDan firman-Nya: \nApabila matahari digulung, dan apabila bintang-bintang berjatuhan. (at-Takwir/81: 1-2) \nBanyak lagi ayat lain yang menunjukkan kejadian yang sangat dahsyat yang akan terjadi ketika hancurnya alam ini dengan tibanya hari Kiamat. Kebanyakan mufasir berpendapat bahwa kejadian tersebut pada ayat pertama telah terjadi dan bulan telah terbelah dua pada masa Nabi Muhammad saw, lima tahun sebelum beliau hijrah. Menurut hadis yang diriwayatkan al-Bukhari, Muslim dan Ibnu Jarir dari Anas bin Malik bahwa penduduk Mekah meminta kepada Nabi Muhammad saw, agar mengemukakan suatu mukjizat sebagai bukti kerasulannya, maka Allah memperlihatkan kepada mereka bulan terbelah dua, sehingga mereka melihat \"Jabal Nur\" berada di antara dua belahan bulan tersebut. Diriwayatkan pula dari Sahih alBukhari, Muslim dan para perawi-perawi hadis lainnya dari Ibnu Mas'ud bahwa: \"Bulan telah terbelah pada masa Nabi Muhammad saw, menjadi dua belah, sebelah berada di atas bukit dan yang lain berada di bawahnya, seraya Nabi Muhammad saw berseru, \"Saksikanlah!\" Abu Dawud meriwayatkan pula bahwa, \"Telah terjadi pembelahan bulan pada masa Nabi Muhammad saw, maka orang-orang Quraisy berkata, \"Ini adalah sihir anak Abu Kabsyah.\" Lalu seorang dari mereka berkata, \"Tunggulah dahulu berita yang dibawa oleh para musafir yang tiba, karena Muhammad saw tak sanggup mensihirkan semua manusia.\" Lalu tibalah para musafir membawa berita kejadian tersebut. Lalu dalam riwayat al-Baihaqi terdapat tambahan, \"Lalu mereka bertanya kepada para musafir yang berdatangan dari semua penjuru, jawaban mereka, \"Sungguh kami telah melihatnya,\" lalu Allah menurunkan ayat ini, \"Telah dekat (datangnya) saat itu dan telah terbelah bulan.\" Para ahli tafsir berbeda pendapat tentang terbelahnya bulan. Sebagian berpendapat bahwa bulan itu memang telah terbelah pada masa Nabi sebagai bagian dari mukjizatnya. Tetapi sebagian mufasir berpendapat bulan pasti terbelah bukan terjadi pada masa nabi, tetapi akan terjadi nanti pada saat hari Kiamat. Hal ini disebabkan karena hilangnya keseimbangan daya tarik menarik antar planet. (",
@@ -20,7 +21,7 @@
         },
         {
             "ind": "Dan jika mereka (orang-orang musyrikin) melihat suatu tanda (mukjizat), mereka berpaling dan berkata: \"(Ini adalah) sihir yang terus menerus\".",
-            "arb": "وَإِن يَرَوْا آيَةً يُعْرِضُوا وَيَقُولُوا سِحْرٌ مُّسْتَمِرٌّ",
+            "arb": "وَاِنْ يَّرَوْا اٰيَةً يُّعْرِضُوْا وَيَقُوْلُوْا سِحْرٌ مُّسْتَمِرٌّ",
             "transliterasi": "Wa iy yarau āyatay yu‘riḍū wa yaqūlū siḥrum mustamirr(un).",
             "eng": "But if they [who reject all thought of the Last Hour] were to see a sign [of its approach], they would turn aside and say, “An ever-recurring delusion!” –",
             "kemenag": "Kaum musyrik melihat suatu bukti tentang kebenaran kerasulan Muhammad, maka mereka berpaling dan mendustakan serta mengingkarinya sambil berkata bahwa, \"Ini adalah sihir yang memesonakan kita yang akan terus-menerus dilakukannya.\" Demikianlah jika memang tidak ada iman, maka meskipun pikirannya dapat menerima kebenaran Al-Qur'an dan secara empirik terlihat pada perbuatan dan perilaku Nabi yang membuktikan kerasulan beliau, tetapi mereka tetap ingkar pada kebenaran yang ada di depan mata mereka. (",
@@ -32,7 +33,7 @@
         },
         {
             "ind": "Dan mereka mendutakan (Nabi) dan mengikuti hawa nafsu mereka, sedang tiap-tiap urusan telah ada ketetapannya",
-            "arb": "وَكَذَّبُوا وَاتَّبَعُوا أَهْوَاءَهُمْ ۚ وَكُلُّ أَمْرٍ مُّسْتَقِرٌّ",
+            "arb": "وَكَذَّبُوْا وَاتَّبَعُوْٓا اَهْوَاۤءَهُمْ وَكُلُّ اَمْرٍ مُّسْتَقِرٌّ",
             "transliterasi": "Wa każżabū wattaba‘ū ahwā'ahum wa kullu amrim mustaqirr(un).",
             "eng": "for they are bent on giving it the lie, being always wont to follow their own desires. Yet everything reveals its truth in the end.",
             "kemenag": "Kaum musyrik mendustakan kebenaran yang disampaikan kepada mereka oleh Nabi Muhammad saw, dan mengikuti hawa nafsu karena kebodohan mereka. Pada akhir ayat ini ditegaskan bahwa sesuatu itu akan berhenti pada sasaran yang telah ditetapkan, sesuai dengan ketetapan Allah. Karena itu persoalan orang-orang musyrik akan berhenti pada kehinaan di dunia dan azab yang kekal di akhirat, sedang persoalanmu hai Muhammad saw akan berhenti pada kemenangan di dunia dan surga di akhirat",
@@ -44,7 +45,7 @@
         },
         {
             "ind": "Dan sesungguhnya telah datang kepada mereka beberapa kisah yang di dalamnya terdapat cegahan (dari kekafiran).",
-            "arb": "وَلَقَدْ جَاءَهُم مِّنَ الْأَنبَاءِ مَا فِيهِ مُزْدَجَرٌ",
+            "arb": "وَلَقَدْ جَاۤءَهُمْ مِّنَ الْاَنْۢبَاۤءِ مَا فِيْهِ مُزْدَجَرٌۙ",
             "transliterasi": "Wa laqad jā'ahum minal-ambā'i mā fīhi muzdajar(un).",
             "eng": "And withal, there has come unto them many a tiding that should have restrained [their arrogance]:",
             "kemenag": "Kaum musyrik yang mendustakan kerasulan Muhammad dan mengikuti hawa nafsu, telah mengetahui beberapa kisah tentang umat-umat terdahulu yang mendustakan para rasul, sehingga Allah menurunkan azab kepada mereka, sebagaimana tersebut dalam AlQur'an. Namun kisah-kisah itu tidak berkesan di hati mereka dan tidak dapat mencegah kekafiran, lalu Allah membinasakan mereka, sedang di akhirat nanti akan disiksa sesuai dengan perbuatan syirik yang telah menghiasi jiwa mereka.",
@@ -56,7 +57,7 @@
         },
         {
             "ind": "Itulah suatu hikmah yang sempurna maka peringatan-peringatan itu tidak berguna (bagi mereka).",
-            "arb": "حِكْمَةٌ بَالِغَةٌ ۖ فَمَا تُغْنِ النُّذُرُ",
+            "arb": "حِكْمَةٌ ۢ بَالِغَةٌ فَمَا تُغْنِ النُّذُرُۙ",
             "transliterasi": "Ḥikmatum bāligatun famā tugnin-nużur(u).",
             "eng": "far-reaching wisdom [was held out to them]: but [since] all warnings have been of no avail,",
             "kemenag": "Kisah tersebut mengandung hikmah yang sangat tinggi nilainya dalam memberi petunjuk bagi manusia kepada jalan yang benar, tetapi hikmah dan peringatan yang terkandung dalam kisahkisah itu tidak berguna lagi bagi mereka karena hati nurani mereka telah terkunci mati. Firman Allah: \nTidaklah bermanfaat tanda-tanda (kebesaran Allah) dan rasul-rasul yang memberi peringatan bagi orang yang tidak beriman. (Yunus/10: 101)",
@@ -68,7 +69,7 @@
         },
         {
             "ind": "Maka berpalinglah kamu dari mereka. (Ingatlah) hari (ketika) seorang penyeru (malaikat) menyeru kepada sesuatu yang tidak menyenangkan (hari pembalasan),",
-            "arb": "فَتَوَلَّ عَنْهُمْ ۘ يَوْمَ يَدْعُ الدَّاعِ إِلَىٰ شَيْءٍ نُّكُرٍ",
+            "arb": "فَتَوَلَّ عَنْهُمْ ۘ يَوْمَ يَدْعُ الدَّاعِ اِلٰى شَيْءٍ نُّكُرٍۙ",
             "transliterasi": "Fa tawalla ‘anhum, yauma yad‘ud-dā‘i ilā syai'in nukur(in).",
             "eng": "turn thou away from them. On the Day when the Summoning Voice will sum­mon [man] unto something that the mind cannot conceive,",
             "kemenag": "Allah memerintahkan rasul-Nya agar tidak mengadakan perdebatan dengan kaum musyrik, karena tidak ada faedahnya. Sebab itu hendaklah berpaling dari mereka, pendusta-pendusta itu. Karena mereka sudah sampai ke tingkat tidak mau tunduk kepada bukti dan kebenaran, maka sudah pantas bagimu tidak memberi nasihat kepada mereka lagi. Allah mengetahui bahwa Rasulullah saw tidak bosan terhadap persoalan mereka dan jengkel karena kecongkakannya. Allah mengingatkan kepada manusia bahwa akan terjadi hari kebangkitan, yang hari itu malaikat akan memanggil manusia datang ke suatu tempat yang sangat berbahaya dan dibenci oleh kaum musyrik, yaitu Padang Mahsyar.",
@@ -80,7 +81,7 @@
         },
         {
             "ind": "sambil menundukkan pandangan-pandangan mereka keluar dari kuburan seakan-akan mereka belalang yang beterbangan",
-            "arb": "خُشَّعًا أَبْصَارُهُمْ يَخْرُجُونَ مِنَ الْأَجْدَاثِ كَأَنَّهُمْ جَرَادٌ مُّنتَشِرٌ",
+            "arb": "خُشَّعًا اَبْصَارُهُمْ يَخْرُجُوْنَ مِنَ الْاَجْدَاثِ كَاَنَّهُمْ جَرَادٌ مُّنْتَشِرٌۙ",
             "transliterasi": "Khusysya‘an abṣāruhum yakhrujūna minal-ajdāṡi ka'annahum jarādum muntasyir(un).",
             "eng": "they will come forth from their graves, with their eyes downcast, [swarming about] like locusts scattered [by the wind],",
             "kemenag": "Mereka akan keluar dari kubur dalam keadaan pandangan mereka tunduk, karena tidak sanggup memandang kedahsyatan yang terjadi pada hari itu, dan ketika mereka bersama-sama keluar dari kubur, tergopoh-gopoh menuju ke tempat perhitungan amal sesuai dengan panggilan, laksana belalang-belalang yang beterbangan di udara. Dalam ayat lain yang bersamaan maksudnya Allah berfirman: \nPada hari itu manusia seperti laron yang beterbangan. (alQari'ah/101: 4)",
@@ -92,7 +93,7 @@
         },
         {
             "ind": "mereka datang dengan cepat kepada penyeru itu. Orang-orang kafir berkata: \"Ini adalah hari yang berat\".",
-            "arb": "مُّهْطِعِينَ إِلَى الدَّاعِ ۖ يَقُولُ الْكَافِرُونَ هَٰذَا يَوْمٌ عَسِرٌ",
+            "arb": "مُّهْطِعِيْنَ اِلَى الدَّاعِۗ يَقُوْلُ الْكٰفِرُوْنَ هٰذَا يَوْمٌ عَسِرٌ",
             "transliterasi": "Muhṭi‘īna ilad-dā‘(i), yaqūlul-kāfirūna hāżā yaumun ‘asir(un).",
             "eng": "running in con­fusion towards the Summoning Voice; [and] those who [now] deny the truth will exclaim, “Calamitous is this Day!”",
             "kemenag": "Mereka segera datang memenuhi seruan, tidak ada yang menentang seruan itu, tidak ada pula yang terlambat memenuhinya, seraya mereka berkata, \"Ini adalah hari yang sangat berbahaya dan tempat yang mencelakakan.\" Firman Allah: \nMaka itulah hari yang serba sulit, bagi orang-orang kafir tidak mudah. (al-Muddatstsir/74: 9-10)",
@@ -104,7 +105,7 @@
         },
         {
             "ind": "Sebelum mereka, telah mendustakan (pula) kamu Nuh, maka mereka mendustakan hamba Kami (Nuh) dan mengatakan: \"Dia seorang gila dan dia sudah pernah diberi ancaman).",
-            "arb": "۞ كَذَّبَتْ قَبْلَهُمْ قَوْمُ نُوحٍ فَكَذَّبُوا عَبْدَنَا وَقَالُوا مَجْنُونٌ وَازْدُجِرَ",
+            "arb": "۞ كَذَّبَتْ قَبْلَهُمْ قَوْمُ نُوْحٍ فَكَذَّبُوْا عَبْدَنَا وَقَالُوْا مَجْنُوْنٌ وَّازْدُجِرَ",
             "transliterasi": "Każżabat qablahum qaumu nūḥin fakażżabū ‘abdanā wa qālū majnūnuw wazdujir(a).",
             "eng": "[LONG] BEFORE those [who now deny resurrec­tion] did Noah’s people call it a lie; and they gave the lie to Our servant and said, “Mad is he!” - and he was repulsed.",
             "kemenag": "Sebelum umat Nabi Muhammad saw, kaum Nuh telah terlebih dahulu mendustakan kerasulan Nabi Nuh. Mereka mendustakan kerasulan Nabi Nuh bahkan mereka menuduhnya gila serta mengancam dan menakut-nakuti Nabi Nuh supaya menghentikan dakwahnya, jika tidak mereka akan merajamnya.",
@@ -116,7 +117,7 @@
         },
         {
             "ind": "Maka dia mengadu kepada Tuhannya: \"bahwasanya aku ini adalah orang yang dikalahkan, oleh sebab itu menangkanlah (aku)\".",
-            "arb": "فَدَعَا رَبَّهُ أَنِّي مَغْلُوبٌ فَانتَصِرْ",
+            "arb": "فَدَعَا رَبَّهٗٓ اَنِّيْ مَغْلُوْبٌ فَانْتَصِرْ",
             "transliterasi": "Fa da‘ā rabbahū annī maglūbun fantaṣir.",
             "eng": "Thereupon he called out to his Sustainer, “Verily, I am defeated; come Thou, then, to my succour!”",
             "kemenag": "Nabi Nuh berdoa kepada Allah swt bahwa ia tidak berdaya menghadapi ancaman kaumnya, dan memohon kepada Allah agar menolongnya. Doa Nabi Nuh terdapat dalam Surah Nuh/71: 26-28, bahwa Nabi Nuh memohon kepada Allah agar orang kafir dihancurkan, karena mereka hanya akan menyesatkan manusia dan akan melahirkan orang-orang durhaka dan kafir. Di samping itu Nabi Nuh juga memohon ampunan bagi kedua orangtua dan orang-orang yang beriman. Hal ini dilakukan setelah Nabi Nuh mengetahui keingkaran mereka dan hampir lelahnya Nabi Nuh dalam menyampaikan dakwahnya. Firman Allah: Dan Nuh berkata, \"Ya Tuhanku, janganlah Engkau biarkan seorang pun di antara orang-orang kafir itu tinggal di atas bumi. Sesungguhnya jika Engkau biarkan mereka tinggal, niscaya mereka akan menyesatkan hamba-hamba-Mu, dan mereka hanya akan melahirkan anak-anak yang jahat dan tidak tahu bersyukur. Ya Tuhanku, ampunilah aku, ibu bapakku, dan siapa pun yang memasuki rumahku dengan beriman dan semua orang yang beriman laki-laki dan perempuan. Dan janganlah Engkau tambahkan bagi orang-orang yang zalim itu selain kehancuran.\" (Nuh/71: 26-28)",
@@ -128,7 +129,7 @@
         },
         {
             "ind": "Maka Kami bukakan pintu-pintu langit dengan (menurunkan) air yang tercurah.",
-            "arb": "فَفَتَحْنَا أَبْوَابَ السَّمَاءِ بِمَاءٍ مُّنْهَمِرٍ",
+            "arb": "فَفَتَحْنَآ اَبْوَابَ السَّمَاۤءِ بِمَاۤءٍ مُّنْهَمِرٍۖ",
             "transliterasi": "Fa fataḥnā abwābas-samā'i bimā'im munhamir(in).",
             "eng": "And so We caused the gates of heaven to open with water pouring down in torrents,",
             "kemenag": "Allah mengabulkan doa Nabi Nuh dengan mencurahkan air yang banyak dari langit dan berlangsung bertahun-tahun.",
@@ -140,7 +141,7 @@
         },
         {
             "ind": "Dan Kami jadikan bumi memancarkan mata air-mata air, maka bertemulah air-air itu untuk suatu urusan yang sungguh telah ditetapkan.",
-            "arb": "وَفَجَّرْنَا الْأَرْضَ عُيُونًا فَالْتَقَى الْمَاءُ عَلَىٰ أَمْرٍ قَدْ قُدِرَ",
+            "arb": "وَّفَجَّرْنَا الْاَرْضَ عُيُوْنًا فَالْتَقَى الْمَاۤءُ عَلٰٓى اَمْرٍ قَدْ قُدِرَ ۚ",
             "transliterasi": "Wa fajjarnal-arḍa ‘uyūnan faltaqal-mā'u ‘alā amrin qad qudir(a).",
             "eng": "and caused the earth to burst forth with springs, so that the waters met for a purpose pre-ordained:",
             "kemenag": "Disamping itu dari dalam bumi, Allah memancarkan sumber mata air di permukaannya, lalu bertemulah dua air tersebut, yaitu air yang diturunkan dari langit dan air yang dipancarkan dari bumi, terjadilah banjir yang besar sebagaimana yang sudah ditentukan Allah. Ayat ini menguraikan mengenai peristiwa air bah pada masa Nabi Nuh. Akan tetapi, apabila penggalan kata-kata pertama dalam kalimat di atas, dan dikaitkan dengan pernyataan dalam ayat sebelumnya, maka keduanya akan memperlihatkan siklus air. Penggalan mengenai siklus air ini menjelaskan tentang turunnya air hujan dan bumi mengeluarkannya lagi dalam bentuk mata air.",
@@ -152,7 +153,7 @@
         },
         {
             "ind": "Dan Kami angkut Nuh ke atas (bahtera) yang terbuat dari papan dan paku,",
-            "arb": "وَحَمَلْنَاهُ عَلَىٰ ذَاتِ أَلْوَاحٍ وَدُسُرٍ",
+            "arb": "وَحَمَلْنٰهُ عَلٰى ذَاتِ اَلْوَاحٍ وَّدُسُرٍۙ",
             "transliterasi": "Wa ḥamalnāhu ‘alā żāti alwāḥiw wa dusur(in).",
             "eng": "but him We bore on that [vessel] made of [mere] planks and nails,",
             "kemenag": "Allah menyelamatkan Nabi Nuh dari banjir besar dengan memerintahkan Nuh beserta pengikutnya naik ke kapal besar yang terbuat dari papan-papan yang dipaku yang telah disiapkan sebelumnya. Maksud ayat ini sejalan dengan firman Allah dalam Surah al-'Ankabut: \nMaka Kami selamatkan Nuh dan orang-orang yang berada di kapal itu. (al-'Ankabut/29: 15)",
@@ -164,7 +165,7 @@
         },
         {
             "ind": "Yang berlayar dengan pemeliharaan Kami sebagai belasan bagi orang-orang yang diingkari (Nuh).",
-            "arb": "تَجْرِي بِأَعْيُنِنَا جَزَاءً لِّمَن كَانَ كُفِرَ",
+            "arb": "تَجْرِيْ بِاَعْيُنِنَاۚ جَزَاۤءً لِّمَنْ كَانَ كُفِرَ",
             "transliterasi": "Tajrī bi'a‘yuninā, jazā'al liman kāna kufir(a).",
             "eng": "and it floated under Our eyes: a recom­pense for him who had been rejected with ingratitude.",
             "kemenag": "Meskipun topan sangat dahsyat disertai hujan yang sangat lebat dan gelombang air laksana gunung besarnya, kapal itu berlayar dengan selamat berjalan di bawah pengawasan Allah sebagai balasan doanya, sebagaimana diinformasikan dalam ayat lain. \nDan kapal itu berlayar membawa mereka ke dalam gelombang laksana gunung-gunung. Dan Nuh memanggil anaknya, ketika dia (anak itu) berada di tempat yang jauh terpencil, \"Wahai anakku! Naiklah (ke kapal) bersama kami dan janganlah engkau bersama orang-orang kafir.\" (Hud/11: 42)",
@@ -176,7 +177,7 @@
         },
         {
             "ind": "Dan sesungguhnya telah Kami jadikan kapal itu sebagai pelajaran, maka adakah orang yang mau mengambil pelajaran?",
-            "arb": "وَلَقَد تَّرَكْنَاهَا آيَةً فَهَلْ مِن مُّدَّكِرٍ",
+            "arb": "وَلَقَدْ تَّرَكْنٰهَآ اٰيَةً فَهَلْ مِنْ مُّدَّكِرٍ",
             "transliterasi": "Wa laqat taraknāhā āyatan fahal mim muddakir(in).",
             "eng": "And, indeed, We have caused such [floating vessels] to remain forever a sign [of Our grace unto man]: who, then, is willing to take it to heart?",
             "kemenag": "Peristiwa bencana buat kaum Nuh dijadikan Allah sebagai pelajaran bagi manusia sepanjang masa. Sehingga mereka dapat membela kebenaran dan menghancurkan kebatilan yang mendustakan terhadap rasul-rasul Allah. Bahtera tersebut mendarat di bukit \"Judi.\" (Nama Gunung di daerah Kurdistan) \nDan difirmankan, \"Wahai bumi! Telanlah airmu dan wahai langit (hujan!) berhentilah.\" Dan air pun disurutkan, dan perintah pun diselesaikan dan kapal itupun berlabuh di atas gunung Judi, dan dikatakan, \"Binasalah orang-orang zalim.\" (Hud/11: 44) \nDalam ayat lain peristiwa itu dinyatakan: \nSesungguhnya ketika air naik (sampai ke gunung), Kami membawa (nenek moyang) kamu ke dalam kapal, agar Kami jadikan (peristiwa itu) sebagai peringatan bagi kamu dan agar diperhatikan oleh telinga yang mau mendengar. (al-haqqah/69: 11-12) \nSelanjutnya pada akhir ayat ini Allah bertanya, \"masih adakah orang-orang yang mau mengingat dan merenungkan peristiwa itu untuk dijadikan pelajaran.\" Artinya peristiwa itu perlu direnungkan dan diingat sepanjang masa untuk meningkatkan keimanan dan ketakwaan.",
@@ -188,7 +189,7 @@
         },
         {
             "ind": "Maka alangkah dahsyatnya azab-Ku dan ancaman-ancaman-Ku.",
-            "arb": "فَكَيْفَ كَانَ عَذَابِي وَنُذُرِ",
+            "arb": "فَكَيْفَ كَانَ عَذَابِيْ وَنُذُرِ",
             "transliterasi": "Fa kaifa kāna ‘ażābī wa nużur(i).",
             "eng": "And how severe is the suffering which I inflict when My warnings are disregarded!",
             "kemenag": "Allah memperingatkan orang yang membangkang dan mendustakan para rasul serta tidak mengambil iktibar terhadap dahsyatnya siksaan Tuhan dan ancaman-ancamannya yang ditujukan kepada orang-orang yang tidak mengindahkan seruan para rasul",
@@ -200,7 +201,7 @@
         },
         {
             "ind": "Dan sesungguhnya telah Kami mudahkan Al-Quran untuk pelajaran, maka adakah orang yang mengambil pelajaran?",
-            "arb": "وَلَقَدْ يَسَّرْنَا الْقُرْآنَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ",
+            "arb": "وَلَقَدْ يَسَّرْنَا الْقُرْاٰنَ لِلذِّكْرِ فَهَلْ مِنْ مُّدَّكِرٍ",
             "transliterasi": "Wa laqad yassarnal-qur'āna liż-żikri fahal mim muddakir(in).",
             "eng": "Hence, indeed, We made this Qur’an easy to bear in mind: who, then, is willing to take it to heart?",
             "kemenag": "Allah yang menurunkan Al-Qur'an yang mudah dibaca dan difahami untuk dijadikan pelajaran bagi orang yang mau menjadikan pelajaran, karena itu hendaknya manusia mengimaninya dan menjalankannya. Dalam ayat lain dinyatakan bahwa Al-Qur'an hanya bermanfaat bagi orang yang beriman, karena mereka menjalankannya: \nDan tetaplah memberi peringatan, karena sesungguhnya peringatan itu bermanfaat bagi orang-orang Mukmin. (adh-dzariyat/51: 55) \nDan seperti firman-Nya: \nKitab (Al-Qur'an) yang Kami turunkan kepadamu penuh berkah agar mereka menghayati ayat-ayatnya dan agar orang-orang yang berakal sehat mendapat pelajaran. (shad/38: 29) \nMaka sungguh, telah Kami mudahkan (Al-Qur'an) itu dengan bahasamu (Muhammad), agar dengan itu engkau dapat memberi kabar gembira kepada orang-orang yang bertakwa, dan agar engkau dapat memberi peringatan kepada kaum yang membangkang. (Maryam/19: 97) \nAl-Qur'an itu mudah difahami dan dijalankan, karena Nabi saw menjelaskan dan mencontohkan pelaksanaannya. Isi Al-Qur'an adalah kabar gembira bagi yang takwa dan peringatan bagi yang membangkang, karena itu hendaknya manusia menjadi orang yang takwa dengan menjalankannya dan tidak mengingkarinya, karena akan menjadi orang yang merugi.",
@@ -212,7 +213,7 @@
         },
         {
             "ind": "Kaum 'Aad pun mendustakan (pula). Maka alangkah dahsyatnya azab-Ku dan ancaman-ancaman-Ku.",
-            "arb": "كَذَّبَتْ عَادٌ فَكَيْفَ كَانَ عَذَابِي وَنُذُرِ",
+            "arb": "كَذَّبَتْ عَادٌ فَكَيْفَ كَانَ عَذَابِيْ وَنُذُرِ",
             "transliterasi": "Każżabat ‘ādun fa kaifa kāna ‘ażābī wa nużur(i).",
             "eng": "TO THE TRUTH gave the lie [the tribe of] Ad: and how severe was the suffering which I inflicted when My warnings were disregarded!",
             "kemenag": "Dalam ayat ini Allah menyatakan bahwa kaum 'Ad memandang nabi mereka dan risalah yang ia bawa untuk mereka adalah bohong. Kepada kaum yang mendustakan para rasul itu Allah telah menyampaikan peringatan dan menurunkan azab yang sangat dahsyat. Hal tersebut hendaknya dijadikan iktibar oleh orang-orang yang datang kemudian.",
@@ -224,7 +225,7 @@
         },
         {
             "ind": "Sesungguhnya Kami telah menghembuskan kepada mereka angin yang sangat kencang pada hari nahas yang terus menerus,",
-            "arb": "إِنَّا أَرْسَلْنَا عَلَيْهِمْ رِيحًا صَرْصَرًا فِي يَوْمِ نَحْسٍ مُّسْتَمِرٍّ",
+            "arb": "اِنَّآ اَرْسَلْنَا عَلَيْهِمْ رِيْحًا صَرْصَرًا فِيْ يَوْمِ نَحْسٍ مُّسْتَمِرٍّۙ",
             "transliterasi": "Innā arsalnā ‘alaihim rīḥan ṣarṣaran fī yaumi naḥsim mustamirr(in).",
             "eng": "Behold, We let loose upon them a raging storm wind on a day of bitter misfortune:",
             "kemenag": "Ayat ini menerangkan bahwa Allah melepaskan topan yang amat dahsyat menderu-deru. Hal tersebut merupakan azab Allah kepada kaum 'Ad di kala bergelimangan dosa dan durhaka. Peristiwa ini terjadi selama tujuh malam delapan hari terus-menerus sebagaimana diinformasikan dalam ayat lain: \nMaka Kami tiupkan angin yang sangat bergemuruh kepada mereka dalam beberapa hari yang nahas. (Fussilat/41: 16) \nDan firman-Nya: \nAllah menimpakan angin itu kepada mereka selama tujuh malam delapan hari terus-menerus. (al-haqqah/69: 7)",
@@ -236,7 +237,7 @@
         },
         {
             "ind": "yang menggelimpangkan manusia seakan-akan mereka pokok korma yang tumbang.",
-            "arb": "تَنزِعُ النَّاسَ كَأَنَّهُمْ أَعْجَازُ نَخْلٍ مُّنقَعِرٍ",
+            "arb": "تَنْزِعُ النَّاسَۙ كَاَنَّهُمْ اَعْجَازُ نَخْلٍ مُّنْقَعِرٍ",
             "transliterasi": "Tanzi‘un-nās(a), ka'annahum a‘jāzu nakhlim munqa‘ir(in).",
             "eng": "it swept the people away as though they were palm-trunks uprooted:",
             "kemenag": "Pada ayat ini dinyatakan bahwa angin itu melemparkan mereka kemudian menghempaskan mereka ke bawah dengan kepala lebih dahulu karena begitu kerasnya kepala mereka terpenggal dan tubuh mereka bergelimangan bagaikan pohon-pohon kurma yang tumbang berserakan karena tercabut oleh badai. Demikianlah dahsyatnya badai itu yang dapat menumbangkan tubuh mereka yang besar-besar sebagaimana dinyatakan dalam firman-Nya: \nOrang-orang itu lebih kuat dari mereka (sendiri) dan mereka telah mengolah bumi (tanah) serta memakmurkannya melebihi apa yang telah mereka makmurkan. (ar-Rum/30: 9)",
@@ -248,7 +249,7 @@
         },
         {
             "ind": "Maka alangkah dahsyatnya azab-Ku dan ancaman-ancaman-Ku.",
-            "arb": "فَكَيْفَ كَانَ عَذَابِي وَنُذُرِ",
+            "arb": "فَكَيْفَ كَانَ عَذَابِيْ وَنُذُرِ",
             "transliterasi": "Fa kaifa kāna ‘ażābī wa nużur(i).",
             "eng": "for, how severe is the suffering which I inflict when My warnings are disregarded!",
             "kemenag": "Allah kembali menyatakan, betapa hebat azab-Nya dan peringatan-Nya. Pernyataan itu menunjukkan bahwa Allah sendiri memandang peristiwa tersebut hebat sekali. Dalam ayat yang lain memang disebutkan bahwa azab Allah sangat hebat: Kami ingin agar mereka itu merasakan siksaan yang menghinakan dalam kehidupan di dunia. Sedangkan azab akhirat pasti lebih menghinakan dan mereka tidak diberi pertolongan. (Fussilat/41: 16)",
@@ -260,7 +261,7 @@
         },
         {
             "ind": "Dan sesungguhnya telah Kami mudahkan Al Quran untuk pelajaran, maka adakah orang yang mengambil pelajaran?",
-            "arb": "وَلَقَدْ يَسَّرْنَا الْقُرْآنَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ",
+            "arb": "وَلَقَدْ يَسَّرْنَا الْقُرْاٰنَ لِلذِّكْرِ فَهَلْ مِنْ مُّدَّكِرٍ ࣖ",
             "transliterasi": "Wa laqad yassarnal-qur'āna liż-żikri fahal mim muddakir(in).",
             "eng": "Hence, indeed, We made this Qur’an easy to bear in mind: who, then, is willing to take it to heart?",
             "kemenag": "Allah juga kembali menegaskan bahwa Al-Qur'an mudah dipahami dan diambil sebagai peringatan karena Allah menyampaikan contoh yang gamblang di dalamnya, karena itu manusia seharusnya mengimaninya dalam menjalankan ajaranajaran yang terdapat di dalamnya supaya mereka bahagia di dunia dan di akhirat.",
@@ -272,7 +273,7 @@
         },
         {
             "ind": "Kaum Tsamudpun telah mendustakan ancaman-ancaman (itu).",
-            "arb": "كَذَّبَتْ ثَمُودُ بِالنُّذُرِ",
+            "arb": "كَذَّبَتْ ثَمُوْدُ بِالنُّذُرِ",
             "transliterasi": "Każżabat ṡamūdu bin-nużur(i).",
             "eng": "[AND the tribe of] Thamud gave the lie to all [Our] warnings;",
             "kemenag": "Dalam ayat ini Allah menerangkan bahwa kaum Samud menganggap dusta peringatan-peringatan yang disampaikan nabi mereka Nabi Saleh, yaitu mentauhidkan Allah, iman kepada rasul dan hari Kiamat.",
@@ -284,7 +285,7 @@
         },
         {
             "ind": "Maka mereka berkata: \"Bagaimana kita akan mengikuti seorang manusia (biasa) di antara kita?\" Sesungguhnya kalau kita begitu benar-benar berada dalam keadaan sesat dan gila\".",
-            "arb": "فَقَالُوا أَبَشَرًا مِّنَّا وَاحِدًا نَّتَّبِعُهُ إِنَّا إِذًا لَّفِي ضَلَالٍ وَسُعُرٍ",
+            "arb": "فَقَالُوْٓا اَبَشَرًا مِّنَّا وَاحِدًا نَّتَّبِعُهٗٓ  ۙاِنَّآ اِذًا لَّفِيْ ضَلٰلٍ وَّسُعُرٍ",
             "transliterasi": "Fa qālū abasyaram minnā wāḥidan nattabi‘uh(ū), innā iżal lafī ḍalāliw wa su‘ur(in).",
             "eng": "and they said: “Are we to follow one single mortal, one from among ourselves? In that case, behold, we would certainly sink into error and folly!",
             "kemenag": "Mereka memandang Nabi Saleh dusta, karena dalam pandangan mereka, tidak mungkin ajaran baru yang diajarkan satu orang lebih benar dari ajaran yang telah diikuti oleh semua orang dan telah diterima semenjak nenek moyang mereka. Mereka memandang bahwa mengikuti satu orang yang membawa ajaran yang lain dari ajaran yang mereka terima sejak nenek moyang akan membuat sesat dan gila.",
@@ -296,7 +297,7 @@
         },
         {
             "ind": "Apakah wahyu itu diturunkan kepadanya di antara kita? Sebenarnya dia adalah seorang yang amat pendusta lagi sombong.",
-            "arb": "أَأُلْقِيَ الذِّكْرُ عَلَيْهِ مِن بَيْنِنَا بَلْ هُوَ كَذَّابٌ أَشِرٌ",
+            "arb": "ءَاُلْقِيَ الذِّكْرُ عَلَيْهِ مِنْۢ بَيْنِنَا بَلْ هُوَ كَذَّابٌ اَشِرٌ",
             "transliterasi": "A'ulqiyaż-żikru ‘alaihi mim baininā bal huwa każżābun asyir(un).",
             "eng": "Why - on him alone from among all of us should a [divine] reminder have been bestowed? Nay, but he is a boastful liar!”",
             "kemenag": "Selanjutnya mereka berdalih bahwa tidak mungkin wahyu itu diturunkan kepada seseorang yaitu Nabi Saleh sedang ia manusia biasa. Mengapa wahyu tidak diturunkan kepada pemimpin mereka yang berkuasa, disegani, berharta, dan sebagainya. Oleh karena itu dalam pandangan mereka Nabi Saleh bohong dan hanya menyombongkan diri. (",
@@ -308,7 +309,7 @@
         },
         {
             "ind": "Kelak mereka akan mengetahui siapakah yang sebenarnya amat pendusta lagi sombong.",
-            "arb": "سَيَعْلَمُونَ غَدًا مَّنِ الْكَذَّابُ الْأَشِرُ",
+            "arb": "سَيَعْلَمُوْنَ غَدًا مَّنِ الْكَذَّابُ الْاَشِرُ",
             "transliterasi": "Saya‘lamūna gadam manil-każżābul-asyir(u).",
             "eng": "[And God said:] “On the morrow they will come to know who the boastful liar is!",
             "kemenag": "Allah membantah dengan keras pandangan mereka dengan menyatakan bahwa dalam waktu dekat mereka akan mengetahui siapa sebenarnya yang bohong dan sombon",
@@ -320,7 +321,7 @@
         },
         {
             "ind": "Sesungguhnya Kami akan mengirimkan unta betina sebagai cobaan bagi mereka, maka tunggulah (tindakan) mereka dan bersabarlah.",
-            "arb": "إِنَّا مُرْسِلُو النَّاقَةِ فِتْنَةً لَّهُمْ فَارْتَقِبْهُمْ وَاصْطَبِرْ",
+            "arb": "اِنَّا مُرْسِلُوا النَّاقَةِ فِتْنَةً لَّهُمْ فَارْتَقِبْهُمْ وَاصْطَبِرْۖ",
             "transliterasi": "Innā mursilun-nāqati fitnatal lahum fartaqibhum waṣṭabir.",
             "eng": "Behold, [O Salih] We are letting loose this she-camel as a test for them; and thou but watch them, and contain thyself in patience.",
             "kemenag": "Allah menerangkan bahwa ia memenuhi permintaan mereka untuk menjelmakan seekor unta betina dari sebuah batu besar sesuai permintaan mereka, sebagai mukjizat Nabi Saleh. Mereka meminta mukjizat seperti itu karena mereka terkenal sebagai pemahat batu yang hebat dan gunung-gunung batu sebagai tempat tinggal mereka. Unta betina yang dijelmakan dari batu gunung itu dijadikan Allah sebagai ujian bagi umat Nabi Saleh. Tempat mereka tinggal itu sekarang dekat Mada'in, suatu daerah antara Hijaz dan Syiria. Pada akhir ayat ini Allah memerintahkan Nabi Saleh untuk menunggu apa yang akan mereka lakukan, apakah beriman atau mereka tetap kafir. Dan supaya Nabi Saleh bersabar terhadap gangguan-gangguan mereka sampai datang ketentuan Allah, karena Allah tetap membela kebenaran dan menghancurkan kebatilan.",
@@ -332,7 +333,7 @@
         },
         {
             "ind": "Dan beritakanlah kepada mereka bahwa sesungguhnya air itu terbagi antara mereka (dengan unta betina itu); tiap-tiap giliran minum dihadiri (oleh yang punya giliran)",
-            "arb": "وَنَبِّئْهُمْ أَنَّ الْمَاءَ قِسْمَةٌ بَيْنَهُمْ ۖ كُلُّ شِرْبٍ مُّحْتَضَرٌ",
+            "arb": "وَنَبِّئْهُمْ اَنَّ الْمَاۤءَ قِسْمَةٌ ۢ بَيْنَهُمْۚ  كُلُّ شِرْبٍ مُّحْتَضَرٌ",
             "transliterasi": "Wa nabbi'hum annal-mā'a qismatum bainahum, kullu syirbim muḥtaḍar(un).",
             "eng": "And let them know that the water [of their wells] is to be divided between them, with each share of water equitably apportioned.”",
             "kemenag": "Allah memerintahkan Nabi Saleh supaya memberitahukan kepada kaumnya tentang pembagian air sumur antara mereka dan unta, yaitu sehari untuk unta betina dan sehari untuk mereka. Masing-masing datang menurut gilirannya untuk mengambil air sumur itu. (",
@@ -344,7 +345,7 @@
         },
         {
             "ind": "Maka mereka memanggil kawannya, lalu kawannya menangkap (unta itu) dan membunuhnya.",
-            "arb": "فَنَادَوْا صَاحِبَهُمْ فَتَعَاطَىٰ فَعَقَرَ",
+            "arb": "فَنَادَوْا صَاحِبَهُمْ فَتَعَاطٰى فَعَقَرَ",
             "transliterasi": "Fa nādau ṣāḥibahum fa ta‘āṭā fa ‘aqar(a).",
             "eng": "But they summoned their [boldest] companion, and he ventured [upon the evil deed], and cruelly slaughtered [the animal]:",
             "kemenag": "Allah menerangkan bahwa akhirnya kaum Samud keberatan atas pembagian seperti itu dan ingin membunuh unta. Mereka lalu memanggil seorang warga mereka yang terkenal sangat kejam, namanya Kudar bin Salif dan mencincang unta tersebut.",
@@ -356,7 +357,7 @@
         },
         {
             "ind": "Alangkah dahsyatnya azab-Ku dan ancaman-ancaman-Ku.",
-            "arb": "فَكَيْفَ كَانَ عَذَابِي وَنُذُرِ",
+            "arb": "فَكَيْفَ كَانَ عَذَابِيْ وَنُذُرِ",
             "transliterasi": "Fakaifa kāna ‘ażābī wa nużur(i).",
             "eng": "and how severe was the suffering which I inflicted when My warnings were disregarded!",
             "kemenag": "Allah kembali menerangkan bagaimana hebatnya azab Allah dan ancaman-ancamannya-Nya. Mereka telah diperingatkan ancaman dan bencana, tetapi mereka tidak menghiraukannya",
@@ -368,7 +369,7 @@
         },
         {
             "ind": "Sesungguhnya Kami menimpakan atas mereka satu suara yang keras mengguntur, maka jadilah mereka seperti rumput kering (yang dikumpulkan oleh) yang punya kandang binatang.",
-            "arb": "إِنَّا أَرْسَلْنَا عَلَيْهِمْ صَيْحَةً وَاحِدَةً فَكَانُوا كَهَشِيمِ الْمُحْتَظِرِ",
+            "arb": "اِنَّآ اَرْسَلْنَا عَلَيْهِمْ صَيْحَةً وَّاحِدَةً فَكَانُوْا كَهَشِيْمِ الْمُحْتَظِرِ",
             "transliterasi": "Innā arsalnā ‘alaihim ṣaiḥataw wāḥidatan fa kānū kahasyīmil-muḥtaẓir(i).",
             "eng": "Behold, We let loose upon them one single blast [of Our punishment], and they became like the dried-up, crumbling twigs of a sheepfold.",
             "kemenag": "Azab pada ayat ini adalah saihah. Sebagaimana sudah diterangkan dalam kosakata Surah Hud/11: 67, saihah adalah rajfah (gempa hebat) dan saiqah (petir yang menyambar). Dengan demikian azab yang mereka terima adalah petir yang menggelegar disertai gempa yang dahsyat. Petir itu menghanguskan tubuh mereka sehingga mati terbakar dan kering bagaikan rerumputan yang mati kering karena kekeringan. (",
@@ -380,7 +381,7 @@
         },
         {
             "ind": "Dan sesungguhnya telah Kami mudahkan Al Quran untuk pelajaran, maka adakah orang yang mengambil pelajaran?",
-            "arb": "وَلَقَدْ يَسَّرْنَا الْقُرْآنَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ",
+            "arb": "وَلَقَدْ يَسَّرْنَا الْقُرْاٰنَ لِلذِّكْرِ فَهَلْ مِنْ مُّدَّكِرٍ",
             "transliterasi": "Wa laqad yassarnal-qur'āna liż-żikri fahal mim muddakir(in).",
             "eng": "Hence, indeed, We made this Qur’an easy to bear in mind: who, then, is willing to take it to heart?",
             "kemenag": "Demikianlah penjelasan Al-Qur'an mengenai umat terdahulu. Penjelasan itu lugas, semoga siapapun mau mengambilnya menjadi pelajaran untuk beriman.",
@@ -392,7 +393,7 @@
         },
         {
             "ind": "Kaum Luth-pun telah mendustakan ancaman-ancaman (nabinya).",
-            "arb": "كَذَّبَتْ قَوْمُ لُوطٍ بِالنُّذُرِ",
+            "arb": "كَذَّبَتْ قَوْمُ لُوْطٍ ۢبِالنُّذُرِ",
             "transliterasi": "Każżabat qaumu lūṭim bin-nużur(i).",
             "eng": "LOT ’S PEOPLE [too] gave the lie to all [Our] warn­ings:",
             "kemenag": "Kisah itu dimulai untuk menghukum mereka. Allah menerangkan bahwa kaum Lut juga telah menganggap peringatan-peringatan Allah yang disampaikan-Nya melalui Nabi Lut, bohong. Peringatan-peringatan itu adalah agar mereka meninggalkan perbuatan-perbuatan kotor yang mereka lakukan yaitu hubungan kelamin sesama laki-laki.",
@@ -404,7 +405,7 @@
         },
         {
             "ind": "Sesungguhnya Kami telah menghembuskan kepada mereka angin yang membawa batu-batu (yang menimpa mereka), kecuali keluarga Luth. Mereka Kami selamatkan sebelum fajar menyingsing,",
-            "arb": "إِنَّا أَرْسَلْنَا عَلَيْهِمْ حَاصِبًا إِلَّا آلَ لُوطٍ ۖ نَّجَّيْنَاهُم بِسَحَرٍ",
+            "arb": "اِنَّآ اَرْسَلْنَا عَلَيْهِمْ حَاصِبًا اِلَّآ اٰلَ لُوْطٍ ۗنَجَّيْنٰهُمْ بِسَحَرٍۙ",
             "transliterasi": "Innā arsalnā ‘alaihim ḥāṣiban illā āla lūṭ(in), najjaināhum bisaḥar(in).",
             "eng": "[and so,] behold, We let loose upon them a deadly tempest; and only Lot ’s kinsfolk did We save at the break of dawn,",
             "kemenag": "Allah mengirimkan mereka angin puting beliung yang menerbangkan batu-batu lalu menghempaskan kepala mereka sehingga mereka binasa, yang selamat hanya keluarga Nabi Lut yaitu orang-orang yang beriman kepadanya. Karena diperintahkan Allah mereka lebih dahulu keluar dari negeri mereka pada dini hari sebelum fajar.",
@@ -416,7 +417,7 @@
         },
         {
             "ind": "sebagai nikmat dari Kami. Demikianlah Kami memberi balasan kepada orang-orang yang bersyukur,",
-            "arb": "نِّعْمَةً مِّنْ عِندِنَا ۚ كَذَٰلِكَ نَجْزِي مَن شَكَرَ",
+            "arb": "نِّعْمَةً مِّنْ عِنْدِنَاۗ  كَذٰلِكَ نَجْزِيْ مَنْ شَكَرَ",
             "transliterasi": "Ni‘matam min ‘indinā, każālika najzī man syakar(a).",
             "eng": "as a blessing from Us: thus do We reward all who are grateful.",
             "kemenag": "Penyelamatan itu merupakan nikmat dari Allah kepada orang-orang yang beriman tersebut. Nikmat itu berupa keselamatan mereka dari azab tersebut. Demikianlah hukum Allah, bahwa Dia senantiasa memberikan nikmat kepada orang-orang yang bersyukur dan patuh menjalankan perintah-Nya dan menjauhi larangan-Nya, dan menghukum orang yang membangkang.",
@@ -428,7 +429,7 @@
         },
         {
             "ind": "Dan sesungguhnya dia (Luth) telah memperingatkan mereka akan azab-azab Kami, maka mereka mendustakan ancaman-ancaman itu.",
-            "arb": "وَلَقَدْ أَنذَرَهُم بَطْشَتَنَا فَتَمَارَوْا بِالنُّذُرِ",
+            "arb": "وَلَقَدْ اَنْذَرَهُمْ بَطْشَتَنَا فَتَمَارَوْا بِالنُّذُرِ",
             "transliterasi": "Wa laqad anżarahum baṭsyatanā fa tamārau bin-nużur(i).",
             "eng": "For he had truly warned them of Our punishing might; but they stubbornly cast doubt on these warn­ings,",
             "kemenag": "Hukuman terhadap mereka yang membangkang pantas dijatuhkan karena Allah melalui Nabi Lut telah memberi peringatan kepada mereka tetapi mereka tidak memperdulikannya, mereka terus melakukan perbuatan hubungan kelamin sesama laki-laki.",
@@ -440,7 +441,7 @@
         },
         {
             "ind": "Dan sesungguhnya mereka telah membujuknya (agar menyerahkan) tamunya (kepada mereka), lalu Kami butakan mata mereka, maka rasakanlah azab-Ku dan ancaman-ancaman-Ku.",
-            "arb": "وَلَقَدْ رَاوَدُوهُ عَن ضَيْفِهِ فَطَمَسْنَا أَعْيُنَهُمْ فَذُوقُوا عَذَابِي وَنُذُرِ",
+            "arb": "وَلَقَدْ رَاوَدُوْهُ عَنْ ضَيْفِهٖ فَطَمَسْنَآ اَعْيُنَهُمْ فَذُوْقُوْا عَذَابِيْ وَنُذُرِ",
             "transliterasi": "Wa laqad rāwadūhu ‘an ḍaifihī fa ṭamasnā a‘yunahum fa żūqū ‘ażābī wa nużur(i).",
             "eng": "and even demanded that he give up his guests [to them]: whereupon We deprived them of their sight [and thus told them, as it were]: “Taste, then, the suffering which I inflict when My warnings are disregarded!”",
             "kemenag": "Kejahatan mereka sampai ke puncaknya ketika yang mereka minta dari Nabi Lut agar menyerahkan kepada mereka, tamu-tamunya. Tamu-tamu itu adalah malaikat-malaikat yang menyamar sebagai pemuda-pemuda ganteng untuk menguji mereka. Mereka mengetahui tamu-tamu itu karena pengkhianatan istri Lut yang menyampaikan kepada mereka berita kedatangannya. Ketika Nabi Lut melihat mereka datang, ia menutup pintu untuk melindungi tamu-tamunya, dan menawarkan kepada mereka \"anakanak perempuannya.\" Namun mereka tidak tertarik pada anak-anak perempuannya itu dan berusaha mendobrak pintu. Akhirnya Nabi Lut membukakan pintu. Begitu mereka masuk, mata mereka menjadi buta tidak dapat melihat tamu-tamu tersebut karena ditampar oleh Jibril dengan sayapnya. Pada akhir ayat ini Allah menyatakan kepada mereka supaya mereka merasakan azab-Nya berupa kebutaan mata mereka, yang sebelumnya kepada mereka telah diberi ancaman.",
@@ -452,7 +453,7 @@
         },
         {
             "ind": "Dan sesungguhnya pada esok harinya mereka ditimpa azab yang kekal.",
-            "arb": "وَلَقَدْ صَبَّحَهُم بُكْرَةً عَذَابٌ مُّسْتَقِرٌّ",
+            "arb": "وَلَقَدْ صَبَّحَهُمْ بُكْرَةً عَذَابٌ مُّسْتَقِرٌّۚ",
             "transliterasi": "Wa laqad ṣabbaḥahum bukratan ‘ażābum mustaqirr(un).",
             "eng": "And, indeed, abiding suffering did befall them early on the morrow:",
             "kemenag": "Pada pagi harinya, azab pun datang. Mereka dihujani batu oleh Allah sehingga mereka dan negerinya terkubur habis. Nabi Lut sendiri beserta keluarga yaitu kedua putrinya dan mereka yang beriman sudah diperintahkan keluar dari negeri itu sebelum fajar sehingga mereka selamat.",
@@ -464,7 +465,7 @@
         },
         {
             "ind": "Maka rasakanlah azab-Ku dan ancaman-ancaman-Ku.",
-            "arb": "فَذُوقُوا عَذَابِي وَنُذُرِ",
+            "arb": "فَذُوْقُوْا عَذَابِيْ وَنُذُرِ",
             "transliterasi": "Fa żūqū ‘ażābī wa nużur(i).",
             "eng": "“Taste, then, the suffering which I inflict when My warnings are disregarded!”",
             "kemenag": "Demikianlah azab Allah terhadap kaum Nabi Lut. Kedahsyatan azab itu harus mereka rasakan karena mereka tidak mau memperhatikan peringatan-peringatan Allah melalui nabi-Nya. Peringatan-peringatan Allah pasti terjadi, karena itu tidak boleh diabaikan.",
@@ -476,7 +477,7 @@
         },
         {
             "ind": "Dan sesungguhnya telah Kami mudahkan Al Quran untuk pelajaran, maka adakah orang yang mengambil pelajaran?",
-            "arb": "وَلَقَدْ يَسَّرْنَا الْقُرْآنَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ",
+            "arb": "وَلَقَدْ يَسَّرْنَا الْقُرْاٰنَ لِلذِّكْرِ فَهَلْ مِنْ مُّدَّكِرٍ ࣖ",
             "transliterasi": "Wa laqad yassarnal-qur'āna liż-żikri fahal mim muddakir(in).",
             "eng": "Hence, indeed, We made this Qur’an easy to bear in mind: who, then, is willing to take it to heart?",
             "kemenag": "Tafsir ayat ini sebagaimana yang telah diterangkan pada ayat 32 surah ini yang selalu dijadikan penutup dari masing-masing empat kisah tersebut (yaitu kisah kaum Nuh, kisah kaum 'Ad, kisah kaum Samud dan kisah kaum Lut). Allah juga kembali menegaskan bahwa Al-Qur'an mudah dipahami dan diambil sebagai peringatan karena Allah menyampaikan contoh yang gamblang di dalamnya, karena itu manusia seharusnya mengimaninya dalam menjalankan ajaran-ajaran yang terdapat di dalamnya supaya mereka bahagia di dunia dan di akhirat.",
@@ -488,7 +489,7 @@
         },
         {
             "ind": "Dan sesungguhnya telah datang kepada kaum Fir'aun ancaman-ancaman.",
-            "arb": "وَلَقَدْ جَاءَ آلَ فِرْعَوْنَ النُّذُرُ",
+            "arb": "وَلَقَدْ جَاۤءَ اٰلَ فِرْعَوْنَ النُّذُرُۚ",
             "transliterasi": "Wa laqad jā'a āla fir‘aunan-nużur(u).",
             "eng": "Now surely, unto Pharaoh’s folk [too] came such warnings;",
             "kemenag": "Ayat-ayat ini menerangkan bahwa sungguh peringatan demi peringatan telah berkali-kali disampaikan kepada kaum Fir'aun dan pengikut-pengikutnya. Namun mereka tetap mendustakannya. Peringatan-peringatan itu adalah semua tanda-tanda kerasulan dan mukjizat yang Allah berikan kepada Nabi Musa sebagaimana diungkapkan dalam Surah al-A'raf/7: 133 dan al-Isra'/17: 101. Karena itu Allah menurunkan azab kepada mereka. Azab datang dari Zat yang Mahakuat dan Mahakuasa, yang menunjukkan bahwa azab itu amat hebat. Berupa tenggelamnya Fir'aun dan pengikutnya di Laut Merah.",
@@ -500,7 +501,7 @@
         },
         {
             "ind": "Mereka mendustakan mukjizat Kami semuanya, lalu Kami azab mereka sebagai azab dari Yang Maha Perkasa lagi Maha Kuasa",
-            "arb": "كَذَّبُوا بِآيَاتِنَا كُلِّهَا فَأَخَذْنَاهُمْ أَخْذَ عَزِيزٍ مُّقْتَدِرٍ",
+            "arb": "كَذَّبُوْا بِاٰيٰتِنَا كُلِّهَا فَاَخَذْنٰهُمْ اَخْذَ عَزِيْزٍ مُّقْتَدِرٍ",
             "transliterasi": "Każżabū bi'āyātinā kullihā fa'akhażnāhum akhża ‘azīzim muqtadir(in).",
             "eng": "they, too, gave the lie to all Our messages: and thereupon We took them to task as only the Almighty, who determines all things, can take to task.",
             "kemenag": "Ayat-ayat ini menerangkan bahwa sungguh peringatan demi peringatan telah berkali-kali disampaikan kepada kaum Fir'aun dan pengikut-pengikutnya. Namun mereka tetap mendustakannya. Peringatan-peringatan itu adalah semua tanda-tanda kerasulan dan mukjizat yang Allah berikan kepada Nabi Musa sebagaimana diungkapkan dalam Surah al-A'raf/7: 133 dan al-Isra'/17: 101. Karena itu Allah menurunkan azab kepada mereka. Azab datang dari Zat yang Mahakuat dan Mahakuasa, yang menunjukkan bahwa azab itu amat hebat. Berupa tenggelamnya Fir'aun dan pengikutnya di Laut Merah.",
@@ -512,7 +513,7 @@
         },
         {
             "ind": "Apakah orang-orang kafirmu (hai kaum musyrikin) lebih baik dari mereka itu, atau apakah kamu telah mempunyai jaminan kebebasan (dari azab) dalam Kitab-kitab yang dahulu",
-            "arb": "أَكُفَّارُكُمْ خَيْرٌ مِّنْ أُولَٰئِكُمْ أَمْ لَكُم بَرَاءَةٌ فِي الزُّبُرِ",
+            "arb": "اَكُفَّارُكُمْ خَيْرٌ مِّنْ اُولٰۤىِٕكُمْ اَمْ لَكُمْ بَرَاۤءَةٌ فِى الزُّبُرِۚ",
             "transliterasi": "Akuffārukum khairum min ulā'ikum am lakum barā'atun fiz-zubur(i).",
             "eng": "ARE, THEN, those of you who [now] deny the truth better than those others - or have you, per­chance, [been promised] immunity in the [ancient] books of [divine] wisdom?",
             "kemenag": "Allah memperingatkan orang-orang kafir Mekah apakah mereka merasa lebih mulia dari kaum kafir sebelum mereka yang telah ditimpa hukuman Allah seperti kaum Nuh, kaum 'Ad dan kaum Samud. Apakah mereka akan selamat dari azab Allah karena kekafiran mereka terhadap-Nya dan kedustaan mereka terhadap rasulNya. Ataukah mereka benar mendapat jaminan tertulis dalam kitabkitab suci bahwa mereka merasa bebas dari azab Allah walaupun selalu kafir dan berbuat jahat. Jika keyakinan mereka itu benar perlu menunjukkan landasan kebenaran keyakinan mereka itu.",
@@ -524,7 +525,7 @@
         },
         {
             "ind": "Atau apakah mereka mengatakan: \"Kami adalah satu golongan yang bersatu yang pasti menang\".",
-            "arb": "أَمْ يَقُولُونَ نَحْنُ جَمِيعٌ مُّنتَصِرٌ",
+            "arb": "اَمْ يَقُوْلُوْنَ نَحْنُ جَمِيْعٌ مُّنْتَصِرٌ",
             "transliterasi": "Am yaqūlūna naḥnu jamī‘um muntaṣir(un).",
             "eng": "Or do they say, “We are a group united, [and therefore] bound to prevail”?",
             "kemenag": "Allah masih melanjutkan pertanyaan apakah mereka merasa merupakan suatu kekuatan yang sangat kompak sehingga begitu kuatnya dan tidak mungkin dikalahkan. Abu Jahal berkata, pasukan mereka banyak dan kuat, mereka pasti akan menang (pada peristiwa Perang Badar). (",
@@ -536,7 +537,7 @@
         },
         {
             "ind": "Golongan itu pasti akan dikalahkan dan mereka akan mundur ke belakang.",
-            "arb": "سَيُهْزَمُ الْجَمْعُ وَيُوَلُّونَ الدُّبُرَ",
+            "arb": "سَيُهْزَمُ الْجَمْعُ وَيُوَلُّوْنَ الدُّبُرَ",
             "transliterasi": "Sayuhzamul-jam‘u wa yuwallūnad-dubur(a).",
             "eng": "[Yet] the hosts [of those who deny the truth] shall be routed, and they shall turn their backs [in flight]!",
             "kemenag": "Allah menegaskan bahwa kesatuan mereka akan diceraiberaikan dan kekuatan mereka akan dipatahkan oleh pasukan Islam. Janji Allah itu terbukti dalam Perang Badar, dimana lebih dari 70 orang pemuka-pemuka mereka tewas dan sisanya lari terbirit-birit kembali ke Mekah. Bukti tentang benarnya kenabian Muhammad saw, karena ayat ini turun di Mekah, sedang Nabi saw belum mempunyai pasukan, bahkan pengikut-pengikut Nabi terpencarpencar, diburu dan disiksa oleh orang-orang musyrik di mana saja mereka berada, 'Umar bin al-Khaththab berkata, \"Ketika ayat itu turun saya tidak mengerti apa maksudnya. Tetapi pada Perang Badar, saya lihat Nabi saw memakai baju besi dan saya dengan beliau membaca ayat ini, 'Golongan itu pasti akan dikalahkan, waktu itu barulah saya mengerti maksud ayat tersebut.\" Diriwayatkan oleh al-Bukhari dari Ibnu 'Abbas bahwa Nabi saw berkata ketika beliau masih dalam kemah, pada hari Perang Badar: \"Aku menagih pesan-Mu dan janji-Mu! Ya Allah, jika Engkau menghendaki (kekalahan kami) niscaya Engkau tidak akan disembah lagi sesudah hari ini\". Lalu Abu Bakar memegang tangan Nabi dan berkata, \"Cukup sudah ya Rasulullah! Engkau telah begitu mendesak Tuhanmu.\"Lalu beliau keluar (dari kemah) melompat dengan memakai baju besi sambil membaca ayat ini. (Riwayat alBukhari) \nKemudian Allah menyatakan bahwa yang tersebut itu adalah azab dunia dan mereka akan menemui azab yang lebih hebat lagi pada hari Kiamat.",
@@ -548,7 +549,7 @@
         },
         {
             "ind": "Sebenarnya hari kiamat itulah hari yang dijanjikan kepada mereka dan kiamat itu lebih dahsyat dan lebih pahit.",
-            "arb": "بَلِ السَّاعَةُ مَوْعِدُهُمْ وَالسَّاعَةُ أَدْهَىٰ وَأَمَرُّ",
+            "arb": "بَلِ السَّاعَةُ مَوْعِدُهُمْ وَالسَّاعَةُ اَدْهٰى وَاَمَرُّ",
             "transliterasi": "Balis-sā‘atu mau‘iduhum was-sā‘atu adhā wa amarr(u).",
             "eng": "But nay - the Last Hour is the time when they shall truly meet their fate; and that Last Hour will be most calamitous, and most bitter:",
             "kemenag": "Peperangan tersebut adalah azab yang akan mereka rasakan di dunia, berupa kekalahan, dibunuh atau ditawan tetapi mereka masih akan menerima azab lain yang lebih dahsyat, yaitu azab neraka di akhirat. Azab akhirat itu lebih hebat dan berlangsung kekal dan kuat selama-lamanya.",
@@ -560,7 +561,7 @@
         },
         {
             "ind": "Sesungguhnya orang-orang yang berdosa berada dalam kesesatan (di dunia) dan dalam neraka.",
-            "arb": "إِنَّ الْمُجْرِمِينَ فِي ضَلَالٍ وَسُعُرٍ",
+            "arb": "اِنَّ الْمُجْرِمِيْنَ فِيْ ضَلٰلٍ وَّسُعُرٍۘ",
             "transliterasi": "Innal-mujrimīna fī ḍalāliw wa su‘ur(in).",
             "eng": "for, behold, those who are lost in sin [will at that time come to know that it is they who] were sunk in error and folly!",
             "kemenag": "Allah menyatakan, bahwa sesungguhnya orang-orang yang mempersekutukan Allah dan mendustakan rasul-rasul-Nya adalah orang-orang sesat dan menyimpang dari jalan yang benar di dunia. Di akhirat nanti mereka akan ditimpa azab yang pedih akibat kesesatannya.",
@@ -572,7 +573,7 @@
         },
         {
             "ind": "(Ingatlah) pada hari mereka diseret ke neraka atas muka mereka. (Dikatakan kepada mereka): \"Rasakanlah sentuhan api neraka!\"",
-            "arb": "يَوْمَ يُسْحَبُونَ فِي النَّارِ عَلَىٰ وُجُوهِهِمْ ذُوقُوا مَسَّ سَقَرَ",
+            "arb": "يَوْمَ يُسْحَبُوْنَ فِى النَّارِ عَلٰى وُجُوْهِهِمْۗ ذُوْقُوْا مَسَّ سَقَرَ",
             "transliterasi": "Yauma yusḥabūna fin-nāri ‘alā wujūhihim, żūqū massa saqar(a).",
             "eng": "On the Day when they shall be dragged into the fire on their faces, [they will be told:] “Taste now the touch of hell-fire!”",
             "kemenag": "Orang-orang yang durhaka akan digiring ke dalam neraka dengan terseret-seret dan terbentur-bentur mukanya ke tanah karena itu mereka sangat menderita. Penderitaan mereka di dalam neraka lebih hebat lagi. Neraka akan melelehkan kulit dan daging mereka",
@@ -584,7 +585,7 @@
         },
         {
             "ind": "Sesungguhnya Kami menciptakan segala sesuatu menurut ukuran.",
-            "arb": "إِنَّا كُلَّ شَيْءٍ خَلَقْنَاهُ بِقَدَرٍ",
+            "arb": "اِنَّا كُلَّ شَيْءٍ خَلَقْنٰهُ بِقَدَرٍ",
             "transliterasi": "Innā kulla syai'in khalaqnāhu biqadar(in).",
             "eng": "BEHOLD, everything have We created in due measure and proportion;",
             "kemenag": "Seluruh makhluk diciptakan-Nya sesuai ketentuan dan hukum-hukum yang telah ditetapkan-Nya. Karena itu bila seseorang dihukum karena ketetapan dan hukum-hukumnya itu. Dan segala sesuatu akan terjadi sesuai ketetapan-Nya. Dalam ayat lain Allah juga berfirman mengenai ketetapan atau takdir yaitu: \nDan Dia menciptakan segala sesuatu, lalu menetapkan ukuranukurannya dengan tepat. (al-Furqan/25: 2) \nTetapi manusia wajib berusaha, ketentuan-Nya diserahkan kepada Allah sesuai firman Allah: \nDan bahwa manusia hanya memperoleh apa yang telah diusahakannya dan sesungguhnya usahanya itu kelak akan diperlihatkan (kepadanya). (an-Najm/53: 39-40) \nDalam hadis sahih yang diriwayatkan Ahmad dan Muslim dari Abu Hurairah: Rasulullah saw bersabda, \"Minta tolonglah kepada Allah, dan jangan bersikap lemah. Bila sesuatu menimpamu, maka katakanlah, Allah telah menetapkannya. Apa yang Dia kehendaki, Dia kerjakan, dan jangan kamu berkata: seandainya aku berbuat begini maka akan begitu. Sesungguhnya kata \"seandainya\" membuka (kemungkinan pada) perbuatan setan. Sesuai dengan hadis Rasulullah saw: Rasullah saw bersabda: segala sesuatu ditetapkan ukurannya bahkan kelemahan dan kecerdasan. (Riwayat Imam Ahmad dan Muslim dari Ibnu 'Umar) Allah swt berfirman: \nBaginya (manusia) ada malaikat-malaikat yang selalu menjaganya bergiliran, dari depan dan belakangnya. Mereka menjaganya atas perintah Allah. Sesungguhnya Allah tidak akan mengubah keadaan suatu kaum sebelum mereka mengubah keadaan diri mereka sendiri. Dan apabila Allah menghendaki keburukan terhadap suatu kaum, maka tak ada yang dapat menolaknya dan tidak ada pelindung bagi mereka selain Dia. (ar-Ra'd/13: 11)",
@@ -596,7 +597,7 @@
         },
         {
             "ind": "Dan perintah Kami hanyalah satu perkataan seperti kejapan mata.",
-            "arb": "وَمَا أَمْرُنَا إِلَّا وَاحِدَةٌ كَلَمْحٍ بِالْبَصَرِ",
+            "arb": "وَمَآ اَمْرُنَآ اِلَّا وَاحِدَةٌ كَلَمْحٍ ۢبِالْبَصَرِ",
             "transliterasi": "Wa mā amrunā illā wāḥidatun kalamḥim bil-baṣar(i).",
             "eng": "and Our ordaining [a thing and its coming into being] is but one [act], like the twinkling of an eye.",
             "kemenag": "Sesungguhnya perintah Allah hanya disampaikan satu kali dan perintah itu pasti terjadi dengan cepat, lebih cepat dari kedipan mata. Bila Allah swt menghendaki terjadinya sesuatu maka Ia hanya mengatakan \"Jadilah\" yang dikehendaki-Nya itu segera terwujud. Begitu pulalah mengenai hukuman terhadap orang kafir, hukuman pasti terlaksana di akhirat. (",
@@ -608,7 +609,7 @@
         },
         {
             "ind": "Dan sesungguhnya telah Kami binasakan orang yang serupa dengan kamu. Maka adakah orang yang mau mengambil pelajaran?",
-            "arb": "وَلَقَدْ أَهْلَكْنَا أَشْيَاعَكُمْ فَهَلْ مِن مُّدَّكِرٍ",
+            "arb": "وَلَقَدْ اَهْلَكْنَآ اَشْيَاعَكُمْ فَهَلْ مِنْ مُّدَّكِرٍ",
             "transliterasi": "Wa laqad ahlaknā asy-yā‘akum fahal mim muddakir(in).",
             "eng": "Thus, indeed, did We destroy people like you [in the past]: who, then, is willing to take it to heart?",
             "kemenag": "Ayat ini menerangkan bahwa Allah membinasakan orangorang yang sama dengan mereka, yaitu umat-umat yang mendustakan para nabi pada zaman lampau, mereka telah hancur karena pembangkangannya. Peristiwa-peristiwa itu hendaknya menjadi pelajaran bagi kaum kafir Mekah dan bagi siapa saja sesudah mereka beriman. Allah berfirman dalam ayat lain mengenai hukuman yang dijatuhkan kepada satu generasi, sama dengan hukuman yang dijatuhkan pada generasi sebelumnya. Dan diberi penghalang antara mereka dengan apa yang mereka inginkan sebagaimana yang dilakukan terhadap orang-orang yang sepaham dengan mereka yang terdahulu. Sesungguhnya mereka dahulu (di dunia) dalam keraguan yang mendalam. (Saba'/34: 54)",
@@ -620,7 +621,7 @@
         },
         {
             "ind": "Dan segala sesuatu yang telah mereka perbuat tercatat dalam buku-buku catatan",
-            "arb": "وَكُلُّ شَيْءٍ فَعَلُوهُ فِي الزُّبُرِ",
+            "arb": "وَكُلُّ شَيْءٍ فَعَلُوْهُ فِى الزُّبُرِ",
             "transliterasi": "Wa kullu syai'in fa‘alūhu fiz-zubur(i).",
             "eng": "[They were truly guilty] because all [the evil] that they ever did had been [revealed to them as such] in the [ancient] books of [divine] wisdom;",
             "kemenag": "Semua perbuatan manusia terhimpun dalam buku catatan masing-masing. Hal itu karena setiap perbuatan manusia kecil ataupun besar, baik atau buruk dicatat oleh malaikat di dalam buku catatan itu, Malaikat Kiram atau sebut saja Raqib, mencatat perbuatan yang baik dan Malaikat Katibin atau 'Atid mencatat perbuatan yang tidak baik. Dalam ayat lain Allah berfirman: \nTidak ada suatu kata yang diucapkannya melainkan ada di sisinya malaikat pengawas yang selalu siap (mencatat). (Qaf/50: 18) \nOleh karena semua aktivitas manusia, baik perbuatan maupun ucapan, baik yang baik maupun yang buruk, baik besar maupun kecil tercatat di dalam buku catatan masing-masing, maka sangat mudah bagi Allah menjatuhkan hukuman kepada yang berdosa dan memberikan pahala kepada yang berbuat baik.",
@@ -632,7 +633,7 @@
         },
         {
             "ind": "Dan segala (urusan) yang kecil maupun yang besar adalah tertulis.",
-            "arb": "وَكُلُّ صَغِيرٍ وَكَبِيرٍ مُّسْتَطَرٌ",
+            "arb": "وَكُلُّ صَغِيْرٍ وَّكَبِيْرٍ مُّسْتَطَرٌ",
             "transliterasi": "Wa kullu ṣagīriw wa kabīrim mustaṭar(un).",
             "eng": "and everything [that man does], be it small or great, is recorded [with God].",
             "kemenag": "Semua perbuatan manusia terhimpun dalam buku catatan masing-masing. Hal itu karena setiap perbuatan manusia kecil ataupun besar, baik atau buruk dicatat oleh malaikat di dalam buku catatan itu, Malaikat Kiram atau sebut saja Raqib, mencatat perbuatan yang baik dan Malaikat Katibin atau 'Atid mencatat perbuatan yang tidak baik. Dalam ayat lain Allah berfirman: \nTidak ada suatu kata yang diucapkannya melainkan ada di sisinya malaikat pengawas yang selalu siap (mencatat). (Qaf/50: 18) \nOleh karena semua aktivitas manusia, baik perbuatan maupun ucapan, baik yang baik maupun yang buruk, baik besar maupun kecil tercatat di dalam buku catatan masing-masing, maka sangat mudah bagi Allah menjatuhkan hukuman kepada yang berdosa dan memberikan pahala kepada yang berbuat baik.",
@@ -644,7 +645,7 @@
         },
         {
             "ind": "Sesungguhnya orang-orang yang bertakwa itu di dalam taman-taman dan sungai-sungai,",
-            "arb": "إِنَّ الْمُتَّقِينَ فِي جَنَّاتٍ وَنَهَرٍ",
+            "arb": "اِنَّ الْمُتَّقِيْنَ فِيْ جَنّٰتٍ وَّنَهَرٍۙ",
             "transliterasi": "Innal-muttaqīna fī jannātiw wa nahar(in).",
             "eng": "[Hence, too,] behold, the God-conscious will find themselves in [a paradise of] gardens and running waters,",
             "kemenag": "Bagi mereka yang bertakwa, Allah memberikan surgasurga sesuai tingkat ketakwaan mereka. Sebagaimana diketahui surga itu bertingkat-tingkat. Di dalam surga-surga mengalir sungaisungai yang menunjukkan bahwa surga adalah tempat yang menyejukkan, indah dan memberikan hasil yang banyak. Mereka menempati tempat yang benar yang tidak ada cacat atau kekurangannya dan mereka berada di bawah naungan Maharaja yang Mahakuasa, yang akan memberi mereka apa yang Ia kehendaki tanpa halangan siapa pun.",
@@ -656,7 +657,7 @@
         },
         {
             "ind": "di tempat yang disenangi di sisi Tuhan Yang Berkuasa.",
-            "arb": "فِي مَقْعَدِ صِدْقٍ عِندَ مَلِيكٍ مُّقْتَدِرٍ",
+            "arb": "فِيْ مَقْعَدِ صِدْقٍ عِنْدَ مَلِيْكٍ مُّقْتَدِرٍ ࣖ",
             "transliterasi": "Fī maq‘adi ṣidqin ‘inda malīkim muqtadir(in).",
             "eng": "in a seat of truth, in the presence of a Sovereign who determines all things.",
             "kemenag": "Bagi mereka yang bertakwa, Allah memberikan surgasurga sesuai tingkat ketakwaan mereka. Sebagaimana diketahui surga itu bertingkat-tingkat. Di dalam surga-surga mengalir sungaisungai yang menunjukkan bahwa surga adalah tempat yang menyejukkan, indah dan memberikan hasil yang banyak. Mereka menempati tempat yang benar yang tidak ada cacat atau kekurangannya dan mereka berada di bawah naungan Maharaja yang Mahakuasa, yang akan memberi mereka apa yang Ia kehendaki tanpa halangan siapa pun.",

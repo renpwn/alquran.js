@@ -1,14 +1,15 @@
 {
     "number": 92,
     "name": "Al-Lail",
-    "englishName": "سُورَةُ اللَّيۡلِ",
-    "englishNameTranslation": "Al-Lail",
+    "ar": "سُورَةُ اللَّيۡلِ",
+    "en": "Al-Lail",
+    "id": "Malam",
     "revelationType": "Meccan",
     "numberOfAyahs": 21,
     "ayahs": [
         {
             "ind": "Demi malam apabila menutupi (cahaya siang),",
-            "arb": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ وَاللَّيْلِ إِذَا يَغْشَىٰ",
+            "arb": "وَالَّيْلِ اِذَا يَغْشٰىۙ",
             "transliterasi": "Wal-laili iżā yagsyā.",
             "eng": "CONSIDER the night as it veils [the earth] in darkness,",
             "kemenag": "Allah bersumpah dengan malam apabila menutupi, yaitu ketika malam sudah merata menutupi alam ini. Ini adalah waktu isya yaitu ketika cahaya merah sudah hilang di ufuk barat. Waktu itu manusia pada umumnya sudah mengakhiri aktivitasnya, dan ingin istirahat dan pergi tidur. Kemudian Allah bersumpah dengan aktivitas alam sebaliknya, yaitu siang ketika terang benderang. Waktu itu adalah waktu duha ketika cahaya matahari sudah merata menyinari alam ini, yang kontras dengan malam yang baru saja berakhir, dan manusia mulai bekerja.",
@@ -20,7 +21,7 @@
         },
         {
             "ind": "dan siang apabila terang benderang,",
-            "arb": "وَالنَّهَارِ إِذَا تَجَلَّىٰ",
+            "arb": "وَالنَّهَارِ اِذَا تَجَلّٰىۙ",
             "transliterasi": "Wan-nahāri iżā tajallā.",
             "eng": "and the day as it rises bright!",
             "kemenag": "Allah bersumpah dengan malam apabila menutupi, yaitu ketika malam sudah merata menutupi alam ini. Ini adalah waktu isya yaitu ketika cahaya merah sudah hilang di ufuk barat. Waktu itu manusia pada umumnya sudah mengakhiri aktivitasnya, dan ingin istirahat dan pergi tidur. Kemudian Allah bersumpah dengan aktivitas alam sebaliknya, yaitu siang ketika terang benderang. Waktu itu adalah waktu duha ketika cahaya matahari sudah merata menyinari alam ini, yang kontras dengan malam yang baru saja berakhir, dan manusia mulai bekerja.",
@@ -32,7 +33,7 @@
         },
         {
             "ind": "dan penciptaan laki-laki dan perempuan,",
-            "arb": "وَمَا خَلَقَ الذَّكَرَ وَالْأُنثَىٰ",
+            "arb": "وَمَا خَلَقَ الذَّكَرَ وَالْاُنْثٰىٓ ۙ",
             "transliterasi": "Wa mā khalaqaż-żakara wal-unṡā.",
             "eng": "Consider the creation of the male and the female!",
             "kemenag": "Selanjutnya, Allah bersumpah dengan laki-laki dan perempuan yang telah diciptakan-Nya. Ini adalah juga dua makhluk yang berlawanan jenis dan kodratnya.",
@@ -44,7 +45,7 @@
         },
         {
             "ind": "sesungguhnya usaha kamu memang berbeda-beda.",
-            "arb": "إِنَّ سَعْيَكُمْ لَشَتَّىٰ",
+            "arb": "اِنَّ سَعْيَكُمْ لَشَتّٰىۗ",
             "transliterasi": "Inna sa‘yakum lasyattā.",
             "eng": "Verily, [O men,] you aim at most divergent ends!",
             "kemenag": "Setelah bersumpah dengan dua-dua makhluk-Nya yang berlawanan jenis dan sifatnya, Allah menegaskan bahwa perbuatan atau tingkah laku manusia itu memang bermacam-macam. Perbedaan itu terjadi karena perbedaan kemauannya, apakah mengikuti potensi positifnya ataukah mengikuti potensi negatifnya.",
@@ -56,7 +57,7 @@
         },
         {
             "ind": "Adapun orang yang memberikan (hartanya di jalan Allah) dan bertakwa,",
-            "arb": "فَأَمَّا مَنْ أَعْطَىٰ وَاتَّقَىٰ",
+            "arb": "فَاَمَّا مَنْ اَعْطٰى وَاتَّقٰىۙ",
             "transliterasi": "Fa ammā man a‘ṭā wattaqā.",
             "eng": "Thus, as for him who gives [to others] and is conscious of God,",
             "kemenag": "Dalam ayat ini, Allah menerangkan adanya tiga tingkah laku manusia. Pertama, suka memberi, yaitu menolong antara sesama manusia. Ia tidak hanya mengeluarkan zakat kekayaannya, yang merupakan kewajiban, tetapi juga berinfak, bersedekah, dan sebagainya yang bukan wajib. Kedua, bertakwa, yaitu takut mengabaikan perintah-Nya atau melanggar larangan-Nya. \nKetiga, membenarkan kebaikan Allah, yaitu mengakui nikmat-nikmat yang telah diberikan kepadanya lalu mensyukurinya. Nikmat terbesar Allah yang ia akui adalah surga. Oleh karena itu, ia tidak segan-segan beramal di dunia untuk memperolehnya, di antaranya membantu antara sesama manusia.\nKepada mereka yang melakukan tiga aspek perbuatan baik di atas, Allah akan memberikan kemudahan bagi mereka, yaitu kemudahan untuk memperoleh keberuntungan di dunia maupun di akhirat.\n",
@@ -68,7 +69,7 @@
         },
         {
             "ind": "dan membenarkan adanya pahala yang terbaik (surga),",
-            "arb": "وَصَدَّقَ بِالْحُسْنَىٰ",
+            "arb": "وَصَدَّقَ بِالْحُسْنٰىۙ",
             "transliterasi": "Wa ṣaddaqa bil-ḥusnā.",
             "eng": "and believes in the truth of the ultimate good",
             "kemenag": "Dalam ayat ini, Allah menerangkan adanya tiga tingkah laku manusia. Pertama, suka memberi, yaitu menolong antara sesama manusia. Ia tidak hanya mengeluarkan zakat kekayaannya, yang merupakan kewajiban, tetapi juga berinfak, bersedekah, dan sebagainya yang bukan wajib. Kedua, bertakwa, yaitu takut mengabaikan perintah-Nya atau melanggar larangan-Nya. \nKetiga, membenarkan kebaikan Allah, yaitu mengakui nikmat-nikmat yang telah diberikan kepadanya lalu mensyukurinya. Nikmat terbesar Allah yang ia akui adalah surga. Oleh karena itu, ia tidak segan-segan beramal di dunia untuk memperolehnya, di antaranya membantu antara sesama manusia.\nKepada mereka yang melakukan tiga aspek perbuatan baik di atas, Allah akan memberikan kemudahan bagi mereka, yaitu kemudahan untuk memperoleh keberuntungan di dunia maupun di akhirat.\n",
@@ -80,7 +81,7 @@
         },
         {
             "ind": "maka Kami kelak akan menyiapkan baginya jalan yang mudah.",
-            "arb": "فَسَنُيَسِّرُهُ لِلْيُسْرَىٰ",
+            "arb": "فَسَنُيَسِّرُهٗ لِلْيُسْرٰىۗ",
             "transliterasi": "Fa sanuyassiruhū lil-yusrā.",
             "eng": "for him shall We make easy the path towards [ultimate] ease.",
             "kemenag": "Dalam ayat ini, Allah menerangkan adanya tiga tingkah laku manusia. Pertama, suka memberi, yaitu menolong antara sesama manusia. Ia tidak hanya mengeluarkan zakat kekayaannya, yang merupakan kewajiban, tetapi juga berinfak, bersedekah, dan sebagainya yang bukan wajib. Kedua, bertakwa, yaitu takut mengabaikan perintah-Nya atau melanggar larangan-Nya. \nKetiga, membenarkan kebaikan Allah, yaitu mengakui nikmat-nikmat yang telah diberikan kepadanya lalu mensyukurinya. Nikmat terbesar Allah yang ia akui adalah surga. Oleh karena itu, ia tidak segan-segan beramal di dunia untuk memperolehnya, di antaranya membantu antara sesama manusia.\nKepada mereka yang melakukan tiga aspek perbuatan baik di atas, Allah akan memberikan kemudahan bagi mereka, yaitu kemudahan untuk memperoleh keberuntungan di dunia maupun di akhirat.\n",
@@ -92,7 +93,7 @@
         },
         {
             "ind": "Dan adapun orang-orang yang bakhil dan merasa dirinya cukup,",
-            "arb": "وَأَمَّا مَن بَخِلَ وَاسْتَغْنَىٰ",
+            "arb": "وَاَمَّا مَنْۢ بَخِلَ وَاسْتَغْنٰىۙ",
             "transliterasi": "Wa ammā man bakhila wastagnā.",
             "eng": "But as for him who is niggardly, and thinks that he is self-sufficient,",
             "kemenag": "Sebaliknya, ada manusia yang bertingkah laku sebaliknya. Ia bakhil, pelit, tidak mau menolong antar sesama, apalagi mengeluarkan kewajibannya yaitu zakat. Di samping itu, ia sudah merasa cukup segala-galanya. Oleh karena itu, ia merasa tidak memerlukan orang lain bahkan Allah. Akibatnya, ia sombong dan tidak mengakui nikmat-nikmat Allah yang telah ia terima dan tidak mengharapkan nikmat-nikmat itu. Akibatnya ia tidak mengindahkan aturan-aturan Allah. Orang itu akan dimudahkan Allah menuju kesulitan, baik kesulitan di dunia maupun di akhirat. Kesulitan di dunia misalnya kejatuhan, penyakit, kecelakaan, musibah, dan sebagainya. Kesulitan di akhirat adalah ketersiksaan yang puncaknya adalah neraka.\nManusia, bila sudah mati tanpa memiliki amal dan kemudian masuk neraka di akhirat, maka harta benda dan kekayaan mereka tidak berguna apa pun. Hal itu karena harta itu tidak akan bisa digunakan untuk menebus dosa-dosa mereka.\n\n",
@@ -104,7 +105,7 @@
         },
         {
             "ind": "serta mendustakan pahala terbaik,",
-            "arb": "وَكَذَّبَ بِالْحُسْنَىٰ",
+            "arb": "وَكَذَّبَ بِالْحُسْنٰىۙ",
             "transliterasi": "Wa każżaba bil-ḥusnā.",
             "eng": "and calls the ultimate good a lie –",
             "kemenag": "Sebaliknya, ada manusia yang bertingkah laku sebaliknya. Ia bakhil, pelit, tidak mau menolong antar sesama, apalagi mengeluarkan kewajibannya yaitu zakat. Di samping itu, ia sudah merasa cukup segala-galanya. Oleh karena itu, ia merasa tidak memerlukan orang lain bahkan Allah. Akibatnya, ia sombong dan tidak mengakui nikmat-nikmat Allah yang telah ia terima dan tidak mengharapkan nikmat-nikmat itu. Akibatnya ia tidak mengindahkan aturan-aturan Allah. Orang itu akan dimudahkan Allah menuju kesulitan, baik kesulitan di dunia maupun di akhirat. Kesulitan di dunia misalnya kejatuhan, penyakit, kecelakaan, musibah, dan sebagainya. Kesulitan di akhirat adalah ketersiksaan yang puncaknya adalah neraka.\nManusia, bila sudah mati tanpa memiliki amal dan kemudian masuk neraka di akhirat, maka harta benda dan kekayaan mereka tidak berguna apa pun. Hal itu karena harta itu tidak akan bisa digunakan untuk menebus dosa-dosa mereka.\n\n",
@@ -116,7 +117,7 @@
         },
         {
             "ind": "maka kelak Kami akan menyiapkan baginya (jalan) yang sukar.",
-            "arb": "فَسَنُيَسِّرُهُ لِلْعُسْرَىٰ",
+            "arb": "فَسَنُيَسِّرُهٗ لِلْعُسْرٰىۗ",
             "transliterasi": "Fa sanuyassiruhū lil-‘usrā.",
             "eng": "for him shall We make easy the path towards hardship:",
             "kemenag": "Sebaliknya, ada manusia yang bertingkah laku sebaliknya. Ia bakhil, pelit, tidak mau menolong antar sesama, apalagi mengeluarkan kewajibannya yaitu zakat. Di samping itu, ia sudah merasa cukup segala-galanya. Oleh karena itu, ia merasa tidak memerlukan orang lain bahkan Allah. Akibatnya, ia sombong dan tidak mengakui nikmat-nikmat Allah yang telah ia terima dan tidak mengharapkan nikmat-nikmat itu. Akibatnya ia tidak mengindahkan aturan-aturan Allah. Orang itu akan dimudahkan Allah menuju kesulitan, baik kesulitan di dunia maupun di akhirat. Kesulitan di dunia misalnya kejatuhan, penyakit, kecelakaan, musibah, dan sebagainya. Kesulitan di akhirat adalah ketersiksaan yang puncaknya adalah neraka.\nManusia, bila sudah mati tanpa memiliki amal dan kemudian masuk neraka di akhirat, maka harta benda dan kekayaan mereka tidak berguna apa pun. Hal itu karena harta itu tidak akan bisa digunakan untuk menebus dosa-dosa mereka.\n\n",
@@ -128,7 +129,7 @@
         },
         {
             "ind": "Dan hartanya tidak bermanfaat baginya apabila ia telah binasa.",
-            "arb": "وَمَا يُغْنِي عَنْهُ مَالُهُ إِذَا تَرَدَّىٰ",
+            "arb": "وَمَا يُغْنِيْ عَنْهُ مَالُهٗٓ اِذَا تَرَدّٰىٓۙ",
             "transliterasi": "Wa mā yugnī ‘anhu māluhū iżā taraddā.",
             "eng": "and what will his wealth avail him when he goes down [to his grave]?",
             "kemenag": "Sebaliknya, ada manusia yang bertingkah laku sebaliknya. Ia bakhil, pelit, tidak mau menolong antar sesama, apalagi mengeluarkan kewajibannya yaitu zakat. Di samping itu, ia sudah merasa cukup segala-galanya. Oleh karena itu, ia merasa tidak memerlukan orang lain bahkan Allah. Akibatnya, ia sombong dan tidak mengakui nikmat-nikmat Allah yang telah ia terima dan tidak mengharapkan nikmat-nikmat itu. Akibatnya ia tidak mengindahkan aturan-aturan Allah. Orang itu akan dimudahkan Allah menuju kesulitan, baik kesulitan di dunia maupun di akhirat. Kesulitan di dunia misalnya kejatuhan, penyakit, kecelakaan, musibah, dan sebagainya. Kesulitan di akhirat adalah ketersiksaan yang puncaknya adalah neraka.\nManusia, bila sudah mati tanpa memiliki amal dan kemudian masuk neraka di akhirat, maka harta benda dan kekayaan mereka tidak berguna apa pun. Hal itu karena harta itu tidak akan bisa digunakan untuk menebus dosa-dosa mereka.\n\n",
@@ -140,7 +141,7 @@
         },
         {
             "ind": "Sesungguhnya kewajiban Kamilah memberi petunjuk,",
-            "arb": "إِنَّ عَلَيْنَا لَلْهُدَىٰ",
+            "arb": "اِنَّ عَلَيْنَا لَلْهُدٰىۖ",
             "transliterasi": "Inna ‘alainā lal-hudā.",
             "eng": "BEHOLD, it is indeed for Us to grace [you] with guidance;",
             "kemenag": "Allah menegaskan bahwa Ia berkewajiban menunjuki manusia mana jalan yang benar dan mana jalan yang salah, mana yang baik dan mana yang buruk, sebagaimana dinyatakan-Nya dalam ayat lain:\n\nDan apabila orang-orang yang beriman kepada ayat-ayat Kami datang kepadamu, maka katakanlah, \"Salamun 'alaikum (selamat sejahtera untuk kamu).\" Tuhanmu telah menetapkan sifat kasih sayang pada diri-Nya, (yaitu) barang siapa berbuat kejahatan di antara kamu karena kebodohan, kemudian dia bertobat setelah itu dan memperbaiki diri, maka Dia Maha Pengampun, Maha Penyayang. (al-An'am/6: 54)\n",
@@ -152,7 +153,7 @@
         },
         {
             "ind": "dan sesungguhnya kepunyaan Kamilah akhirat dan dunia.",
-            "arb": "وَإِنَّ لَنَا لَلْآخِرَةَ وَالْأُولَىٰ",
+            "arb": "وَاِنَّ لَنَا لَلْاٰخِرَةَ وَالْاُوْلٰىۗ",
             "transliterasi": "Wa inna lanā lal-ākhirata wal-ūlā.",
             "eng": "and, behold, Ours is [the dominion over] the life to come as well as [over] this earlier part [of your life]:",
             "kemenag": "Allah juga pemilik alam ini, baik alam akhirat maupun alam dunia. Bila Allah pemilik segala-galanya, maka tiada jalan bagi manusia selain meminta semuanya itu kepada-Nya dengan jalan mengimani dan bertakwa kepada-Nya.",
@@ -164,7 +165,7 @@
         },
         {
             "ind": "Maka, kami memperingatkan kamu dengan neraka yang menyala-nyala.",
-            "arb": "فَأَنذَرْتُكُمْ نَارًا تَلَظَّىٰ",
+            "arb": "فَاَنْذَرْتُكُمْ نَارًا تَلَظّٰىۚ",
             "transliterasi": "Fa anżartukum nāran talaẓẓā.",
             "eng": "and so I warn you of the raging fire -",
             "kemenag": "Di samping Allah telah menunjuki manusia jalan yang benar, Ia juga memperingatkan manusia tentang adanya neraka yang senantiasa menyala-nyala. Penghuni neraka itu adalah mereka yang paling durhaka, yaitu orang-orang yang senantiasa memandang dusta wahyu-wahyu yang disampaikan kepadanya, dan karena itu tidak mau mengimaninya dan menjalankannya.",
@@ -176,7 +177,7 @@
         },
         {
             "ind": "Tidak ada yang masuk ke dalamnya kecuali orang yang paling celaka,",
-            "arb": "لَا يَصْلَاهَا إِلَّا الْأَشْقَى",
+            "arb": "لَا يَصْلٰىهَآ اِلَّا الْاَشْقَىۙ",
             "transliterasi": "Lā yaṣlāhā illal-asyqā.",
             "eng": "[the fire] which none shall have to endure but that most hapless wretch",
             "kemenag": "Di samping Allah telah menunjuki manusia jalan yang benar, Ia juga memperingatkan manusia tentang adanya neraka yang senantiasa menyala-nyala. Penghuni neraka itu adalah mereka yang paling durhaka, yaitu orang-orang yang senantiasa memandang dusta wahyu-wahyu yang disampaikan kepadanya, dan karena itu tidak mau mengimaninya dan menjalankannya.",
@@ -188,7 +189,7 @@
         },
         {
             "ind": "yang mendustakan (kebenaran) dan berpaling (dari iman).",
-            "arb": "الَّذِي كَذَّبَ وَتَوَلَّىٰ",
+            "arb": "الَّذِيْ كَذَّبَ وَتَوَلّٰىۗ",
             "transliterasi": "Allażī każżaba wa tawallā.",
             "eng": "who gives the lie to the truth and turns away [from it].",
             "kemenag": "Di samping Allah telah menunjuki manusia jalan yang benar, Ia juga memperingatkan manusia tentang adanya neraka yang senantiasa menyala-nyala. Penghuni neraka itu adalah mereka yang paling durhaka, yaitu orang-orang yang senantiasa memandang dusta wahyu-wahyu yang disampaikan kepadanya, dan karena itu tidak mau mengimaninya dan menjalankannya.",
@@ -200,7 +201,7 @@
         },
         {
             "ind": "Dan kelak akan dijauhkan orang yang paling takwa dari neraka itu,",
-            "arb": "وَسَيُجَنَّبُهَا الْأَتْقَى",
+            "arb": "وَسَيُجَنَّبُهَا الْاَتْقَىۙ",
             "transliterasi": "Wa sayujannabuhal-atqā.",
             "eng": "For, distant from it shall remain he who is truly conscious of God:",
             "kemenag": "Sebaliknya adalah orang yang takwa, yaitu orang yang memberikan kekayaannya untuk membantu orang lain untuk menyucikan dirinya. Orang yang takwa itu akan terjauh dari neraka. Contoh orang yang paling takwa adalah Abu Bakar as-siddiq yang telah menggunakan seluruh kekayaannya untuk memerdekakan orang-orang lemah dan perempuan-perempuan yang masuk Islam dan membantu mereka.",
@@ -212,7 +213,7 @@
         },
         {
             "ind": "yang menafkahkan hartanya (di jalan Allah) untuk membersihkannya,",
-            "arb": "الَّذِي يُؤْتِي مَالَهُ يَتَزَكَّىٰ",
+            "arb": "الَّذِيْ يُؤْتِيْ مَالَهٗ يَتَزَكّٰىۚ",
             "transliterasi": "Allażī yu'tī mālahū yatazakkā.",
             "eng": "he that spends his possessions [on others] so that he might grow in purity –",
             "kemenag": "Sebaliknya adalah orang yang takwa, yaitu orang yang memberikan kekayaannya untuk membantu orang lain untuk menyucikan dirinya. Orang yang takwa itu akan terjauh dari neraka. Contoh orang yang paling takwa adalah Abu Bakar as-siddiq yang telah menggunakan seluruh kekayaannya untuk memerdekakan orang-orang lemah dan perempuan-perempuan yang masuk Islam dan membantu mereka.",
@@ -224,7 +225,7 @@
         },
         {
             "ind": "padahal tidak ada seseorangpun memberikan suatu nikmat kepadanya yang harus dibalasnya,",
-            "arb": "وَمَا لِأَحَدٍ عِندَهُ مِن نِّعْمَةٍ تُجْزَىٰ",
+            "arb": "وَمَا لِاَحَدٍ عِنْدَهٗ مِنْ نِّعْمَةٍ تُجْزٰىٓۙ",
             "transliterasi": "Wa mā li'aḥadin ‘indahū min ni‘matin tujzā.",
             "eng": "not as payment for favours received,",
             "kemenag": "Orang-orang yang bertakwa membantu orang lain bukan karena orang itu berjasa kepadanya yang karena itu ia perlu membalasnya. Ia membantu orang itu semata-mata karena mengharapkan rida dan surga Allah di akhirat.",
@@ -236,7 +237,7 @@
         },
         {
             "ind": "tetapi (dia memberikan itu semata-mata) karena mencari keridhaan Tuhannya yang Maha Tinggi.",
-            "arb": "إِلَّا ابْتِغَاءَ وَجْهِ رَبِّهِ الْأَعْلَىٰ",
+            "arb": "اِلَّا ابْتِغَاۤءَ وَجْهِ رَبِّهِ الْاَعْلٰىۚ",
             "transliterasi": "Illabtigā'a wajhi rabbihil-a‘lā.",
             "eng": "but only out of a longing for the countenance of his Sustainer, the All-Highest:",
             "kemenag": "Orang-orang yang bertakwa membantu orang lain bukan karena orang itu berjasa kepadanya yang karena itu ia perlu membalasnya. Ia membantu orang itu semata-mata karena mengharapkan rida dan surga Allah di akhirat.",
@@ -248,7 +249,7 @@
         },
         {
             "ind": "Dan kelak dia benar-benar mendapat kepuasan.",
-            "arb": "وَلَسَوْفَ يَرْضَىٰ",
+            "arb": "وَلَسَوْفَ يَرْضٰى ࣖ",
             "transliterasi": "Wa lasaufa yarḍā.",
             "eng": "and such, indeed, shall in time be well-pleased.",
             "kemenag": "Orang takwa yang membantu orang lain untuk mencari rida Allah itu akhirnya akan memperolehnya. Orang itu terjauh dari neraka, dan pasti masuk surga.",
