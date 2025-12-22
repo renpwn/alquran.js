@@ -1,22 +1,22 @@
 import { openDB as _openDB } from './setting.db.js';
 
-let gdb = null;         // global DB instance
+let db = null;         // global DB instance
 let manualDB = false;  // flag: apakah user membuka DB manual?
 
 // Buka DB manual
 export async function openDB() {
-  if (!gdb) {
-    gdb = await _openDB();
+  if (!db) {
+    db = await _openDB();
     manualDB = true; // user harus menutup
   }
-  return gdb;
+  return db;
 }
 
 // Tutup DB manual
 export async function closeDB() {
-  if (gdb) {
-    await gdb.close();
-    gdb = null;
+  if (db) {
+    await db.close();
+    db = null;
     manualDB = false;
   }
 }
@@ -102,20 +102,15 @@ const parseAyatRange = (input, maxAyat) => {
 /* =====================================
    MAIN HANDLER (DB ONLY)
 ===================================== */
-export default async function alquranHandler(input = '', options = {}, dbInstance = null) {
-  let db = dbInstance;
+export default async function alquranHandler(input = '', options = {}) {
   let autoClose = false;
 
-  // jika user kirim dbInstance, pakai itu
-  // kalau tidak ada, pakai global db atau open sementara
-  if (!db) {
-    if (gdb) {
-      db = gdb; // pakai DB manual
-    } else {
+  // kalau manualDB belum dibuka, buka sendiri
+    if (!manualDB) {
       db = await _openDB(); // buka DB sementara
       autoClose = true;           // tandai untuk ditutup di akhir
     }
-  }
+  // }
 
 
   /* ========= TAFSIR ========= */
