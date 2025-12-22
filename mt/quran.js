@@ -138,8 +138,8 @@ const List = [
 ========================= */
 let db = null
 const DB_PATH = "./quran.db"
-const ALQURAN_DIR = "./alquran"
-const ALQURAN_DIR_MIN = "./alquran_min"
+const ALQURAN_DIR = "./json"
+const ALQURAN_DIR_MIN = "./json_min"
 const SOURCE_DIR = "../renpwn/database/alquran"
 
 // Helper untuk mendapatkan __dirname di ES Module
@@ -526,6 +526,12 @@ async function ambilTransliterasiAyat(surahNo) {
     const html = await fetchUrl(url)
     const $ = cheerio.load(html)
 
+    // Ambil text arab
+    const arab = $("p.arabic")
+    const arabic = arab.map((i, el) => {
+      return $(el).text().trim()
+    })
+
     // Ambil transliterasi
     const trans = $("p.translate")
     const transliterasi = trans.map((i, el) => {
@@ -535,6 +541,7 @@ async function ambilTransliterasiAyat(surahNo) {
     return {
       success: true,
       transliterasi,
+      arabic,
       title
     }
 
@@ -592,16 +599,16 @@ async function processSurah(surahNo, concurrency = 5, resume = false, mode = 1) 
       console.log(`✅ Semua tafsir surah ${surahNo} sudah lengkap`)
       
       // Buat versi minified
-      try {
-        await fs.access(ALQURAN_DIR_MIN)
-      } catch {
-        await fs.mkdir(ALQURAN_DIR_MIN, {
-          recursive: true
-        })
-      }
+      // try {
+      //   await fs.access(ALQURAN_DIR_MIN)
+      // } catch {
+      //   await fs.mkdir(ALQURAN_DIR_MIN, {
+      //     recursive: true
+      //   })
+      // }
 
-      const filenameMin = `${ALQURAN_DIR_MIN}/Alquran_${surahNo}.min.json`
-      await fs.writeFile(filenameMin, JSON.stringify(surahData))
+      // const filenameMin = `${ALQURAN_DIR_MIN}/Alquran_${surahNo}.min.json`
+      // await fs.writeFile(filenameMin, JSON.stringify(surahData))
 
       return true
     }
@@ -613,8 +620,9 @@ async function processSurah(surahNo, concurrency = 5, resume = false, mode = 1) 
 
     let namaSurahUpdated = false
     
-    let trans = await ambilTransliterasiAyat(surahNo)
-    trans = trans.transliterasi || []
+    const getTrans = await ambilTransliterasiAyat(surahNo)
+    const trans = getTrans.transliterasi || []
+    const arabic = getTrans.arabic || []
 
     for (const ayat of ayatBelumLengkap) {
       webQueue.add(async () => {
@@ -644,6 +652,7 @@ async function processSurah(surahNo, concurrency = 5, resume = false, mode = 1) 
           const ayahIndex = ayat - 1
           surahData.ayahs[ayahIndex] = {
             ...surahData.ayahs[ayahIndex],
+            arb: arabic[ayahIndex],
             transliterasi: trans[ayahIndex],
             ...result.data
           }
@@ -672,13 +681,13 @@ async function processSurah(surahNo, concurrency = 5, resume = false, mode = 1) 
     await fs.writeFile(filename, JSON.stringify(surahData, null, 4))
 
     // 8. Buat versi minified
-    try {
-      await fs.access(ALQURAN_DIR_MIN)
-    } catch {
-      await fs.mkdir(ALQURAN_DIR_MIN, {
-        recursive: true
-      })
-    }
+    // try {
+    //   await fs.access(ALQURAN_DIR_MIN)
+    // } catch {
+    //   await fs.mkdir(ALQURAN_DIR_MIN, {
+    //     recursive: true
+    //   })
+    // }
 
     const filenameMin = `${ALQURAN_DIR_MIN}/Alquran_${surahNo}.min.json`
     await fs.writeFile(filenameMin, JSON.stringify(surahData))
@@ -899,6 +908,15 @@ async function main() {
     await fs.access(ALQURAN_DIR)
   } catch {
     await fs.mkdir(ALQURAN_DIR, {
+      recursive: true
+    })
+  }
+
+  // Buat versi minified
+  try {
+    await fs.access(ALQURAN_DIR_MIN)
+  } catch {
+    await fs.mkdir(ALQURAN_DIR_MIN, {
       recursive: true
     })
   }
