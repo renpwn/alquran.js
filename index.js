@@ -342,11 +342,21 @@ export default async function alquranHandler(input = '', options = {}) {
       a.ayat,
       a.text_ar,
       a.text_latin,
+
+      -- translations
+      MAX(CASE WHEN tr.lang = 'id' THEN tr.text END) AS id,
+      MAX(CASE WHEN tr.lang = 'en' THEN tr.text END) AS en,
+
       t.text AS tafsir,
       so.offset + a.ayat AS noAudio
     FROM ayahs a   
     JOIN surahs s ON s.no = a.surah_id
     JOIN surah_offset so ON so.no = s.no
+
+    JOIN translations tr
+      ON tr.ayah_id = a.id
+    AND tr.lang IN ('id','en')
+
     LEFT JOIN tafsirs t
       ON t.ayah_id = a.id
      AND t.kitab = ?
@@ -363,6 +373,8 @@ export default async function alquranHandler(input = '', options = {}) {
       ayah: a.ayat,
       arab: a.text_ar,
       transliterasi: a.text_latin,
+      id: a.id,
+      en: a.en,
       tafsir: a.tafsir || null,
       noAudio: a.noAudio,
       audioUrl: `https://cdn.islamic.network/quran/audio/128/ar.alafasy/${a.noAudio}.mp3`
