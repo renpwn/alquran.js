@@ -1,5 +1,5 @@
 {
-  "name": "@renpwn/alquran-js",
+  "name": "@renpwn/alquran.js",
   "version": "0.14.11",
   "description": "Node.js library untuk mengakses Al-Qur'an dengan database SQLite + FTS5. Dilengkapi teks Arab, terjemahan, tafsir 6 sumber, transliterasi, dan audio. Ideal untuk bot WhatsApp/Telegram, aplikasi mobile, dan website Islamic.",
   "keywords": [
